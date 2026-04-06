@@ -1,0 +1,134 @@
+{
+  "navigation": {
+    "home": "Home",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "language": "EN | DE",
+    "cta": "Get in Touch"
+  },
+  "hero": {
+    "label": "Digital Excellence",
+    "headline": "IT Solutions for Your",
+    "headlineHighlight": "Business.",
+    "description": "We architect digital infrastructures that harmonize technical precision with elegant user experiences. Your vision, technically curated.",
+    "cta1": "Our Work",
+    "cta2": "Services"
+  },
+  "portfolio": {
+    "title": "Our Projects",
+    "projects": [
+      {
+        "id": 1,
+        "category": "Fintech",
+        "title": "NeoBank Interface",
+        "description": "A secure, high-performance banking dashboard for modern users."
+      },
+      {
+        "id": 2,
+        "category": "Data Science",
+        "title": "Analytics Core",
+        "description": "Predictive modeling engine for supply chain optimization."
+      },
+      {
+        "id": 3,
+        "category": "E-Commerce",
+        "title": "Luxe Retail",
+        "description": "Bespoke headless commerce solution for luxury brands."
+      },
+      {
+        "id": 4,
+        "category": "Infrastructure",
+        "title": "Cloud Migrator",
+        "description": "Seamless migration tool for legacy enterprise systems."
+      },
+      {
+        "id": 5,
+        "category": "SaaS",
+        "title": "SyncFlow CRM",
+        "description": "Intelligent customer relation management platform."
+      },
+      {
+        "id": 6,
+        "category": "Security",
+        "title": "ShieldGate Pro",
+        "description": "Zero-trust network architecture for global firms."
+      }
+    ],
+    "visitWebsite": "Visit Website"
+  },
+  "services": {
+    "title": "What we do",
+    "description": "Our services are tailored for enterprises that value stability, performance, and aesthetic precision.",
+    "tags": ["Infrastructure", "Web Systems", "Cybersecurity", "AI Solutions"],
+    "items": [
+      {
+        "icon": "cloud_done",
+        "title": "Cloud Strategy",
+        "description": "Scalable architectures built for 99.9% uptime and global reach."
+      },
+      {
+        "icon": "terminal",
+        "title": "Custom Software",
+        "description": "Bespoke applications designed around your unique business workflows."
+      },
+      {
+        "icon": "security",
+        "title": "Security Audits",
+        "description": "Proactive threat mitigation and rigorous system stress testing."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Performance Opt",
+        "description": "Identifying bottlenecks and refining systems for maximum speed."
+      }
+    ]
+  },
+  "about": {
+    "title": "About Our Company",
+    "yearsExperience": "10+",
+    "yearsLabel": "Years Experience",
+    "description1": "The Architectural Curator is not just an IT agency; we are digital architects. Founded in Berlin, we believe that software should be as enduring and precise as classical architecture.",
+    "description2": "Our values are rooted in transparency, technical excellence, and minimalist design. We work with select partners who seek to push the boundaries of what's possible in the digital realm.",
+    "values": [
+      "Precision-driven engineering",
+      "Aesthetic functionalism",
+      "Long-term technical partnership"
+    ]
+  },
+  "contact": {
+    "title": "Let's build",
+    "titleHighlight": "something remarkable.",
+    "description": "Ready to start your next project? Get in touch for a consultation with our senior architects.",
+    "email": "hello@architecturalcurator.com",
+    "phone": "+49 30 123 456 78",
+    "address": "Torstraße 120, 10119 Berlin, Germany",
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "John Doe",
+      "email": "Email Address",
+      "emailPlaceholder": "john@company.com",
+      "subject": "Subject",
+      "subjectOptions": [
+        "New Project Inquiry",
+        "Service Consultation",
+        "Partnership",
+        "Other"
+      ],
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your project...",
+      "submit": "Send Inquiry"
+    }
+  },
+  "footer": {
+    "company": "The Architectural Curator",
+    "links": {
+      "imprint": "Imprint",
+      "privacy": "Privacy Policy",
+      "gdpr": "GDPR",
+      "terms": "Terms of Service"
+    },
+    "copyright": "© 2024 The Architectural Curator. All rights reserved."
+  }
+}

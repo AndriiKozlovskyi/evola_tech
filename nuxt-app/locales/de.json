@@ -1,0 +1,134 @@
+{
+  "navigation": {
+    "home": "Startseite",
+    "portfolio": "Portfolio",
+    "services": "Services",
+    "about": "Über uns",
+    "contact": "Kontakt",
+    "language": "EN | DE",
+    "cta": "In Kontakt treten"
+  },
+  "hero": {
+    "label": "Digitale Exzellenz",
+    "headline": "IT-Lösungen für Ihr",
+    "headlineHighlight": "Unternehmen.",
+    "description": "Wir entwerfen digitale Infrastrukturen, die technische Präzision mit eleganten Benutzererfahrungen vereinen. Ihre Vision, technisch kuratiert.",
+    "cta1": "Unsere Arbeiten",
+    "cta2": "Services"
+  },
+  "portfolio": {
+    "title": "Unsere Projekte",
+    "projects": [
+      {
+        "id": 1,
+        "category": "Fintech",
+        "title": "NeoBank Interface",
+        "description": "Ein sicheres, hochperformantes Banking-Dashboard für moderne Benutzer."
+      },
+      {
+        "id": 2,
+        "category": "Data Science",
+        "title": "Analytics Core",
+        "description": "Predictive-Modeling-Engine für Lieferkettenoptimierung."
+      },
+      {
+        "id": 3,
+        "category": "E-Commerce",
+        "title": "Luxe Retail",
+        "description": "Maßgeschneiderte Headless-Commerce-Lösung für Luxusmarken."
+      },
+      {
+        "id": 4,
+        "category": "Infrastructure",
+        "title": "Cloud Migrator",
+        "description": "Nahtlose Migrationstool für Legacy-Enterprise-Systeme."
+      },
+      {
+        "id": 5,
+        "category": "SaaS",
+        "title": "SyncFlow CRM",
+        "description": "Intelligente Customer-Relationship-Management-Plattform."
+      },
+      {
+        "id": 6,
+        "category": "Security",
+        "title": "ShieldGate Pro",
+        "description": "Zero-Trust-Netzwerk-Architektur für globale Unternehmen."
+      }
+    ],
+    "visitWebsite": "Website besuchen"
+  },
+  "services": {
+    "title": "Was wir machen",
+    "description": "Unsere Services sind auf Unternehmen zugeschnitten, die Stabilität, Performance und ästhetische Präzision schätzen.",
+    "tags": ["Infrastruktur", "Web-Systeme", "Cybersicherheit", "KI-Lösungen"],
+    "items": [
+      {
+        "icon": "cloud_done",
+        "title": "Cloud-Strategie",
+        "description": "Skalierbare Architekturen mit 99,9% Uptime und globaler Reichweite."
+      },
+      {
+        "icon": "terminal",
+        "title": "Custom Software",
+        "description": "Maßgeschneiderte Anwendungen für Ihre einzigartigen Geschäftsabläufe."
+      },
+      {
+        "icon": "security",
+        "title": "Sicherheits-Audits",
+        "description": "Proaktive Bedrohungsminderung und rigoroses Systemtesting."
+      },
+      {
+        "icon": "monitoring",
+        "title": "Performance Opt",
+        "description": "Identifizierung von Bottlenecks und Systemoptimierung für maximale Geschwindigkeit."
+      }
+    ]
+  },
+  "about": {
+    "title": "Über unser Unternehmen",
+    "yearsExperience": "10+",
+    "yearsLabel": "Jahre Erfahrung",
+    "description1": "The Architectural Curator ist nicht nur eine IT-Agentur; wir sind digitale Architekten. Gegründet in Berlin, glauben wir, dass Software so dauerhaft und präzise sein sollte wie klassische Architektur.",
+    "description2": "Unsere Werte basieren auf Transparenz, technischer Exzellenz und minimalistischem Design. Wir arbeiten mit ausgewählten Partnern zusammen, die die Grenzen des Möglichen im digitalen Bereich verschieben möchten.",
+    "values": [
+      "Präzisions-orientiertes Engineering",
+      "Ästhetischer Funktionalismus",
+      "Langfristige technische Partnerschaft"
+    ]
+  },
+  "contact": {
+    "title": "Lassen Sie uns etwas",
+    "titleHighlight": "Bemerkenswertes bauen.",
+    "description": "Bereit, Ihr nächstes Projekt zu starten? Kontaktieren Sie uns für eine Beratung mit unseren Senior-Architekten.",
+    "email": "hello@architecturalcurator.com",
+    "phone": "+49 30 123 456 78",
+    "address": "Torstraße 120, 10119 Berlin, Germany",
+    "form": {
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "John Doe",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "john@firma.com",
+      "subject": "Betreff",
+      "subjectOptions": [
+        "Anfrage für neues Projekt",
+        "Service-Beratung",
+        "Partnerschaft",
+        "Sonstiges"
+      ],
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
+      "submit": "Anfrage senden"
+    }
+  },
+  "footer": {
+    "company": "The Architectural Curator",
+    "links": {
+      "imprint": "Impressum",
+      "privacy": "Datenschutz",
+      "gdpr": "DSGVO",
+      "terms": "Nutzungsbedingungen"
+    },
+    "copyright": "© 2024 The Architectural Curator. Alle Rechte vorbehalten."
+  }
+}

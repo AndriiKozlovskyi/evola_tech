@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>The Architectural Curator | Elite IT Solutions</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed-dim": "#b2c8e8",
+                    "secondary-container": "#c9deff",
+                    "on-secondary": "#ffffff",
+                    "on-tertiary-fixed-variant": "#733600",
+                    "tertiary-fixed": "#ffdcc7",
+                    "on-tertiary": "#ffffff",
+                    "surface-container-high": "#e5e8ee",
+                    "primary-fixed-dim": "#a1c9ff",
+                    "on-primary-container": "#afd1ff",
+                    "surface-container-highest": "#e0e3e8",
+                    "surface-tint": "#1261a3",
+                    "inverse-on-surface": "#eef1f6",
+                    "inverse-primary": "#a1c9ff",
+                    "tertiary-fixed-dim": "#ffb787",
+                    "error": "#ba1a1a",
+                    "primary-container": "#005a9c",
+                    "on-background": "#181c20",
+                    "on-primary-fixed": "#001c37",
+                    "on-secondary-fixed": "#041c35",
+                    "surface-container-lowest": "#ffffff",
+                    "surface-container-low": "#f1f4f9",
+                    "tertiary": "#6a3100",
+                    "on-surface": "#181c20",
+                    "secondary-fixed": "#d2e4ff",
+                    "surface-bright": "#f7f9ff",
+                    "on-primary": "#ffffff",
+                    "outline": "#727781",
+                    "on-tertiary-container": "#ffc29c",
+                    "on-primary-fixed-variant": "#00487f",
+                    "secondary": "#4b607b",
+                    "primary": "#004275",
+                    "surface-container": "#ebeef3",
+                    "on-secondary-fixed-variant": "#334862",
+                    "on-secondary-container": "#4d627e",
+                    "outline-variant": "#c1c7d2",
+                    "on-surface-variant": "#414750",
+                    "background": "#f7f9ff",
+                    "surface-dim": "#d7dadf",
+                    "on-error": "#ffffff",
+                    "surface-variant": "#e0e3e8",
+                    "error-container": "#ffdad6",
+                    "on-tertiary-fixed": "#311300",
+                    "tertiary-container": "#8d4401",
+                    "on-error-container": "#93000a",
+                    "surface": "#f7f9ff",
+                    "inverse-surface": "#2d3135",
+                    "primary-fixed": "#d2e4ff"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Inter"],
+                    "body": ["Inter"],
+                    "label": ["Inter"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; color: #181c20; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-nav { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(20px); }
+        .ambient-shadow:hover { box-shadow: 0 20px 40px rgba(0, 66, 117, 0.06); }
+        .ghost-border { border: 1px solid rgba(193, 199, 210, 0.2); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- Top Navigation Bar -->
+<header class="fixed top-0 w-full z-50 glass-nav shadow-sm">
+<nav class="flex justify-between items-center px-8 py-4 max-w-7xl mx-auto">
+<div class="text-2xl font-bold tracking-tighter text-slate-900">
+                The Architectural Curator
+            </div>
+<div class="hidden md:flex items-center gap-8 font-inter tracking-tight font-medium text-sm">
+<a class="text-blue-700 font-semibold border-b-2 border-blue-700 pb-1" href="#home">Home</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#portfolio">Portfolio</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#services">Services</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#about">About</a>
+<a class="text-slate-600 hover:text-slate-900 transition-colors" href="#contact">Contact</a>
+</div>
+<div class="flex items-center gap-6">
+<span class="text-slate-500 font-inter text-sm font-medium">DE | EN</span>
+<a class="bg-primary text-on-primary px-5 py-2.5 rounded-md text-sm font-semibold transition-all hover:opacity-80" href="#contact">
+                    Get in Touch
+                </a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="min-h-screen flex flex-col justify-center px-8 pt-20 max-w-7xl mx-auto" id="home">
+<div class="max-w-4xl space-y-8">
+<span class="text-label-md font-bold text-primary tracking-[0.2em] uppercase">Digital Excellence</span>
+<h1 class="text-7xl font-bold tracking-tighter leading-[1.1] text-on-surface">
+                    IT Solutions for Your <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">Business.</span>
+</h1>
+<p class="text-body-lg text-on-surface-variant max-w-xl leading-relaxed">
+                    We architect digital infrastructures that harmonize technical precision with elegant user experiences. Your vision, technically curated.
+                </p>
+<div class="pt-4 flex gap-4">
+<a class="bg-primary text-on-primary px-8 py-4 rounded-md font-semibold text-lg flex items-center gap-2 transition-all hover:scale-[1.02]" href="#portfolio">
+                        Our Work
+                        <span class="material-symbols-outlined">arrow_forward</span>
+</a>
+<a class="ghost-border text-primary px-8 py-4 rounded-md font-semibold text-lg transition-all hover:bg-surface-container-low" href="#services">
+                        Services
+                    </a>
+</div>
+</div>
+</section>
+<!-- Portfolio Section (Bento Grid Style) -->
+<section class="py-32 px-8 bg-surface-container-low" id="portfolio">
+<div class="max-w-7xl mx-auto">
+<div class="mb-16">
+<h2 class="text-4xl font-semibold tracking-tight text-on-surface mb-4">Our Projects</h2>
+<div class="w-20 h-1 bg-primary"></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Modern minimalist website interface displayed on a sleek laptop screen with soft studio lighting and clean desk background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAuCHdOE6Ceh1VHX08RATs2StRyY4EQ47Snm-l6SSXLfKxT7ZoLJ2IEEZ12xPINb39Hu6IPkLdmSNvZNKVEpd-dlrdqcMva_y7aLdBiio5zxc8NzD6iXHKbRACukwOsoYhmHptLWxQyEdozMQMWf2pYL4eIWrv5kB18pSbRdIwXzFvbA6PqmRuaZoeqY_2Xk5THnU4hITaPqzjEtGYAMekdDpjQ1kRXC3OjymRJ2qY4nWxhgaXG9evcGwdn7Y8msDHUjXCWcceAXII"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Fintech</span>
+<h3 class="text-xl font-bold mt-2 mb-3">NeoBank Interface</h3>
+<p class="text-sm text-on-surface-variant mb-6">A secure, high-performance banking dashboard for modern users.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+<!-- Project Card 2 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Complex data visualization dashboard with dark theme and vibrant blue neon accents on a professional monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDF1xQDIu9G1k5LCwY7XpTY19PnQIszLLqf1izqZrA1nGXuwlAHP3Oubf0GfM_WiGmdDLvYpjGTfGhUI0cwjhsLmgmYQ0ZiboYvjW_qHXuJjKc4hznkcYB_68sr16xdlssoIaeoWvPdooY3uRFLPx1J6anHuldqu2bdoJe1HWc3ME2sif9sL8AgP7TxKtxUiAJ-UY_s9CR-E6Tp2KlBu4N-43x_tXyx0upYV8wCcT1XHG224zYJPZMMTCO-6goBk-pKVSERds50gqU"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Data Science</span>
+<h3 class="text-xl font-bold mt-2 mb-3">Analytics Core</h3>
+<p class="text-sm text-on-surface-variant mb-6">Predictive modeling engine for supply chain optimization.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+<!-- Project Card 3 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Elegant ecommerce storefront with luxury typography and large negative space on a tablet device" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBmRJ2YW_2cvYKe328oYtgRttADRXJ8IiPaKx7rw-fQUy-pGJAVJBJoqcZrzm6ZbGjtlM3SllJm79Ufls910dUF-MJjAcMXf_V7qgvbTUk7KmA-J-J4GsqIvcAuRb4O9O4YilJjJ6WMCb7WY-t7l_CcMb8z6_DURm7zNXNQbRUkEExeC1cADffvFDEWO__gc2uaDr2SDcaNH_d3eEz4sPnwmTYofjY5OorTYLDkH-F76K6aHPtYp-m8CybPMGc1GMjUAwzrdHMQWIs"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">E-Commerce</span>
+<h3 class="text-xl font-bold mt-2 mb-3">Luxe Retail</h3>
+<p class="text-sm text-on-surface-variant mb-6">Bespoke headless commerce solution for luxury brands.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+<!-- Project Card 4 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Cloud infrastructure diagram being edited on a high resolution screen with stylized lines and icons" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCEzzN4ZWCS6Zml27X343oi0zak9fJDgPV9_y1VsmZQrppsO9Ajn2cnykdnse04svlya4y7AP8RL0ltEweWWjHBGIwFQ80HQbsYUPy_j4dARaoqN8USwxOjHyrAuZOrvJrLJhnPPq6rUcSwhG9OsbkKDnML8MAArEcCT-xLrTlNuHq0eUa6WMjvcEvMnKDdYXhoPyQMtevImoZuTOQoz_FLEB3546zCA244U-aYdcDY1oto_Cl6ttzccnIM224ndcomQQa78KJYCDY"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Infrastructure</span>
+<h3 class="text-xl font-bold mt-2 mb-3">Cloud Migrator</h3>
+<p class="text-sm text-on-surface-variant mb-6">Seamless migration tool for legacy enterprise systems.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+<!-- Project Card 5 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Collaborative software environment with clean sidebar and floating task windows on a desktop monitor" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEnz1ap_OpChxP7gFZhCXR4bSVWrtlbOBo82WZeVxJwqWPAGVSTZs4FVgDGESMqtBcqX5hdkOFqc080gSgP5O2FSLXaO7r84K1Bt4o4EEn3kfZxgKRmkPgOrG_JHkpiogaRjjKPPiUGzXao7m3kPD0HbmQSR6Bid-gwScsAMP9ErXl0n3w_x84r-vtxX-YFE2Z_AQeOIZ8wF4LZxejzfFobgOHt_IhDvjPJDFJA_svlCS-2oOVwd_RMzZKpE4zs_rBpUuCTu19VZU"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">SaaS</span>
+<h3 class="text-xl font-bold mt-2 mb-3">SyncFlow CRM</h3>
+<p class="text-sm text-on-surface-variant mb-6">Intelligent customer relation management platform.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+<!-- Project Card 6 -->
+<div class="group relative bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.03] ambient-shadow">
+<div class="aspect-video bg-slate-200 overflow-hidden">
+<img class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Cybersecurity lock icon overlay on a grid of server racks in a modern data center with blue lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHgPq3NQnXvDB5adDChxzuHvUD-4nPqahf90YDgiOB4N5T968FgM5wLEMG6-OEpdWYrrCPKYKXWboZ4EzIycb0h8oj2uLtgodgflKevzsieoHGfuVLW5mJi2NgaHoupK8ha5fZnU-AZ2B0h5nQpCb4oIR2ADsTPQ4QJj_WXf5WODAea-qnjQJp0VHWGEq60-Ay2ANuO7LMj-10Oww_siCg1bUzR3TWEkhh-vEFZFW344kzSh-ZXiE11-LD5_3qaSJ94JUs55Vc5N8"/>
+</div>
+<div class="p-8">
+<span class="text-[10px] font-bold text-primary uppercase tracking-widest">Security</span>
+<h3 class="text-xl font-bold mt-2 mb-3">ShieldGate Pro</h3>
+<p class="text-sm text-on-surface-variant mb-6">Zero-trust network architecture for global firms.</p>
+<a class="inline-flex items-center gap-2 text-primary font-semibold text-sm" href="#">
+                                Visit Website
+                                <span class="material-symbols-outlined text-sm">north_east</span>
+</a>
+</div>
+<div class="absolute inset-0 bg-primary/90 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity duration-300">
+<button class="bg-on-primary text-primary px-6 py-3 rounded-md font-bold">Go to Site</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Services Section -->
+<section class="py-32 px-8 bg-surface" id="services">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
+<div>
+<h2 class="text-4xl font-semibold tracking-tight mb-6">What we do</h2>
+<p class="text-body-lg text-on-surface-variant max-w-md leading-relaxed mb-10">
+                        Our services are tailored for enterprises that value stability, performance, and aesthetic precision.
+                    </p>
+<div class="flex flex-wrap gap-3">
+<span class="bg-secondary-container/30 text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">Infrastructure</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">Web Systems</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">Cybersecurity</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-4 py-1.5 rounded-full text-xs font-semibold tracking-wide">AI Solutions</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div class="bg-surface-container-lowest p-8 rounded-xl ghost-border ambient-shadow transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">cloud_done</span>
+<h3 class="text-lg font-bold mb-2">Cloud Strategy</h3>
+<p class="text-sm text-on-surface-variant">Scalable architectures built for 99.9% uptime and global reach.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl ghost-border ambient-shadow transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">terminal</span>
+<h3 class="text-lg font-bold mb-2">Custom Software</h3>
+<p class="text-sm text-on-surface-variant">Bespoke applications designed around your unique business workflows.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl ghost-border ambient-shadow transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">security</span>
+<h3 class="text-lg font-bold mb-2">Security Audits</h3>
+<p class="text-sm text-on-surface-variant">Proactive threat mitigation and rigorous system stress testing.</p>
+</div>
+<div class="bg-surface-container-lowest p-8 rounded-xl ghost-border ambient-shadow transition-all">
+<span class="material-symbols-outlined text-primary text-4xl mb-4">monitoring</span>
+<h3 class="text-lg font-bold mb-2">Performance Opt</h3>
+<p class="text-sm text-on-surface-variant">Identifying bottlenecks and refining systems for maximum speed.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- About Us Section -->
+<section class="py-32 px-8 bg-surface-container-low overflow-hidden relative" id="about">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-20">
+<div class="w-full md:w-1/2 relative">
+<div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
+<img class="rounded-2xl relative z-10 w-full shadow-2xl grayscale" data-alt="Close-up of three professionals in a bright modern office collaborating around a large screen showing architectural code" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZJNN3j-5dQaPPuiraqBYWeNeeNxqAYhWn_34P7vvYTao2fSd969YWWzN7dow0WRoTobSkg2deQCAgUxQh9dn7FMqP2rUmMus49Wd948Kj80MWhFUtk2IXDy7f9ke4mIcaZPeQCLbDMhyoYGWrjCWLUWJdayspOrGVrEe7I4bmjPuKZLwVN-ZYkgb_TUedGSb1zp1f8ZFk6CZ_E0K2idlqxUEJZtbuHfduFemZlRvApRI7SHK5sG9ZE62iwdwk7Zn9XotywUZ8o0k"/>
+<div class="absolute -bottom-6 -right-6 bg-primary p-8 rounded-xl shadow-xl z-20">
+<div class="text-on-primary text-4xl font-bold">10+</div>
+<div class="text-primary-fixed-dim text-xs font-semibold tracking-wider uppercase">Years Experience</div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-6">
+<h2 class="text-4xl font-semibold tracking-tight">About Our Company</h2>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                        The Architectural Curator is not just an IT agency; we are digital architects. Founded in Berlin, we believe that software should be as enduring and precise as classical architecture.
+                    </p>
+<p class="text-body-lg text-on-surface-variant leading-relaxed">
+                        Our values are rooted in transparency, technical excellence, and minimalist design. We work with select partners who seek to push the boundaries of what's possible in the digital realm.
+                    </p>
+<ul class="space-y-4 pt-4">
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Precision-driven engineering</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Aesthetic functionalism</span>
+</li>
+<li class="flex items-center gap-3">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+<span class="font-medium">Long-term technical partnership</span>
+</li>
+</ul>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="py-32 px-8 bg-surface" id="contact">
+<div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20">
+<div class="space-y-8">
+<h2 class="text-4xl font-semibold tracking-tight">Let's build <br/> something remarkable.</h2>
+<p class="text-on-surface-variant max-w-sm">Ready to start your next project? Get in touch for a consultation with our senior architects.</p>
+<div class="space-y-6 pt-6">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">mail</span>
+<div>
+<h4 class="font-bold text-sm">Email Us</h4>
+<p class="text-on-surface-variant">hello@architecturalcurator.com</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">call</span>
+<div>
+<h4 class="font-bold text-sm">Call Us</h4>
+<p class="text-on-surface-variant">+49 30 123 456 78</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary mt-1">location_on</span>
+<div>
+<h4 class="font-bold text-sm">Visit Our Studio</h4>
+<p class="text-on-surface-variant">Torstraße 120, 10119 Berlin, Germany</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-10 rounded-2xl shadow-sm border border-outline-variant/10">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Full Name</label>
+<input class="w-full bg-surface-container-low border-0 rounded-md py-3 px-4 focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Email Address</label>
+<input class="w-full bg-surface-container-low border-0 rounded-md py-3 px-4 focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Subject</label>
+<select class="w-full bg-surface-container-low border-0 rounded-md py-3 px-4 focus:ring-0 focus:border-b-2 focus:border-primary transition-all">
+<option>New Project Inquiry</option>
+<option>Service Consultation</option>
+<option>Partnership</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-2">
+<label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Message</label>
+<textarea class="w-full bg-surface-container-low border-0 rounded-md py-3 px-4 focus:ring-0 focus:border-b-2 focus:border-primary transition-all" placeholder="Tell us about your project..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-on-primary font-bold py-4 rounded-md shadow-lg hover:opacity-90 transition-all active:scale-[0.98]" type="submit">
+                            Send Inquiry
+                        </button>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-slate-100 py-12">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-6">
+<div class="text-lg font-bold text-slate-900">
+                The Architectural Curator
+            </div>
+<div class="flex gap-8 font-inter text-xs tracking-wider uppercase font-semibold">
+<a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#">Imprint</a>
+<a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#">Privacy Policy</a>
+<a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#">GDPR</a>
+<a class="text-slate-500 hover:text-slate-900 hover:underline transition-all" href="#">Terms of Service</a>
+</div>
+<div class="text-slate-500 text-xs font-medium">
+                © 2024 The Architectural Curator. All rights reserved.
+            </div>
+</div>
+</footer>
+</body></html>
