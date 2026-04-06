@@ -16,11 +16,14 @@ export default defineNuxtConfig({
   // i18n Configuration
   i18n: {
     locales: [
-      { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr' },
-      { code: 'de', iso: 'de-DE', name: 'Deutsch', dir: 'ltr' },
+      { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr', file: 'en.json' },
+      { code: 'de', iso: 'de-DE', name: 'Deutsch', dir: 'ltr', file: 'de.json' },
     ],
+    langDir: 'locales',
+    restructureDir: '',
     defaultLocale: 'en',
-    strategy: 'prefix',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
   },
 

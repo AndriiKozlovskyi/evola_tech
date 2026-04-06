@@ -89,7 +89,7 @@
     "title": "About Our Company",
     "yearsExperience": "10+",
     "yearsLabel": "Years Experience",
-    "description1": "The Architectural Curator is not just an IT agency; we are digital architects. Founded in Berlin, we believe that software should be as enduring and precise as classical architecture.",
+    "description1": "EvolaTech is not just an IT agency; we are digital architects. We believe that software should be as enduring and precise as classical architecture.",
     "description2": "Our values are rooted in transparency, technical excellence, and minimalist design. We work with select partners who seek to push the boundaries of what's possible in the digital realm.",
     "values": [
       "Precision-driven engineering",
@@ -101,14 +101,14 @@
     "title": "Let's build",
     "titleHighlight": "something remarkable.",
     "description": "Ready to start your next project? Get in touch for a consultation with our senior architects.",
-    "email": "hello@architecturalcurator.com",
-    "phone": "+49 30 123 456 78",
-    "address": "Torstraße 120, 10119 Berlin, Germany",
+    "email": "evolateam{'@'}gmail.com",
+    "phone": "+48 789 711 631",
+    "address": "",
     "form": {
       "fullName": "Full Name",
       "fullNamePlaceholder": "John Doe",
       "email": "Email Address",
-      "emailPlaceholder": "john@company.com",
+      "emailPlaceholder": "john{'@'}company.com",
       "subject": "Subject",
       "subjectOptions": [
         "New Project Inquiry",
@@ -122,13 +122,13 @@
     }
   },
   "footer": {
-    "company": "The Architectural Curator",
+    "company": "EvolaTech",
     "links": {
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
       "gdpr": "GDPR",
       "terms": "Terms of Service"
     },
-    "copyright": "© 2024 The Architectural Curator. All rights reserved."
+    "copyright": "© 2026 EvolaTech. All rights reserved."
   }
 }

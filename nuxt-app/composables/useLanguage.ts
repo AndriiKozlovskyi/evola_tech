@@ -1,18 +1,16 @@
 import { useI18n } from 'vue-i18n'
 
 export const useLanguage = () => {
-  const { locale, t } = useI18n()
-  const router = useRouter()
-  const localePath = useLocalePath()
+  const { locale, setLocale, t } = useI18n()
 
   const currentLocale = computed(() => locale.value as string)
 
   const toggleLanguage = async () => {
     const newLocale = currentLocale.value === 'en' ? 'de' : 'en'
-    locale.value = newLocale
+    await setLocale(newLocale)
 
     // Persist to localStorage
-    if (process.client) {
+    if (import.meta.client) {
       localStorage.setItem('i18n-locale', newLocale)
     }
   }
