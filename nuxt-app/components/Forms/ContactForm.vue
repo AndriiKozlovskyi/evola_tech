@@ -1,138 +1,115 @@
 <template>
-  <div class="bg-surface-container-lowest p-8 lg:p-10 rounded-2xl ghost-border">
-    <form @submit.prevent="handleSubmit" class="space-y-6">
-      <!-- Name & Email Row -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <div class="space-y-2">
-          <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-            {{ $t('contact.form.fullName') }}
-          </label>
-          <input
-            v-model="form.fullName"
-            type="text"
-            :placeholder="$t('contact.form.fullNamePlaceholder')"
-            class="w-full bg-surface-container-low border-0 rounded-xl py-3 px-4 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0 focus:bg-surface-container-lowest focus:border-b-2 focus:border-primary transition-all"
-            required
-          />
-          <p v-if="errors.fullName" class="text-error text-xs">{{ errors.fullName }}</p>
-        </div>
-        <div class="space-y-2">
-          <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-            {{ $t('contact.form.email') }}
-          </label>
-          <input
-            v-model="form.email"
-            type="email"
-            :placeholder="$t('contact.form.emailPlaceholder')"
-            class="w-full bg-surface-container-low border-0 rounded-xl py-3 px-4 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0 focus:bg-surface-container-lowest focus:border-b-2 focus:border-primary transition-all"
-            required
-          />
-          <p v-if="errors.email" class="text-error text-xs">{{ errors.email }}</p>
+  <div class="relative">
+    <!-- Decorative blur -->
+    <div class="absolute -top-8 -right-8 w-40 h-40 bg-primary/8 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="relative bg-surface-container-lowest p-8 lg:p-10 rounded-2xl ghost-border space-y-7">
+      <!-- Topic Selection Chips -->
+      <div>
+        <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-4">
+          {{ $t('contact.form.topicLabel') }}
+        </p>
+        <div class="flex flex-wrap gap-2">
+          <button
+            v-for="(option, i) in ($tm('contact.form.subjectOptions') as string[])"
+            :key="i"
+            @click="selectedTopic = $rt(option)"
+            :class="[
+              'px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer',
+              selectedTopic === $rt(option)
+                ? 'bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/20 scale-[1.03]'
+                : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface'
+            ]"
+          >
+            {{ $rt(option) }}
+          </button>
         </div>
       </div>
 
-      <!-- Subject -->
+      <!-- Email -->
       <div class="space-y-2">
-        <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
-          {{ $t('contact.form.subject') }}
+        <label class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+          {{ $t('contact.form.email') }}
         </label>
-        <select
-          v-model="form.subject"
-          class="w-full bg-surface-container-low border-0 rounded-xl py-3 px-4 text-on-surface focus:ring-0 focus:bg-surface-container-lowest focus:border-b-2 focus:border-primary transition-all"
-        >
-          <option
-            v-for="(option, i) in ($tm('contact.form.subjectOptions') as string[])"
-            :key="i"
-            :value="$rt(option)"
-          >
-            {{ $rt(option) }}
-          </option>
-        </select>
+        <input
+          v-model="email"
+          type="email"
+          :placeholder="$t('contact.form.emailPlaceholder')"
+          class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none"
+        />
       </div>
 
       <!-- Message -->
       <div class="space-y-2">
-        <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">
+        <label class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
           {{ $t('contact.form.message') }}
         </label>
         <textarea
-          v-model="form.message"
+          v-model="message"
           :placeholder="$t('contact.form.messagePlaceholder')"
           rows="4"
-          class="w-full bg-surface-container-low border-0 rounded-xl py-3 px-4 text-on-surface placeholder:text-on-surface-variant/50 focus:ring-0 focus:bg-surface-container-lowest focus:border-b-2 focus:border-primary transition-all resize-none"
-          required
+          class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all resize-none outline-none"
         ></textarea>
-        <p v-if="errors.message" class="text-error text-xs">{{ errors.message }}</p>
       </div>
 
-      <!-- Submit -->
-      <button
-        type="submit"
-        :disabled="isSubmitting"
-        class="w-full bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+      <!-- Send Button (mailto) -->
+      <a
+        :href="mailtoLink"
+        class="w-full flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98]"
       >
-        {{ isSubmitting ? '...' : $t('contact.form.submit') }}
-      </button>
+        <span class="material-symbols-outlined text-xl">send</span>
+        {{ $t('contact.form.submit') }}
+      </a>
 
-      <!-- Success Message -->
-      <p v-if="successMessage" class="text-green-600 text-sm font-medium text-center">
-        {{ successMessage }}
-      </p>
-    </form>
+      <!-- Divider -->
+      <div class="flex items-center gap-4">
+        <div class="flex-1 h-px bg-outline-variant/20"></div>
+        <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">
+          {{ $t('contact.form.orConnect') }}
+        </span>
+        <div class="flex-1 h-px bg-outline-variant/20"></div>
+      </div>
+
+      <!-- Direct Contact Channels -->
+      <div class="grid grid-cols-3 gap-3">
+        <a
+          href="https://t.me/evola_manager"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="flex flex-col items-center gap-2.5 py-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all group"
+        >
+          <svg class="w-6 h-6 text-on-surface-variant group-hover:text-primary transition-colors" viewBox="0 0 24 24" fill="currentColor"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.962 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z"/></svg>
+          <span class="text-xs font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Telegram</span>
+        </a>
+        <a
+          href="mailto:evolateam@gmail.com"
+          class="flex flex-col items-center gap-2.5 py-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all group"
+        >
+          <span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">mail</span>
+          <span class="text-xs font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Email</span>
+        </a>
+        <a
+          href="tel:+48789711631"
+          class="flex flex-col items-center gap-2.5 py-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all group"
+        >
+          <span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">call</span>
+          <span class="text-xs font-semibold text-on-surface-variant group-hover:text-primary transition-colors">{{ $t('contact.form.call') }}</span>
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 
 <script setup lang="ts">
-const form = reactive({
-  fullName: '',
-  email: '',
-  subject: '',
-  message: '',
+const selectedTopic = ref('')
+const email = ref('')
+const message = ref('')
+
+const mailtoLink = computed(() => {
+  const subject = encodeURIComponent(selectedTopic.value || 'New Inquiry')
+  const body = encodeURIComponent(
+    `${message.value}\n\n---\nFrom: ${email.value}`
+  )
+  return `mailto:evolateam@gmail.com?subject=${subject}&body=${body}`
 })
-
-const errors = reactive({
-  fullName: '',
-  email: '',
-  message: '',
-})
-
-const isSubmitting = ref(false)
-const successMessage = ref('')
-
-const validateForm = () => {
-  errors.fullName = form.fullName.trim() ? '' : 'Full name is required'
-  errors.email = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(form.email) ? '' : 'Valid email is required'
-  errors.message = form.message.length >= 10 ? '' : 'Message must be at least 10 characters'
-
-  return !errors.fullName && !errors.email && !errors.message
-}
-
-const handleSubmit = async () => {
-  if (!validateForm()) return
-
-  isSubmitting.value = true
-  successMessage.value = ''
-
-  try {
-    // TODO: Replace with actual form submission (Formspree, Netlify Functions, etc.)
-    console.log('Form data:', form)
-    
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000))
-    
-    successMessage.value = 'Thank you! Your inquiry has been sent.'
-    form.fullName = ''
-    form.email = ''
-    form.subject = ''
-    form.message = ''
-
-    setTimeout(() => {
-      successMessage.value = ''
-    }, 5000)
-  } catch (err) {
-    console.error('Form submission error:', err)
-  } finally {
-    isSubmitting.value = false
-  }
-}
 </script>

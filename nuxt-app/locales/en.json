@@ -21,39 +21,21 @@
     "projects": [
       {
         "id": 1,
-        "category": "Fintech",
-        "title": "NeoBank Interface",
-        "description": "A secure, high-performance banking dashboard for modern users."
+        "category": "Rental Service",
+        "title": "Evola E-Bikes",
+        "description": "Electric bike and battery rental service in Wroclaw with full suspension and hardtail options, weekly service, and clear rental terms."
       },
       {
         "id": 2,
-        "category": "Data Science",
-        "title": "Analytics Core",
-        "description": "Predictive modeling engine for supply chain optimization."
+        "category": "Healthcare",
+        "title": "Recovery Astana",
+        "description": "Comprehensive addiction treatment center in Astana offering detoxification, rehabilitation, psychotherapy, and long-term recovery support."
       },
       {
         "id": 3,
-        "category": "E-Commerce",
-        "title": "Luxe Retail",
-        "description": "Bespoke headless commerce solution for luxury brands."
-      },
-      {
-        "id": 4,
-        "category": "Infrastructure",
-        "title": "Cloud Migrator",
-        "description": "Seamless migration tool for legacy enterprise systems."
-      },
-      {
-        "id": 5,
-        "category": "SaaS",
-        "title": "SyncFlow CRM",
-        "description": "Intelligent customer relation management platform."
-      },
-      {
-        "id": 6,
-        "category": "Security",
-        "title": "ShieldGate Pro",
-        "description": "Zero-trust network architecture for global firms."
+        "category": "Elderly Care",
+        "title": "Dobroe Serdce",
+        "description": "Private comfortable pension for elderly people in Astana providing 24/7 qualified care, medical supervision, and individual attention."
       }
     ],
     "visitWebsite": "Visit Website"
@@ -87,7 +69,7 @@
   },
   "about": {
     "title": "About Our Company",
-    "yearsExperience": "10+",
+    "yearsExperience": "3+",
     "yearsLabel": "Years Experience",
     "description1": "EvolaTech is not just an IT agency; we are digital architects. We believe that software should be as enduring and precise as classical architecture.",
     "description2": "Our values are rooted in transparency, technical excellence, and minimalist design. We work with select partners who seek to push the boundaries of what's possible in the digital realm.",
@@ -105,20 +87,20 @@
     "phone": "+48 789 711 631",
     "address": "",
     "form": {
-      "fullName": "Full Name",
-      "fullNamePlaceholder": "John Doe",
-      "email": "Email Address",
+      "topicLabel": "What can we help with?",
+      "email": "Your Email",
       "emailPlaceholder": "john{'@'}company.com",
-      "subject": "Subject",
       "subjectOptions": [
-        "New Project Inquiry",
-        "Service Consultation",
+        "New Project",
+        "Consultation",
         "Partnership",
         "Other"
       ],
-      "message": "Message",
+      "message": "Your Message",
       "messagePlaceholder": "Tell us about your project...",
-      "submit": "Send Inquiry"
+      "submit": "Send Message",
+      "orConnect": "or reach out directly",
+      "call": "Call"
     }
   },
   "footer": {

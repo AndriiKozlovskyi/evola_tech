@@ -15,6 +15,8 @@
       <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">{{ project.description }}</p>
       <a
         :href="project.link || '#'"
+        target="_blank"
+        rel="noopener noreferrer"
         class="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:gap-2.5 transition-all"
       >
         {{ $t('portfolio.visitWebsite') }}

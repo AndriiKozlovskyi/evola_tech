@@ -21,39 +21,21 @@
     "projects": [
       {
         "id": 1,
-        "category": "Fintech",
-        "title": "NeoBank Interface",
-        "description": "Ein sicheres, hochperformantes Banking-Dashboard für moderne Benutzer."
+        "category": "Mietservice",
+        "title": "Evola E-Bikes",
+        "description": "Elektrofahrrad- und Batterievermietung in Breslau mit Fully- und Hardtail-Optionen, wöchentlichem Service und klaren Mietbedingungen."
       },
       {
         "id": 2,
-        "category": "Data Science",
-        "title": "Analytics Core",
-        "description": "Predictive-Modeling-Engine für Lieferkettenoptimierung."
+        "category": "Gesundheitswesen",
+        "title": "Recovery Astana",
+        "description": "Umfassendes Suchtbehandlungszentrum in Astana mit Entgiftung, Rehabilitation, Psychotherapie und langfristiger Genesungsbetreuung."
       },
       {
         "id": 3,
-        "category": "E-Commerce",
-        "title": "Luxe Retail",
-        "description": "Maßgeschneiderte Headless-Commerce-Lösung für Luxusmarken."
-      },
-      {
-        "id": 4,
-        "category": "Infrastructure",
-        "title": "Cloud Migrator",
-        "description": "Nahtlose Migrationstool für Legacy-Enterprise-Systeme."
-      },
-      {
-        "id": 5,
-        "category": "SaaS",
-        "title": "SyncFlow CRM",
-        "description": "Intelligente Customer-Relationship-Management-Plattform."
-      },
-      {
-        "id": 6,
-        "category": "Security",
-        "title": "ShieldGate Pro",
-        "description": "Zero-Trust-Netzwerk-Architektur für globale Unternehmen."
+        "category": "Seniorenpflege",
+        "title": "Dobroe Serdce",
+        "description": "Privates komfortables Pflegeheim für ältere Menschen in Astana mit 24/7 qualifizierter Betreuung, ärztlicher Aufsicht und individueller Aufmerksamkeit."
       }
     ],
     "visitWebsite": "Website besuchen"
@@ -87,7 +69,7 @@
   },
   "about": {
     "title": "Über unser Unternehmen",
-    "yearsExperience": "10+",
+    "yearsExperience": "3+",
     "yearsLabel": "Jahre Erfahrung",
     "description1": "EvolaTech ist nicht nur eine IT-Agentur; wir sind digitale Architekten. Wir glauben, dass Software so dauerhaft und präzise sein sollte wie klassische Architektur.",
     "description2": "Unsere Werte basieren auf Transparenz, technischer Exzellenz und minimalistischem Design. Wir arbeiten mit ausgewählten Partnern zusammen, die die Grenzen des Möglichen im digitalen Bereich verschieben möchten.",
@@ -105,20 +87,20 @@
     "phone": "+48 789 711 631",
     "address": "",
     "form": {
-      "fullName": "Vollständiger Name",
-      "fullNamePlaceholder": "John Doe",
-      "email": "E-Mail-Adresse",
+      "topicLabel": "Womit können wir helfen?",
+      "email": "Ihre E-Mail",
       "emailPlaceholder": "john{'@'}firma.com",
-      "subject": "Betreff",
       "subjectOptions": [
-        "Anfrage für neues Projekt",
-        "Service-Beratung",
+        "Neues Projekt",
+        "Beratung",
         "Partnerschaft",
         "Sonstiges"
       ],
-      "message": "Nachricht",
+      "message": "Ihre Nachricht",
       "messagePlaceholder": "Erzählen Sie uns von Ihrem Projekt...",
-      "submit": "Anfrage senden"
+      "submit": "Nachricht senden",
+      "orConnect": "oder direkt kontaktieren",
+      "call": "Anrufen"
     }
   },
   "footer": {
