@@ -8,7 +8,7 @@
       <h2 class="text-xl font-semibold text-on-surface mt-8">Data Controller</h2>
       <p>EvolaTech</p>
       <h2 class="text-xl font-semibold text-on-surface mt-8">Contact</h2>
-      <p>For GDPR-related requests, contact us at evolateam{'@'}gmail.com.</p>
+      <p>For GDPR-related requests, contact us at evolateam@gmail.com.</p>
     </div>
   </div>
 </template>

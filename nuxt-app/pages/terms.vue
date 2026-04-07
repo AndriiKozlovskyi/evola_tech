@@ -8,7 +8,7 @@
       <h2 class="text-xl font-semibold text-on-surface mt-8">Liability</h2>
       <p>We are not liable for any indirect or consequential damages arising from the use of our services.</p>
       <h2 class="text-xl font-semibold text-on-surface mt-8">Contact</h2>
-      <p>For questions regarding these terms, contact us at evolateam{'@'}gmail.com.</p>
+      <p>For questions regarding these terms, contact us at evolateam@gmail.com.</p>
     </div>
   </div>
 </template>

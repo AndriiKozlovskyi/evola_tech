@@ -6,7 +6,7 @@
       <h2 class="text-xl font-semibold text-on-surface mt-8">Data Collection</h2>
       <p>We only collect data that is necessary for the purpose of providing our services.</p>
       <h2 class="text-xl font-semibold text-on-surface mt-8">Contact</h2>
-      <p>For privacy-related inquiries, contact us at evolateam{'@'}gmail.com.</p>
+      <p>For privacy-related inquiries, contact us at evolateam@gmail.com.</p>
     </div>
   </div>
 </template>
