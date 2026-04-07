@@ -9,10 +9,10 @@
     "cta": "In Kontakt treten"
   },
   "hero": {
-    "label": "Digitale Exzellenz",
-    "headline": "IT-Lösungen für Ihr",
+    "label": "ZUKUNFTSSICHERE ENTWICKLUNG",
+    "headline": "Hochleistungs-Webanwendungen für Ihr",
     "headlineHighlight": "Unternehmen.",
-    "description": "Wir entwerfen digitale Infrastrukturen, die technische Präzision mit eleganten Benutzererfahrungen vereinen. Ihre Vision, technisch kuratiert.",
+    "description": "Wir entwickeln skalierbare Weblösungen und nahtlose API-Integrationen, die Ihre Abläufe optimieren. Ihre Vision, professionell umgesetzt.",
     "cta1": "Unsere Arbeiten",
     "cta2": "Services"
   },
@@ -42,28 +42,28 @@
   },
   "services": {
     "title": "Was wir machen",
-    "description": "Unsere Services sind auf Unternehmen zugeschnitten, die Stabilität, Performance und ästhetische Präzision schätzen.",
-    "tags": ["Infrastruktur", "Web-Systeme", "Cybersicherheit", "KI-Lösungen"],
+    "description": "Unsere Services sind auf Unternehmen zugeschnitten, die zuverlässige, skalierbare und vernetzte digitale Produkte benötigen.",
+    "tags": ["Web-Apps", "API & Integrationen", "Cloud-Setup", "Tech-Support"],
     "items": [
       {
+        "icon": "web",
+        "title": "Webanwendungen",
+        "description": "Maßgeschneiderte, responsive Web-Apps mit modernen Frameworks für maximale Performance."
+      },
+      {
+        "icon": "api",
+        "title": "API & Integrationen",
+        "description": "Verbindung Ihrer Systeme durch sichere, schnelle APIs und Drittanbieter-Service-Synchronisation."
+      },
+      {
         "icon": "cloud_done",
-        "title": "Cloud-Strategie",
-        "description": "Skalierbare Architekturen mit 99,9% Uptime und globaler Reichweite."
+        "title": "Cloud-Grundlagen",
+        "description": "Grundlegende Cloud-Infrastruktur, damit Ihre Anwendungen zugänglich und widerstandsfähig bleiben."
       },
       {
-        "icon": "terminal",
-        "title": "Custom Software",
-        "description": "Maßgeschneiderte Anwendungen für Ihre einzigartigen Geschäftsabläufe."
-      },
-      {
-        "icon": "security",
-        "title": "Sicherheits-Audits",
-        "description": "Proaktive Bedrohungsminderung und rigoroses Systemtesting."
-      },
-      {
-        "icon": "monitoring",
-        "title": "Performance Opt",
-        "description": "Identifizierung von Bottlenecks und Systemoptimierung für maximale Geschwindigkeit."
+        "icon": "support_agent",
+        "title": "Dedizierter Support",
+        "description": "Kontinuierliches Monitoring, Updates und technische Wartung, damit Ihr Geschäft rund um die Uhr läuft."
       }
     ]
   },
@@ -71,23 +71,23 @@
     "title": "Über unser Unternehmen",
     "yearsExperience": "3+",
     "yearsLabel": "Jahre Erfahrung",
-    "description1": "EvolaTech ist nicht nur eine IT-Agentur; wir sind digitale Architekten. Wir glauben, dass Software so dauerhaft und präzise sein sollte wie klassische Architektur.",
-    "description2": "Unsere Werte basieren auf Transparenz, technischer Exzellenz und minimalistischem Design. Wir arbeiten mit ausgewählten Partnern zusammen, die die Grenzen des Möglichen im digitalen Bereich verschieben möchten.",
+    "description1": "EvolaTech ist mehr als eine Entwicklungsagentur; wir sind Ihre technischen Partner. Wir glauben, dass Websoftware so dauerhaft und präzise sein sollte wie klassische Architektur.",
+    "description2": "Wir setzen auf sauberen Code und smarte Konnektivität und helfen Unternehmen, die Lücke zwischen komplexer Geschäftslogik und intuitiven Benutzererfahrungen zu schließen.",
     "values": [
-      "Präzisions-orientiertes Engineering",
-      "Ästhetischer Funktionalismus",
-      "Langfristige technische Partnerschaft"
+      "Full-Stack-Engineering-Exzellenz",
+      "Nahtlose Systeminteroperabilität",
+      "Zuverlässige langfristige technische Partnerschaft"
     ]
   },
   "contact": {
-    "title": "Lassen Sie uns etwas",
-    "titleHighlight": "Bemerkenswertes bauen.",
-    "description": "Bereit, Ihr nächstes Projekt zu starten? Kontaktieren Sie uns für eine Beratung mit unseren Senior-Architekten.",
+    "title": "Lassen Sie uns",
+    "titleHighlight": "Ihre nächste große Idee bauen.",
+    "description": "Bereit, Ihr Webprojekt zu starten? Kontaktieren Sie uns für eine technische Beratung mit unseren Lead-Entwicklern.",
     "email": "evolateam{'@'}gmail.com",
     "phone": "+48 789 711 631",
     "address": "",
     "form": {
-      "topicLabel": "Womit können wir helfen?",
+      "topicLabel": "Erzählen Sie uns von Ihrem Projekt oder Ihren Integrationsbedürfnissen:",
       "email": "Ihre E-Mail",
       "emailPlaceholder": "john{'@'}firma.com",
       "subjectOptions": [

@@ -9,10 +9,10 @@
     "cta": "Get in Touch"
   },
   "hero": {
-    "label": "Digital Excellence",
-    "headline": "IT Solutions for Your",
+    "label": "FUTURE-READY DEVELOPMENT",
+    "headline": "High-Performance Web Applications for Your",
     "headlineHighlight": "Business.",
-    "description": "We architect digital infrastructures that harmonize technical precision with elegant user experiences. Your vision, technically curated.",
+    "description": "We build scalable web solutions and seamless API integrations designed to streamline your operations. Your vision, expertly engineered.",
     "cta1": "Our Work",
     "cta2": "Services"
   },
@@ -42,28 +42,28 @@
   },
   "services": {
     "title": "What we do",
-    "description": "Our services are tailored for enterprises that value stability, performance, and aesthetic precision.",
-    "tags": ["Infrastructure", "Web Systems", "Cybersecurity", "AI Solutions"],
+    "description": "Our services are tailored for businesses that need reliable, scalable, and interconnected digital products.",
+    "tags": ["Web Apps", "API & Integrations", "Cloud Setup", "Tech Support"],
     "items": [
       {
+        "icon": "web",
+        "title": "Web Applications",
+        "description": "Bespoke, responsive web apps built with modern frameworks for maximum performance."
+      },
+      {
+        "icon": "api",
+        "title": "API & Integrations",
+        "description": "Connecting your systems through secure, high-speed APIs and third-party service synchronization."
+      },
+      {
         "icon": "cloud_done",
-        "title": "Cloud Strategy",
-        "description": "Scalable architectures built for 99.9% uptime and global reach."
+        "title": "Cloud Foundations",
+        "description": "Essential cloud infrastructure setup to ensure your applications stay accessible and resilient."
       },
       {
-        "icon": "terminal",
-        "title": "Custom Software",
-        "description": "Bespoke applications designed around your unique business workflows."
-      },
-      {
-        "icon": "security",
-        "title": "Security Audits",
-        "description": "Proactive threat mitigation and rigorous system stress testing."
-      },
-      {
-        "icon": "monitoring",
-        "title": "Performance Opt",
-        "description": "Identifying bottlenecks and refining systems for maximum speed."
+        "icon": "support_agent",
+        "title": "Dedicated Support",
+        "description": "Continuous monitoring, updates, and technical maintenance to keep your business running 24/7."
       }
     ]
   },
@@ -71,23 +71,23 @@
     "title": "About Our Company",
     "yearsExperience": "3+",
     "yearsLabel": "Years Experience",
-    "description1": "EvolaTech is not just an IT agency; we are digital architects. We believe that software should be as enduring and precise as classical architecture.",
-    "description2": "Our values are rooted in transparency, technical excellence, and minimalist design. We work with select partners who seek to push the boundaries of what's possible in the digital realm.",
+    "description1": "EvolaTech is more than a development agency; we are your technical partners. We believe that web software should be as enduring and precise as classical architecture.",
+    "description2": "We focus on clean code and smart connectivity, helping companies bridge the gap between complex business logic and intuitive user experiences.",
     "values": [
-      "Precision-driven engineering",
-      "Aesthetic functionalism",
-      "Long-term technical partnership"
+      "Full-stack engineering excellence",
+      "Seamless system interoperability",
+      "Reliable long-term technical partnership"
     ]
   },
   "contact": {
     "title": "Let's build",
-    "titleHighlight": "something remarkable.",
-    "description": "Ready to start your next project? Get in touch for a consultation with our senior architects.",
+    "titleHighlight": "your next big idea.",
+    "description": "Ready to launch your web project? Get in touch for a technical consultation with our lead developers.",
     "email": "evolateam{'@'}gmail.com",
     "phone": "+48 789 711 631",
     "address": "",
     "form": {
-      "topicLabel": "What can we help with?",
+      "topicLabel": "Tell us about your project or integration needs",
       "email": "Your Email",
       "emailPlaceholder": "john{'@'}company.com",
       "subjectOptions": [
@@ -97,7 +97,7 @@
         "Other"
       ],
       "message": "Your Message",
-      "messagePlaceholder": "Tell us about your project...",
+      "messagePlaceholder": "Tell us about your project",
       "submit": "Send Message",
       "orConnect": "or reach out directly",
       "call": "Call"
