@@ -85,6 +85,7 @@
     "description": "Ready to launch your web project? Get in touch for a technical consultation with our lead developers.",
     "email": "evolateam{'@'}gmail.com",
     "phone": "+48 789 711 631",
+    "phoneLabel": "Phone",
     "address": "",
     "form": {
       "topicLabel": "Tell us about your project or integration needs",
@@ -99,6 +100,12 @@
       "message": "Your Message",
       "messagePlaceholder": "Tell us about your project",
       "submit": "Send Message",
+      "sending": "Sending...",
+      "successTitle": "Message Sent!",
+      "successText": "Thank you for reaching out. We'll get back to you shortly.",
+      "errorTitle": "Error",
+      "errorText": "Something went wrong. Please try again or contact us directly.",
+      "sendAnother": "Send Another Message",
       "orConnect": "or reach out directly",
       "call": "Call"
     }
@@ -112,5 +119,40 @@
       "terms": "Terms of Service"
     },
     "copyright": "© 2026 EvolaTech. All rights reserved."
+  },
+  "legal": {
+    "terms": {
+      "title": "Terms of Service",
+      "intro": "By using our services, you agree to the following terms and conditions.",
+      "servicesTitle": "Services",
+      "servicesText": "EvolaTech provides IT consulting, software development, and digital infrastructure services.",
+      "liabilityTitle": "Liability",
+      "liabilityText": "We are not liable for any indirect or consequential damages arising from the use of our services.",
+      "contactTitle": "Contact",
+      "contactText": "For questions regarding these terms, contact us at evolateam{'@'}gmail.com."
+    },
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "We take the protection of your personal data seriously. This privacy policy explains how we collect, use, and protect your information.",
+      "dataCollectionTitle": "Data Collection",
+      "dataCollectionText": "We only collect data that is necessary for the purpose of providing our services.",
+      "contactTitle": "Contact",
+      "contactText": "For privacy-related inquiries, contact us at evolateam{'@'}gmail.com."
+    },
+    "gdpr": {
+      "title": "GDPR",
+      "intro": "In accordance with the General Data Protection Regulation (GDPR), we are committed to protecting your personal data.",
+      "rightsTitle": "Your Rights",
+      "rightsText": "You have the right to access, rectify, erase, restrict, and object to the processing of your personal data.",
+      "controllerTitle": "Data Controller",
+      "controllerText": "EvolaTech",
+      "contactTitle": "Contact",
+      "contactText": "For GDPR-related requests, contact us at evolateam{'@'}gmail.com."
+    },
+    "imprint": {
+      "title": "Imprint",
+      "company": "EvolaTech",
+      "contactInfo": "Email: evolateam{'@'}gmail.com | Phone: +48 789 711 631"
+    }
   }
 }

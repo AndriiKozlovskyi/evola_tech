@@ -153,7 +153,7 @@
                 <span class="material-symbols-outlined text-primary text-xl">call</span>
               </div>
               <div>
-                <h4 class="font-semibold text-sm text-on-surface">{{ currentLocale === 'en' ? 'Phone' : 'Telefon' }}</h4>
+                <h4 class="font-semibold text-sm text-on-surface">{{ $t('contact.phoneLabel') }}</h4>
                 <p class="text-on-surface-variant text-sm">{{ $t('contact.phone') }}</p>
               </div>
             </div>
@@ -167,7 +167,6 @@
 
 <script setup lang="ts">
 const { projects } = useProjects()
-const { currentLocale } = useLanguage()
 
 definePageMeta({
   layout: 'default'
