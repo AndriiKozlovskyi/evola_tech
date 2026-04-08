@@ -87,7 +87,7 @@
           <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
           <img
             class="rounded-2xl relative z-10 w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
-            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZJNN3j-5dQaPPuiraqBYWeNeeNxqAYhWn_34P7vvYTao2fSd969YWWzN7dow0WRoTobSkg2deQCAgUxQh9dn7FMqP2rUmMus49Wd948Kj80MWhFUtk2IXDy7f9ke4mIcaZPeQCLbDMhyoYGWrjCWLUWJdayspOrGVrEe7I4bmjPuKZLwVN-ZYkgb_TUedGSb1zp1f8ZFk6CZ_E0K2idlqxUEJZtbuHfduFemZlRvApRI7SHK5sG9ZE62iwdwk7Zn9XotywUZ8o0k"
+            src="/images/about/team.jpg"
             alt="Team collaboration"
           />
           <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-br from-primary to-primary-container p-6 lg:p-8 rounded-xl shadow-xl z-20">
@@ -166,7 +166,15 @@
 </template>
 
 <script setup lang="ts">
+const { t } = useI18n()
 const { projects } = useProjects()
+
+useSeoMeta({
+  title: () => t('seo.home.title'),
+  ogTitle: () => t('seo.home.title'),
+  description: () => t('seo.home.description'),
+  ogDescription: () => t('seo.home.description'),
+})
 
 definePageMeta({
   layout: 'default'

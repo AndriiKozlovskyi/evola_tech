@@ -123,36 +123,137 @@
   "legal": {
     "terms": {
       "title": "Terms of Service",
-      "intro": "By using our services, you agree to the following terms and conditions.",
-      "servicesTitle": "Services",
-      "servicesText": "EvolaTech provides IT consulting, software development, and digital infrastructure services.",
-      "liabilityTitle": "Liability",
-      "liabilityText": "We are not liable for any indirect or consequential damages arising from the use of our services.",
-      "contactTitle": "Contact",
-      "contactText": "For questions regarding these terms, contact us at evolateam{'@'}gmail.com."
+      "intro": "By using our services, you agree to the following terms and conditions. Please read them carefully.",
+      "sections": [
+        {
+          "heading": "Services",
+          "body": "EvolaTech provides IT consulting, custom software development, API integrations, cloud infrastructure setup, and ongoing technical support. All services are subject to a separate written agreement unless otherwise stated."
+        },
+        {
+          "heading": "Payment Terms",
+          "body": "Invoices are due within 14 days of issuance unless agreed otherwise in writing. Late payments may incur interest at the statutory rate. Project commencement may require an upfront deposit as specified in the project agreement."
+        },
+        {
+          "heading": "Intellectual Property",
+          "body": "Upon full payment, clients receive ownership of all custom deliverables created for them. EvolaTech retains the right to use general methodologies, frameworks, and non-client-specific know-how developed during the engagement."
+        },
+        {
+          "heading": "Liability",
+          "body": "We are not liable for any indirect, incidental, or consequential damages arising from the use of our services. Our total liability shall not exceed the total fees paid for the specific service giving rise to the claim."
+        },
+        {
+          "heading": "Termination",
+          "body": "Either party may terminate an engagement with 30 days written notice. In the event of material breach, immediate termination is permitted. Fees for work completed up to the termination date remain due."
+        },
+        {
+          "heading": "Governing Law",
+          "body": "These terms are governed by the laws of the Republic of Poland. Any disputes shall be resolved in the courts of competent jurisdiction in Poland."
+        },
+        {
+          "heading": "Contact",
+          "body": "For questions regarding these terms, contact us at evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "privacy": {
       "title": "Privacy Policy",
-      "intro": "We take the protection of your personal data seriously. This privacy policy explains how we collect, use, and protect your information.",
-      "dataCollectionTitle": "Data Collection",
-      "dataCollectionText": "We only collect data that is necessary for the purpose of providing our services.",
-      "contactTitle": "Contact",
-      "contactText": "For privacy-related inquiries, contact us at evolateam{'@'}gmail.com."
+      "intro": "EvolaTech is committed to protecting your personal data. This policy explains how we collect, use, and safeguard information in accordance with the General Data Protection Regulation (GDPR).",
+      "sections": [
+        {
+          "heading": "Data Controller",
+          "body": "EvolaTech is the data controller responsible for your personal data. Contact: evolateam{'@'}gmail.com, Phone: +48 789 711 631."
+        },
+        {
+          "heading": "Data We Collect",
+          "body": "We collect information you voluntarily provide when contacting us (name, email, phone, project details). We also collect technical data such as IP address and browser type via server logs for security purposes."
+        },
+        {
+          "heading": "Legal Basis",
+          "body": "Processing is based on your consent (GDPR Art. 6(1)(a)), the performance of a contract (Art. 6(1)(b)), and our legitimate interests in maintaining secure and functional services (Art. 6(1)(f))."
+        },
+        {
+          "heading": "Data Retention",
+          "body": "We retain personal data only as long as necessary for the purposes described above, or as required by law. Contact enquiries are stored for up to 2 years unless a contract relationship follows."
+        },
+        {
+          "heading": "Third Parties",
+          "body": "We do not sell your data. We may share data with trusted service providers (e.g. hosting and email) under data processing agreements. These providers are bound by confidentiality obligations."
+        },
+        {
+          "heading": "Your Rights",
+          "body": "You have the right to access, rectify, erase, restrict processing, and object to the use of your data. You also have the right to data portability and to withdraw consent at any time."
+        },
+        {
+          "heading": "Contact",
+          "body": "For privacy-related inquiries or to exercise your rights, contact us at evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "gdpr": {
       "title": "GDPR",
-      "intro": "In accordance with the General Data Protection Regulation (GDPR), we are committed to protecting your personal data.",
-      "rightsTitle": "Your Rights",
-      "rightsText": "You have the right to access, rectify, erase, restrict, and object to the processing of your personal data.",
-      "controllerTitle": "Data Controller",
-      "controllerText": "EvolaTech",
-      "contactTitle": "Contact",
-      "contactText": "For GDPR-related requests, contact us at evolateam{'@'}gmail.com."
+      "intro": "In accordance with Regulation (EU) 2016/679 (General Data Protection Regulation), EvolaTech upholds the highest standards for protecting personal data.",
+      "sections": [
+        {
+          "heading": "Your Rights",
+          "body": "Under the GDPR you have the right to: access your personal data; rectify inaccurate data; request erasure ('right to be forgotten'); restrict or object to certain processing; receive your data in a portable format; and withdraw consent at any time without affecting the lawfulness of prior processing."
+        },
+        {
+          "heading": "How to Exercise Your Rights",
+          "body": "Submit your request in writing to evolateam{'@'}gmail.com. We will respond within 30 days. Identity verification may be required to protect your data."
+        },
+        {
+          "heading": "Data Controller",
+          "body": "EvolaTech — evolateam{'@'}gmail.com — +48 789 711 631."
+        },
+        {
+          "heading": "Supervisory Authority",
+          "body": "You have the right to lodge a complaint with the Polish supervisory authority: Urząd Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warsaw, Poland."
+        },
+        {
+          "heading": "Contact",
+          "body": "For GDPR-related requests, contact us at evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "imprint": {
       "title": "Imprint",
       "company": "EvolaTech",
-      "contactInfo": "Email: evolateam{'@'}gmail.com | Phone: +48 789 711 631"
+      "details": "Software Development & IT Consulting",
+      "emailLabel": "Email",
+      "email": "evolateam{'@'}gmail.com",
+      "phoneLabel": "Phone",
+      "phone": "+48 789 711 631",
+      "countryLabel": "Country",
+      "country": "Poland"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "EvolaTech – High-Performance Web Applications",
+      "description": "EvolaTech builds scalable web solutions and seamless API integrations for your business. Contact us for a technical consultation."
+    },
+    "terms": {
+      "title": "Terms of Service – EvolaTech",
+      "description": "Read EvolaTech's terms and conditions for IT consulting, software development, and technical services."
+    },
+    "privacy": {
+      "title": "Privacy Policy – EvolaTech",
+      "description": "Learn how EvolaTech collects, uses, and protects your personal data in accordance with GDPR."
+    },
+    "gdpr": {
+      "title": "GDPR – EvolaTech",
+      "description": "EvolaTech's commitment to GDPR compliance and your data protection rights explained."
+    },
+    "imprint": {
+      "title": "Imprint – EvolaTech",
+      "description": "Legal information and contact details for EvolaTech."
+    }
+  },
+  "error": {
+    "notFoundTitle": "Page Not Found",
+    "notFoundMessage": "The page you're looking for doesn't exist or has been moved.",
+    "defaultTitle": "Something Went Wrong",
+    "defaultMessage": "An unexpected error occurred. Please try again.",
+    "goHome": "Back to Home"
   }
 }

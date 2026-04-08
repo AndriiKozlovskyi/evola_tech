@@ -123,36 +123,137 @@
   "legal": {
     "terms": {
       "title": "Nutzungsbedingungen",
-      "intro": "Durch die Nutzung unserer Dienste stimmen Sie den folgenden Geschäftsbedingungen zu.",
-      "servicesTitle": "Dienstleistungen",
-      "servicesText": "EvolaTech bietet IT-Beratung, Softwareentwicklung und digitale Infrastruktur-Dienstleistungen an.",
-      "liabilityTitle": "Haftung",
-      "liabilityText": "Wir haften nicht für indirekte oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen.",
-      "contactTitle": "Kontakt",
-      "contactText": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+      "intro": "Durch die Nutzung unserer Dienste stimmen Sie den folgenden Geschäftsbedingungen zu. Bitte lesen Sie diese sorgfältig.",
+      "sections": [
+        {
+          "heading": "Dienstleistungen",
+          "body": "EvolaTech bietet IT-Beratung, maßgeschneiderte Softwareentwicklung, API-Integrationen, Cloud-Infrastrukturaufbau und laufenden technischen Support. Alle Dienstleistungen unterliegen einer separaten schriftlichen Vereinbarung, sofern nicht anders angegeben."
+        },
+        {
+          "heading": "Zahlungsbedingungen",
+          "body": "Rechnungen sind innerhalb von 14 Tagen nach Ausstellung fällig, sofern nicht schriftlich anders vereinbart. Bei Zahlungsverzug können Zinsen in gesetzlicher Höhe anfallen. Der Projektbeginn kann eine Anzahlung erfordern, wie im Projektvertrag angegeben."
+        },
+        {
+          "heading": "Geistiges Eigentum",
+          "body": "Nach vollständiger Zahlung erhält der Kunde das Eigentum an allen für ihn erstellten individuellen Ergebnissen. EvolaTech behält sich das Recht vor, allgemeine Methoden, Frameworks und nicht kundenspezifisches Know-how, das während der Zusammenarbeit entwickelt wurde, zu verwenden."
+        },
+        {
+          "heading": "Haftung",
+          "body": "Wir haften nicht für indirekte, zufällige oder Folgeschäden, die aus der Nutzung unserer Dienste entstehen. Unsere Gesamthaftung übersteigt nicht die für den jeweiligen Dienst gezahlten Gesamtgebühren."
+        },
+        {
+          "heading": "Kündigung",
+          "body": "Jede Partei kann ein Engagement mit einer Frist von 30 Tagen schriftlich kündigen. Bei wesentlichem Vertragsbruch ist eine sofortige Kündigung zulässig. Die bis zum Kündigungsdatum geleisteten Arbeiten bleiben honorarpflichtig."
+        },
+        {
+          "heading": "Geltendes Recht",
+          "body": "Diese Bedingungen unterliegen dem Recht der Republik Polen. Streitigkeiten werden vor den zuständigen Gerichten in Polen beigelegt."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "privacy": {
       "title": "Datenschutzerklärung",
-      "intro": "Wir nehmen den Schutz Ihrer personenbezogenen Daten ernst. Diese Datenschutzerklärung erläutert, wie wir Ihre Daten erheben, verwenden und schützen.",
-      "dataCollectionTitle": "Datenerhebung",
-      "dataCollectionText": "Wir erheben nur Daten, die für die Erbringung unserer Dienstleistungen erforderlich sind.",
-      "contactTitle": "Kontakt",
-      "contactText": "Bei datenschutzbezogenen Anfragen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+      "intro": "EvolaTech verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Erklärung erläutert, wie wir Informationen gemäß der Datenschutz-Grundverordnung (DSGVO) erheben, verwenden und schützen.",
+      "sections": [
+        {
+          "heading": "Verantwortlicher",
+          "body": "EvolaTech ist der für Ihre personenbezogenen Daten verantwortliche Verantwortliche. Kontakt: evolateam{'@'}gmail.com, Tel: +48 789 711 631."
+        },
+        {
+          "heading": "Erhobene Daten",
+          "body": "Wir erheben Informationen, die Sie freiwillig bei der Kontaktaufnahme angeben (Name, E-Mail, Telefon, Projektdetails). Außerdem erheben wir technische Daten wie IP-Adresse und Browser-Typ über Server-Logs zu Sicherheitszwecken."
+        },
+        {
+          "heading": "Rechtsgrundlage",
+          "body": "Die Verarbeitung erfolgt auf Basis Ihrer Einwilligung (DSGVO Art. 6 Abs. 1 lit. a), der Vertragserfüllung (Art. 6 Abs. 1 lit. b) und unserer berechtigten Interessen an sicheren und funktionalen Diensten (Art. 6 Abs. 1 lit. f)."
+        },
+        {
+          "heading": "Speicherdauer",
+          "body": "Wir speichern personenbezogene Daten nur so lange, wie es für die beschriebenen Zwecke erforderlich ist oder gesetzlich vorgeschrieben ist. Kontaktanfragen werden bis zu 2 Jahre gespeichert, sofern kein Vertragsverhältnis entsteht."
+        },
+        {
+          "heading": "Dritte",
+          "body": "Wir verkaufen Ihre Daten nicht. Wir können Daten mit vertrauenswürdigen Dienstleistern (z. B. Hosting und E-Mail) im Rahmen von Auftragsverarbeitungsverträgen teilen. Diese Anbieter sind zur Vertraulichkeit verpflichtet."
+        },
+        {
+          "heading": "Ihre Rechte",
+          "body": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung und Widerspruch gegen die Nutzung Ihrer Daten. Außerdem haben Sie das Recht auf Datenübertragbarkeit und auf jederzeitigen Widerruf Ihrer Einwilligung."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "Bei datenschutzbezogenen Anfragen oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "gdpr": {
       "title": "DSGVO",
-      "intro": "Gemäß der Datenschutz-Grundverordnung (DSGVO) verpflichten wir uns zum Schutz Ihrer personenbezogenen Daten.",
-      "rightsTitle": "Ihre Rechte",
-      "rightsText": "Sie haben das Recht auf Auskunft, Berichtigung, Löschung, Einschränkung und Widerspruch gegen die Verarbeitung Ihrer personenbezogenen Daten.",
-      "controllerTitle": "Verantwortlicher",
-      "controllerText": "EvolaTech",
-      "contactTitle": "Kontakt",
-      "contactText": "Bei DSGVO-bezogenen Anfragen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+      "intro": "Gemäß der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung) hält EvolaTech die höchsten Standards zum Schutz personenbezogener Daten ein.",
+      "sections": [
+        {
+          "heading": "Ihre Rechte",
+          "body": "Gemäß der DSGVO haben Sie das Recht auf: Auskunft über Ihre personenbezogenen Daten; Berichtigung unrichtiger Daten; Löschung ('Recht auf Vergessenwerden'); Einschränkung oder Widerspruch gegen bestimmte Verarbeitungen; Erhalt Ihrer Daten in einem portablen Format; Widerruf der Einwilligung jederzeit ohne Auswirkung auf die Rechtmäßigkeit der bisherigen Verarbeitung."
+        },
+        {
+          "heading": "Ausübung Ihrer Rechte",
+          "body": "Senden Sie Ihre Anfrage schriftlich an evolateam{'@'}gmail.com. Wir antworten innerhalb von 30 Tagen. Zur Datensicherheit kann eine Identitätsprüfung erforderlich sein."
+        },
+        {
+          "heading": "Verantwortlicher",
+          "body": "EvolaTech — evolateam{'@'}gmail.com — +48 789 711 631."
+        },
+        {
+          "heading": "Aufsichtsbehörde",
+          "body": "Sie haben das Recht, eine Beschwerde bei der polnischen Aufsichtsbehörde einzureichen: Urząd Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warschau, Polen."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "Bei DSGVO-bezogenen Anfragen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+        }
+      ]
     },
     "imprint": {
       "title": "Impressum",
       "company": "EvolaTech",
-      "contactInfo": "E-Mail: evolateam{'@'}gmail.com | Telefon: +48 789 711 631"
+      "details": "Softwareentwicklung & IT-Beratung",
+      "emailLabel": "E-Mail",
+      "email": "evolateam{'@'}gmail.com",
+      "phoneLabel": "Telefon",
+      "phone": "+48 789 711 631",
+      "countryLabel": "Land",
+      "country": "Polen"
     }
+  },
+  "seo": {
+    "home": {
+      "title": "EvolaTech – Hochleistungs-Webanwendungen",
+      "description": "EvolaTech entwickelt skalierbare Weblösungen und nahtlose API-Integrationen für Ihr Unternehmen. Kontaktieren Sie uns für eine technische Beratung."
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen – EvolaTech",
+      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von EvolaTech für IT-Beratung, Softwareentwicklung und technische Dienstleistungen."
+    },
+    "privacy": {
+      "title": "Datenschutzerklärung – EvolaTech",
+      "description": "Erfahren Sie, wie EvolaTech Ihre personenbezogenen Daten gemäß DSGVO erhebt, verwendet und schützt."
+    },
+    "gdpr": {
+      "title": "DSGVO – EvolaTech",
+      "description": "EvolaTechs Einhaltung der DSGVO und Ihre Datenschutzrechte verständlich erklärt."
+    },
+    "imprint": {
+      "title": "Impressum – EvolaTech",
+      "description": "Rechtliche Angaben und Kontaktdaten für EvolaTech."
+    }
+  },
+  "error": {
+    "notFoundTitle": "Seite nicht gefunden",
+    "notFoundMessage": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "defaultTitle": "Etwas ist schiefgelaufen",
+    "defaultMessage": "Ein unerwarteter Fehler ist aufgetreten. Bitte versuchen Sie es erneut.",
+    "goHome": "Zurück zur Startseite"
   }
 }

@@ -64,10 +64,11 @@
 
           <!-- Email -->
           <div class="space-y-2">
-            <label class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <label for="contact-email" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
               {{ $t('contact.form.email') }}
             </label>
             <input
+              id="contact-email"
               v-model="email"
               name="email"
               type="email"
@@ -79,10 +80,11 @@
 
           <!-- Message -->
           <div class="space-y-2">
-            <label class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <label for="contact-message" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
               {{ $t('contact.form.message') }}
             </label>
             <textarea
+              id="contact-message"
               v-model="message"
               name="message"
               required

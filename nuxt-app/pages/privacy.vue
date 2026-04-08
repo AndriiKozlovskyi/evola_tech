@@ -3,10 +3,20 @@
     <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-10">{{ $t('legal.privacy.title') }}</h1>
     <div class="text-on-surface-variant space-y-6 leading-relaxed">
       <p>{{ $t('legal.privacy.intro') }}</p>
-      <h2 class="text-xl font-semibold text-on-surface mt-8">{{ $t('legal.privacy.dataCollectionTitle') }}</h2>
-      <p>{{ $t('legal.privacy.dataCollectionText') }}</p>
-      <h2 class="text-xl font-semibold text-on-surface mt-8">{{ $t('legal.privacy.contactTitle') }}</h2>
-      <p>{{ $t('legal.privacy.contactText') }}</p>
+      <template v-for="(section, i) in ($tm('legal.privacy.sections') as any[])" :key="i">
+        <h2 class="text-xl font-semibold text-on-surface mt-8">{{ $rt(section.heading) }}</h2>
+        <p>{{ $rt(section.body) }}</p>
+      </template>
     </div>
   </div>
 </template>
+
+<script setup lang="ts">
+const { t } = useI18n()
+useSeoMeta({
+  title: () => t('seo.privacy.title'),
+  ogTitle: () => t('seo.privacy.title'),
+  description: () => t('seo.privacy.description'),
+  ogDescription: () => t('seo.privacy.description'),
+})
+</script>
