@@ -3,6 +3,7 @@
     "home": "Home",
     "portfolio": "Portfolio",
     "services": "Services",
+    "workflow": "How We Work",
     "about": "About",
     "contact": "Contact",
     "language": "EN | DE",
@@ -42,8 +43,16 @@
   },
   "services": {
     "title": "What we do",
-    "description": "Our services are tailored for enterprises that value stability, performance, and aesthetic precision.",
-    "tags": ["Infrastructure", "Web Systems", "Cybersecurity", "AI Solutions"],
+    "description1": "Our service model combines product design, engineering, and growth strategy in one streamlined pipeline.",
+    "description2": "Instead of fragmented vendors, you get one team responsible for architecture, conversion-focused UX, speed, and long-term visibility.",
+    "projectsDelivered": "End-to-End",
+    "projectsDeliveredLabel": "Delivery Model",
+    "values": [
+      "Clear scope and measurable milestones",
+      "High-performance build quality and clean code",
+      "SEO and marketing readiness from the first sprint"
+    ],
+    "tags": ["Infrastructure", "Web Systems", "SEO", "Cybersecurity", "AI Solutions"],
     "items": [
       {
         "icon": "cloud_done",
@@ -64,6 +73,59 @@
         "icon": "monitoring",
         "title": "Performance Opt",
         "description": "Identifying bottlenecks and refining systems for maximum speed."
+      },
+      {
+        "icon": "travel_explore",
+        "title": "SEO & Growth",
+        "description": "Technical SEO setup, content architecture, and measurable search visibility growth."
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "How We Work",
+    "title": "Fast single-page websites without chaos.",
+    "subtitle": "A structured process that keeps speed high, feedback clear, and your business goals in focus.",
+    "benefits": [
+      "Launch faster with less back-and-forth",
+      "Transparent milestones and clear approvals",
+      "Design + SEO + marketing alignment from day one"
+    ],
+    "steps": [
+      {
+        "phase": "Phase 1",
+        "title": "Rapid discovery",
+        "description": "We gather only essential inputs first: business goal, offer, audience, references, tone, and desired emotional impact.",
+        "benefit": "You avoid long questionnaires and get momentum immediately."
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Traffic and promotion planning",
+        "description": "We align expected traffic, SEO scope, promotion conditions, and budget. We also map SMM channels if needed.",
+        "benefit": "Your site is designed for real growth, not just visuals."
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Prototype and approval loop",
+        "description": "We build a fast concept in Stitch, present it, and iterate in short loops until direction is approved.",
+        "benefit": "You see results early and steer decisions with confidence."
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Content and assets integration",
+        "description": "After first layout approval, we collect photos, documents, and resources, then refine the design with real content.",
+        "benefit": "The final site looks polished and accurate to your brand."
+      },
+      {
+        "phase": "Phase 5",
+        "title": "Build, review, and release",
+        "description": "We choose the right stack, develop from the approved visuals, present the working site, and finalize practical edits.",
+        "benefit": "Predictable delivery, clear scope, and smooth launch preparation."
+      },
+      {
+        "phase": "Phase 6",
+        "title": "Domain, SEO, and marketing handoff",
+        "description": "Once visuals are finalized, we proceed with domain setup and complete SEO + marketing execution as the final stage.",
+        "benefit": "You launch with a ready-to-promote digital product."
       }
     ]
   },
@@ -105,11 +167,28 @@
   },
   "footer": {
     "company": "EvolaTech",
+    "description": "We design and build high-performing digital products with clear strategy, clean execution, and long-term support.",
+    "contactTitle": "Contact",
+    "navigateTitle": "Navigate",
+    "legalTitle": "Legal",
+    "otherTitle": "Other",
+    "responseTime": "Response within 24 hours",
     "links": {
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
       "gdpr": "GDPR",
       "terms": "Terms of Service"
+    },
+    "navigate": {
+      "services": "Services",
+      "workflow": "How We Work",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "other": {
+      "seo": "SEO Strategy",
+      "landing": "Landing Pages",
+      "audit": "Performance Audits"
     },
     "copyright": "© 2026 EvolaTech. All rights reserved."
   }

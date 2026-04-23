@@ -3,6 +3,7 @@
     "home": "Startseite",
     "portfolio": "Portfolio",
     "services": "Services",
+    "workflow": "Ablauf",
     "about": "Über uns",
     "contact": "Kontakt",
     "language": "EN | DE",
@@ -42,8 +43,16 @@
   },
   "services": {
     "title": "Was wir machen",
-    "description": "Unsere Services sind auf Unternehmen zugeschnitten, die Stabilität, Performance und ästhetische Präzision schätzen.",
-    "tags": ["Infrastruktur", "Web-Systeme", "Cybersicherheit", "KI-Lösungen"],
+    "description1": "Unser Service-Modell verbindet Produktdesign, Entwicklung und Wachstumsstrategie in einem klaren Ablauf.",
+    "description2": "Statt vieler einzelner Dienstleister erhalten Sie ein Team, das Architektur, conversion-orientierte UX, Performance und langfristige Sichtbarkeit gemeinsam verantwortet.",
+    "projectsDelivered": "End-to-End",
+    "projectsDeliveredLabel": "Delivery-Modell",
+    "values": [
+      "Klarer Umfang und messbare Meilensteine",
+      "Hohe Code-Qualität und performante Umsetzung",
+      "SEO- und Marketing-Bereitschaft ab dem ersten Sprint"
+    ],
+    "tags": ["Infrastruktur", "Web-Systeme", "SEO", "Cybersicherheit", "KI-Lösungen"],
     "items": [
       {
         "icon": "cloud_done",
@@ -64,6 +73,59 @@
         "icon": "monitoring",
         "title": "Performance Opt",
         "description": "Identifizierung von Bottlenecks und Systemoptimierung für maximale Geschwindigkeit."
+      },
+      {
+        "icon": "travel_explore",
+        "title": "SEO & Wachstum",
+        "description": "Technisches SEO-Setup, Content-Architektur und messbares Wachstum in der organischen Suche."
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "So arbeiten wir",
+    "title": "Schnelle One-Page-Websites ohne Chaos.",
+    "subtitle": "Ein klarer Prozess, der Geschwindigkeit, Feedback und Ihre Business-Ziele verbindet.",
+    "benefits": [
+      "Schneller live gehen mit weniger Abstimmungsschleifen",
+      "Transparente Meilensteine und klare Freigaben",
+      "Design, SEO und Marketing von Anfang an abgestimmt"
+    ],
+    "steps": [
+      {
+        "phase": "Phase 1",
+        "title": "Schnelles Discovery",
+        "description": "Wir sammeln zuerst nur die wichtigsten Inputs: Ziel, Angebot, Zielgruppe, Referenzen, Stil und gewünschte Emotion.",
+        "benefit": "Sie vermeiden lange Fragebögen und kommen sofort in Bewegung."
+      },
+      {
+        "phase": "Phase 2",
+        "title": "Traffic- und Promotion-Planung",
+        "description": "Wir definieren erwarteten Traffic, SEO-Umfang, Bedingungen der Promotion und Budget. Falls nötig planen wir auch SMM-Kanäle.",
+        "benefit": "Ihre Website wird auf Wachstum ausgelegt, nicht nur auf Optik."
+      },
+      {
+        "phase": "Phase 3",
+        "title": "Prototyp und Abstimmungsloop",
+        "description": "Wir erstellen einen schnellen Entwurf in Stitch, zeigen ihn und optimieren in kurzen Runden bis die Richtung passt.",
+        "benefit": "Sie sehen früh Ergebnisse und steuern Entscheidungen sicher."
+      },
+      {
+        "phase": "Phase 4",
+        "title": "Content- und Asset-Integration",
+        "description": "Nach der ersten Freigabe sammeln wir Fotos, Dokumente und Ressourcen und verfeinern das Design mit echten Inhalten.",
+        "benefit": "Die finale Website wirkt hochwertig und markenkonform."
+      },
+      {
+        "phase": "Phase 5",
+        "title": "Entwicklung, Review und Launch",
+        "description": "Wir wählen den passenden Stack, entwickeln nach dem freigegebenen Layout, präsentieren die Seite und finalisieren sinnvolle Anpassungen.",
+        "benefit": "Planbare Lieferung, klarer Umfang und saubere Launch-Vorbereitung."
+      },
+      {
+        "phase": "Phase 6",
+        "title": "Domain, SEO und Marketing-Finish",
+        "description": "Nach Abschluss der visuellen Freigaben folgt Domain-Setup sowie die finale SEO- und Marketing-Umsetzung.",
+        "benefit": "Sie starten mit einem direkt vermarktbaren digitalen Produkt."
       }
     ]
   },
@@ -105,11 +167,28 @@
   },
   "footer": {
     "company": "EvolaTech",
+    "description": "Wir konzipieren und entwickeln performante digitale Produkte mit klarer Strategie, sauberer Umsetzung und langfristiger Betreuung.",
+    "contactTitle": "Kontakt",
+    "navigateTitle": "Navigation",
+    "legalTitle": "Rechtliches",
+    "otherTitle": "Weitere Leistungen",
+    "responseTime": "Antwort innerhalb von 24 Stunden",
     "links": {
       "imprint": "Impressum",
       "privacy": "Datenschutz",
       "gdpr": "DSGVO",
       "terms": "Nutzungsbedingungen"
+    },
+    "navigate": {
+      "services": "Services",
+      "workflow": "Ablauf",
+      "about": "Über uns",
+      "contact": "Kontakt"
+    },
+    "other": {
+      "seo": "SEO-Strategie",
+      "landing": "Landingpages",
+      "audit": "Performance-Audits"
     },
     "copyright": "© 2026 EvolaTech. Alle Rechte vorbehalten."
   }
