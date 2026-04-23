@@ -4,8 +4,8 @@ functions = "server"
 publish = ".output/public"
 
 [build.environment]
-NODE_VERSION = "18"
-NPM_VERSION = "9"
+NODE_VERSION = "20.19.0"
+NPM_VERSION = "10"
 
 [[redirects]]
 from = "/*"

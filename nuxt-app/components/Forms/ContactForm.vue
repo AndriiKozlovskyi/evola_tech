@@ -65,14 +65,15 @@
         {{ $t('contact.form.submit') }}
       </a>
 
-      <!-- Divider -->
-      <div class="flex items-center gap-4">
-        <div class="flex-1 h-px bg-outline-variant/20"></div>
-        <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">
-          {{ $t('contact.form.orConnect') }}
-        </span>
-        <div class="flex-1 h-px bg-outline-variant/20"></div>
-      </div>
+      <!-- Divider (hidden on success/error) -->
+      <template v-if="formState === 'idle' || formState === 'sending'">
+        <div class="flex items-center gap-4">
+          <div class="flex-1 h-px bg-outline-variant/20"></div>
+          <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">
+            {{ $t('contact.form.orConnect') }}
+          </span>
+          <div class="flex-1 h-px bg-outline-variant/20"></div>
+        </div>
 
       <!-- Direct Contact Channels -->
       <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
@@ -105,15 +106,37 @@
 </template>
 
 <script setup lang="ts">
+type FormState = 'idle' | 'sending' | 'success' | 'error'
+
 const selectedTopic = ref('')
 const email = ref('')
 const message = ref('')
+const formState = ref<FormState>('idle')
 
-const mailtoLink = computed(() => {
-  const subject = encodeURIComponent(selectedTopic.value || 'New Inquiry')
-  const body = encodeURIComponent(
-    `${message.value}\n\n---\nFrom: ${email.value}`
-  )
-  return `mailto:evolateam@gmail.com?subject=${subject}&body=${body}`
-})
+const handleSubmit = async () => {
+  formState.value = 'sending'
+  try {
+    const formData = new URLSearchParams({
+      'form-name': 'contact',
+      topic: selectedTopic.value,
+      email: email.value,
+      message: message.value,
+    })
+    await $fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: formData.toString(),
+    })
+    formState.value = 'success'
+  } catch {
+    formState.value = 'error'
+  }
+}
+
+const resetForm = () => {
+  selectedTopic.value = ''
+  email.value = ''
+  message.value = ''
+  formState.value = 'idle'
+}
 </script>
