@@ -2,6 +2,7 @@
 .nuxt/
 dist/
 .output/
+.netlify/
 
 # Dependencies
 node_modules/

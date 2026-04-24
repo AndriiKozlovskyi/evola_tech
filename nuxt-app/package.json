@@ -12,6 +12,7 @@
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
+    "@netlify/functions": "^5.2.0",
     "@nuxtjs/i18n": "^10.2.4",
     "nuxt": "^3.11.0",
     "vue": "^3.4.0",
