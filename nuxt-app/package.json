@@ -8,11 +8,10 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "preview": "nuxi preview",
-    "generate": "nuxi generate",
+    "generate": "cross-env NITRO_PRESET=static nuxi generate",
     "postinstall": "nuxi prepare"
   },
   "dependencies": {
-    "@netlify/functions": "^5.2.0",
     "@nuxtjs/i18n": "^10.2.4",
     "nuxt": "^3.11.0",
     "vue": "^3.4.0",
@@ -23,6 +22,7 @@
     "@tailwindcss/forms": "^0.5.7",
     "@types/node": "^20.0.0",
     "autoprefixer": "^10.4.0",
+    "cross-env": "^10.1.0",
     "postcss": "^8.4.0",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.0.0"

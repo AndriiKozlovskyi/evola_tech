@@ -5,6 +5,7 @@ publish = ".output/public"
 [build.environment]
 NODE_VERSION = "20.19.0"
 NPM_VERSION = "10"
+NITRO_PRESET = "static"
 
 [[headers]]
 for = "/*.js"

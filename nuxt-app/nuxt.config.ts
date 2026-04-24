@@ -49,6 +49,13 @@ export default defineNuxtConfig({
     },
   },
 
+  nitro: {
+    preset: 'static',
+    prerender: {
+      routes: ['/', '/gdpr', '/imprint', '/privacy', '/terms'],
+    },
+  },
+
   // Runtimes
   routeRules: {
     '/**': { cache: { maxAge: 60 * 10 } },
