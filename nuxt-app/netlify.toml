@@ -1,6 +1,5 @@
 [build]
 command = "npm run build"
-functions = "server"
 publish = ".output/public"
 
 [build.environment]
