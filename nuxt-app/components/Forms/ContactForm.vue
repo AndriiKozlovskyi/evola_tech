@@ -27,6 +27,7 @@
         <form
           name="contact"
           data-netlify="true"
+          method="POST"
           data-netlify-honeypot="bot-field"
           @submit.prevent="handleSubmit"
           class="space-y-6 sm:space-y-7"
