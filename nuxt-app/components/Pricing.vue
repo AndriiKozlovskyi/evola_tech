@@ -71,7 +71,7 @@
             </h4>
             <ul class="space-y-2 text-sm text-on-surface-variant">
               <li v-for="(item, i) in $tm('pricing.importantInfo.items')" :key="i" class="flex items-start gap-2">
-                <span class="text-primary mt-1">•</span>
+                <span class="text-primary">•</span>
                 <span>{{ $rt(item) }}</span>
               </li>
             </ul>
@@ -83,7 +83,7 @@
             </h4>
             <ul class="space-y-2 text-sm text-on-surface-variant">
               <li v-for="(item, i) in $tm('pricing.importantInfo.warnings')" :key="i" class="flex items-start gap-2">
-                <span class="text-primary/60 mt-1">⚠</span>
+                <span class="text-primary/60 ">⚠</span>
                 <span>{{ $rt(item) }}</span>
               </li>
             </ul>
