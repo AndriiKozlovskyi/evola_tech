@@ -1,0 +1,374 @@
+{
+  "navigation": {
+    "home": "Strona główna",
+    "portfolio": "Portfolio",
+    "services": "Usługi",
+    "workflow": "Jak pracujemy",
+    "about": "O nas",
+    "pricing": "Cennik",
+    "contact": "Kontakt",
+    "language": "PL | EN | DE | RU",
+    "cta": "Skontaktuj się"
+  },
+  "hero": {
+    "label": "TWORZENIE STRON INTERNETOWYCH",
+    "headline": "Nowoczesne strony internetowe dla Twojego",
+    "headlineHighlight": "Biznesu.",
+    "description": "Tworzymy skalowalne strony internetowe i landing page dla firm w Polsce i Europie. Twoja wizja, profesjonalnie zrealizowana.",
+    "cta1": "Nasze realizacje",
+    "cta2": "Usługi"
+  },
+  "portfolio": {
+    "title": "Nasze realizacje",
+    "projects": [
+      {
+        "id": 1,
+        "category": "Serwis wynajmu",
+        "title": "Evola E-Bikes",
+        "description": "Serwis wynajmu rowerów elektrycznych i akumulatorów we Wrocławiu – opcje full-suspension i hardtail, cotygodniowy serwis i przejrzyste warunki wynajmu."
+      },
+      {
+        "id": 2,
+        "category": "Ochrona zdrowia",
+        "title": "Freedom Astana",
+        "description": "Kompleksowe centrum leczenia uzależnień w Astanie – detoksykacja, rehabilitacja, psychoterapia i długoterminowe wsparcie zdrowienia."
+      },
+      {
+        "id": 3,
+        "category": "Opieka nad seniorami",
+        "title": "Dobroe Serdce",
+        "description": "Prywatny komfortowy pensjonat dla seniorów w Astanie – całodobowa wykwalifikowana opieka, nadzór medyczny i indywidualne podejście."
+      }
+    ],
+    "visitWebsite": "Odwiedź stronę"
+  },
+  "services": {
+    "title": "Co robimy",
+    "description1": "Od prostego landing page po kompleksowy stack marketingu cyfrowego – jedna firma dla wszystkich kanałów.",
+    "description2": "Tworzenie stron, design, SEO, media społecznościowe i reklamy płatne. Indywidualny zakres, czysta realizacja, mierzalne rezultaty.",
+    "projectsDelivered": "Kompleksowa",
+    "projectsDeliveredLabel": "Realizacja",
+    "values": [
+      "Indywidualny zakres – żadnych gotowych szablonów",
+      "Design, tworzenie i marketing pod jednym dachem",
+      "Realizacje zgodne z RODO, SSL w każdym projekcie"
+    ],
+    "tags": ["Vue 3 + Nuxt", "Figma", "SEO", "Google Ads", "Meta Ads", "WordPress"],
+    "items": [
+      {
+        "icon": "web",
+        "title": "Tworzenie stron internetowych",
+        "description": "Landing page, strony firmowe, aplikacje webowe i sklepy internetowe. Frontend Vue 3 + Nuxt, backend Java Spring Boot, WordPress dla stron contentowych."
+      },
+      {
+        "icon": "palette",
+        "title": "Design",
+        "description": "UI/UX w Figma, logo i identyfikacja wizualna, redesign stron i materiały drukowane. Pliki źródłowe zawsze należą do Ciebie."
+      },
+      {
+        "icon": "travel_explore",
+        "title": "SEO i pozycjonowanie",
+        "description": "Audyty techniczne, optymalizacja on-page, lokalne SEO, strategia contentowa i budowanie linków. Przejrzyste raporty miesięczne."
+      },
+      {
+        "icon": "campaign",
+        "title": "Social Media",
+        "description": "Miesięczne kalendarze treści, projekty postów zgodne z marką, copywriting, Stories i Reels, zarządzanie społecznością na Instagramie, Facebooku i LinkedInie."
+      },
+      {
+        "icon": "ads_click",
+        "title": "Reklamy kontekstowe",
+        "description": "Google Search, Display, Shopping, Performance Max i Meta Ads. Zachowujesz pełen dostęp do konta. Miesięczne raporty wydatków w pakiecie."
+      },
+      {
+        "icon": "image",
+        "title": "Banery i kreacje",
+        "description": "Statyczne i animowane banery do Google Display, Meta Ads i sieci – wszystkie rozmiary IAB. Realizacja w GIF lub HTML5 w 2–4 dni robocze."
+      }
+    ]
+  },
+  "workflow": {
+    "eyebrow": "Jak pracujemy",
+    "title": "Szybkie strony internetowe bez chaosu.",
+    "subtitle": "Strukturalny proces, który utrzymuje wysokie tempo, jasny feedback i skupienie na Twoich celach biznesowych.",
+    "benefits": [
+      "Szybszy launch z mniejszą liczbą iteracji",
+      "Przejrzyste etapy i jasne zatwierdzenia",
+      "Alignment designu, SEO i marketingu od pierwszego dnia"
+    ],
+    "steps": [
+      {
+        "phase": "Etap 1",
+        "title": "Szybkie rozpoznanie",
+        "description": "Zbieramy tylko kluczowe informacje: cel biznesowy, oferta, grupa docelowa, referencje, ton i pożądany efekt emocjonalny.",
+        "benefit": "Unikasz długich ankiet i od razu nabierasz tempa."
+      },
+      {
+        "phase": "Etap 2",
+        "title": "Planowanie ruchu i promocji",
+        "description": "Uzgadniamy oczekiwany ruch, zakres SEO, warunki promocji i budżet. W razie potrzeby mapujemy kanały SMM.",
+        "benefit": "Twoja strona projektowana jest z myślą o realnym wzroście, nie tylko o wyglądzie."
+      },
+      {
+        "phase": "Etap 3",
+        "title": "Prototyp i pętla zatwierdzeń",
+        "description": "Budujemy szybki koncept w Stitch, prezentujemy go i iterujemy w krótkich cyklach aż do zatwierdzenia kierunku.",
+        "benefit": "Widzisz rezultaty na wczesnym etapie i pewnie podejmujesz decyzje."
+      },
+      {
+        "phase": "Etap 4",
+        "title": "Integracja treści i zasobów",
+        "description": "Po zatwierdzeniu pierwszego layoutu zbieramy zdjęcia, dokumenty i zasoby, a następnie dopracowujemy design z rzeczywistą treścią.",
+        "benefit": "Gotowa strona wygląda profesjonalnie i dokładnie odzwierciedla Twoją markę."
+      },
+      {
+        "phase": "Etap 5",
+        "title": "Budowa, przegląd i launch",
+        "description": "Dobieramy odpowiedni stack, rozwijamy projekt na podstawie zatwierdzonych makiet, prezentujemy działającą stronę i finalizujemy poprawki.",
+        "benefit": "Przewidywalna realizacja, jasny zakres i płynne przygotowanie do launchu."
+      },
+      {
+        "phase": "Etap 6",
+        "title": "Domena, SEO i przekazanie marketingu",
+        "description": "Po finalizacji makiet konfigurujemy domenę i realizujemy SEO + działania marketingowe jako końcowy etap.",
+        "benefit": "Startujesz z gotowym do promowania produktem cyfrowym."
+      }
+    ]
+  },
+  "about": {
+    "title": "O naszej firmie",
+    "yearsExperience": "3+",
+    "yearsLabel": "Lat doświadczenia",
+    "description1": "EvolaTech to więcej niż agencja deweloperska – jesteśmy Twoim partnerem technicznym. Wierzymy, że oprogramowanie webowe powinno być tak trwałe i precyzyjne jak klasyczna architektura.",
+    "description2": "Skupiamy się na czystym kodzie i inteligentnych integracjach, pomagając firmom połączyć złożoną logikę biznesową z intuicyjnym doświadczeniem użytkownika.",
+    "values": [
+      "Pełna inżynierska precyzja",
+      "Płynna interoperacyjność systemów",
+      "Niezawodne długoterminowe partnerstwo"
+    ]
+  },
+  "pricing": {
+    "eyebrow": "PRZEJRZYSTE CENY",
+    "title": "Proste, skalowalne pakiety",
+    "description": "Wybierz pakiet dopasowany do Twoich celów. Wszystkie pakiety obejmują indywidualny design, responsywny layout i szybką realizację.",
+    "selectType": "Wybierz typ strony",
+    "mostPopular": "Najpopularniejszy",
+    "cta": "Zacznij",
+    "ready": "Gotowy do startu?",
+    "contactUs": "Skontaktuj się",
+    "importantInfo": {
+      "title": "Co warto wiedzieć",
+      "overview": "Przegląd pakietów",
+      "items": [
+        "Każdy pakiet obejmuje jasny zakres i mierzalne etapy",
+        "Limity stron i poprawek zapewniają przewidywalność realizacji",
+        "Plany e-commerce ograniczone do określonej liczby produktów",
+        "Budżety reklamowe są oddzielne od cen pakietów",
+        "Czas wsparcia zależy od pakietu"
+      ],
+      "important": "Ważne ograniczenia",
+      "warnings": [
+        "Landing page: stałe limity bloków dla każdego pakietu",
+        "Strony: limity podstron dla zachowania jakości i terminowości",
+        "E-commerce: limity produktów dla optymalnej wydajności",
+        "Budżety reklamowe nie obejmują wydatków na kampanie",
+        "Okresy wsparcia różnią się – sprawdź szczegóły pakietu"
+      ]
+    }
+  },
+  "contact": {
+    "title": "Zbudujmy razem",
+    "titleHighlight": "Twój następny wielki pomysł.",
+    "description": "Gotowy na uruchomienie projektu webowego? Skontaktuj się z nami w celu konsultacji technicznej z naszymi wiodącymi developerami.",
+    "email": "evolateam{'@'}gmail.com",
+    "phone": "+48 789 711 631",
+    "phoneLabel": "Telefon",
+    "address": "",
+    "form": {
+      "topicLabel": "Powiedz nam o swoim projekcie lub potrzebach integracyjnych",
+      "email": "Twój adres e-mail",
+      "emailPlaceholder": "jan{'@'}firma.pl",
+      "subjectOptions": [
+        "Nowy projekt",
+        "Konsultacja",
+        "Współpraca",
+        "Inne"
+      ],
+      "message": "Twoja wiadomość",
+      "messagePlaceholder": "Opisz swój projekt",
+      "submit": "Wyślij wiadomość",
+      "sending": "Wysyłanie...",
+      "successTitle": "Wiadomość wysłana!",
+      "successText": "Dziękujemy za kontakt. Odezwiemy się wkrótce.",
+      "errorTitle": "Błąd",
+      "errorText": "Coś poszło nie tak. Spróbuj ponownie lub skontaktuj się z nami bezpośrednio.",
+      "sendAnother": "Wyślij kolejną wiadomość",
+      "orConnect": "lub napisz do nas bezpośrednio",
+      "call": "Zadzwoń"
+    }
+  },
+  "footer": {
+    "company": "EvolaTech",
+    "description": "Projektujemy i budujemy wysokowydajne produkty cyfrowe z jasną strategią, profesjonalną realizacją i długoterminowym wsparciem.",
+    "contactTitle": "Kontakt",
+    "navigateTitle": "Nawigacja",
+    "legalTitle": "Informacje prawne",
+    "otherTitle": "Inne",
+    "responseTime": "Odpowiedź w ciągu 24 godzin",
+    "links": {
+      "imprint": "Dane firmy",
+      "privacy": "Polityka prywatności",
+      "gdpr": "RODO",
+      "terms": "Regulamin"
+    },
+    "navigate": {
+      "services": "Usługi",
+      "workflow": "Jak pracujemy",
+      "about": "O nas",
+      "contact": "Kontakt"
+    },
+    "other": {
+      "seo": "Strategia SEO",
+      "landing": "Landing page",
+      "audit": "Audyt wydajności"
+    },
+    "copyright": "© 2026 EvolaTech. Wszelkie prawa zastrzeżone."
+  },
+  "legal": {
+    "terms": {
+      "title": "Regulamin",
+      "intro": "Korzystając z naszych usług, akceptujesz poniższe warunki. Prosimy o ich uważne przeczytanie.",
+      "sections": [
+        {
+          "heading": "Usługi",
+          "body": "EvolaTech świadczy usługi doradztwa IT, tworzenia oprogramowania na zamówienie, integracji API, konfiguracji infrastruktury chmurowej i bieżącego wsparcia technicznego. Wszystkie usługi podlegają oddzielnej pisemnej umowie, jeśli nie zaznaczono inaczej."
+        },
+        {
+          "heading": "Warunki płatności",
+          "body": "Faktury są płatne w ciągu 14 dni od wystawienia, chyba że ustalono inaczej na piśmie. Opóźnienia w płatnościach mogą skutkować naliczeniem odsetek ustawowych. Rozpoczęcie projektu może wymagać zaliczki określonej w umowie."
+        },
+        {
+          "heading": "Własność intelektualna",
+          "body": "Po pełnej zapłacie klient otrzymuje własność wszystkich stworzonych dla niego materiałów. EvolaTech zachowuje prawo do korzystania z ogólnych metodologii, frameworków i wiedzy niebędącej własnością klienta."
+        },
+        {
+          "heading": "Odpowiedzialność",
+          "body": "Nie ponosimy odpowiedzialności za pośrednie, przypadkowe lub wynikowe szkody wynikające z korzystania z naszych usług. Nasza całkowita odpowiedzialność nie przekracza łącznego wynagrodzenia zapłaconego za konkretną usługę."
+        },
+        {
+          "heading": "Rozwiązanie umowy",
+          "body": "Każda ze stron może rozwiązać umowę z 30-dniowym pisemnym wypowiedzeniem. W przypadku istotnego naruszenia umowy dopuszczalne jest natychmiastowe jej rozwiązanie. Opłaty za prace wykonane do dnia rozwiązania umowy pozostają wymagalne."
+        },
+        {
+          "heading": "Prawo właściwe",
+          "body": "Niniejsze warunki podlegają prawu Rzeczypospolitej Polskiej. Wszelkie spory będą rozstrzygane przez sądy właściwej jurysdykcji w Polsce."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "W sprawach dotyczących regulaminu prosimy kontaktować się pod adresem evolateam{'@'}gmail.com."
+        }
+      ]
+    },
+    "privacy": {
+      "title": "Polityka prywatności",
+      "intro": "EvolaTech zobowiązuje się do ochrony Twoich danych osobowych. Niniejsza polityka wyjaśnia, jak zbieramy, wykorzystujemy i chronimy informacje zgodnie z Ogólnym Rozporządzeniem o Ochronie Danych (RODO).",
+      "sections": [
+        {
+          "heading": "Administrator danych",
+          "body": "EvolaTech jest administratorem Twoich danych osobowych. Kontakt: evolateam{'@'}gmail.com, Tel.: +48 789 711 631."
+        },
+        {
+          "heading": "Zbierane dane",
+          "body": "Zbieramy informacje, które dobrowolnie podajesz kontaktując się z nami (imię, e-mail, telefon, szczegóły projektu). Zbieramy również dane techniczne, takie jak adres IP i typ przeglądarki, za pośrednictwem logów serwera w celach bezpieczeństwa."
+        },
+        {
+          "heading": "Podstawa prawna",
+          "body": "Przetwarzanie odbywa się na podstawie Twojej zgody (art. 6 ust. 1 lit. a RODO), wykonania umowy (art. 6 ust. 1 lit. b) oraz naszego prawnie uzasadnionego interesu w utrzymaniu bezpiecznych i funkcjonalnych usług (art. 6 ust. 1 lit. f)."
+        },
+        {
+          "heading": "Okres przechowywania",
+          "body": "Przechowujemy dane osobowe tylko przez okres niezbędny do celów opisanych powyżej lub wymagany przez prawo. Zapytania kontaktowe są przechowywane do 2 lat, chyba że następuje nawiązanie relacji umownej."
+        },
+        {
+          "heading": "Podmioty trzecie",
+          "body": "Nie sprzedajemy Twoich danych. Możemy udostępniać dane zaufanym dostawcom usług (np. hostingu i poczty e-mail) na podstawie umów powierzenia przetwarzania danych."
+        },
+        {
+          "heading": "Twoje prawa",
+          "body": "Masz prawo dostępu do danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, sprzeciwu wobec przetwarzania, przenoszenia danych oraz cofnięcia zgody w dowolnym momencie."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "W sprawach dotyczących prywatności lub realizacji swoich praw prosimy kontaktować się pod adresem evolateam{'@'}gmail.com."
+        }
+      ]
+    },
+    "gdpr": {
+      "title": "RODO",
+      "intro": "Zgodnie z Rozporządzeniem (UE) 2016/679 (Ogólne Rozporządzenie o Ochronie Danych) EvolaTech przestrzega najwyższych standardów ochrony danych osobowych.",
+      "sections": [
+        {
+          "heading": "Twoje prawa",
+          "body": "Na podstawie RODO masz prawo do: dostępu do swoich danych osobowych; sprostowania nieprawidłowych danych; żądania ich usunięcia ('prawo do bycia zapomnianym'); ograniczenia lub sprzeciwu wobec określonego przetwarzania; otrzymania danych w przenośnym formacie; cofnięcia zgody w dowolnym momencie bez wpływu na zgodność z prawem wcześniejszego przetwarzania."
+        },
+        {
+          "heading": "Jak skorzystać ze swoich praw",
+          "body": "Prześlij wniosek na piśmie na adres evolateam{'@'}gmail.com. Odpowiemy w ciągu 30 dni. W celu ochrony Twoich danych może być wymagana weryfikacja tożsamości."
+        },
+        {
+          "heading": "Administrator danych",
+          "body": "EvolaTech — evolateam{'@'}gmail.com — +48 789 711 631."
+        },
+        {
+          "heading": "Organ nadzorczy",
+          "body": "Masz prawo złożyć skargę do polskiego organu nadzorczego: Urząd Ochrony Danych Osobowych (UODO), ul. Stawki 2, 00-193 Warszawa."
+        },
+        {
+          "heading": "Kontakt",
+          "body": "W sprawach dotyczących RODO prosimy kontaktować się pod adresem evolateam{'@'}gmail.com."
+        }
+      ]
+    },
+    "imprint": {
+      "title": "Dane firmy",
+      "company": "EvolaTech",
+      "details": "Tworzenie oprogramowania i doradztwo IT",
+      "emailLabel": "E-mail",
+      "email": "evolateam{'@'}gmail.com",
+      "phoneLabel": "Telefon",
+      "phone": "+48 789 711 631",
+      "countryLabel": "Kraj",
+      "country": "Polska"
+    }
+  },
+  "seo": {
+    "home": {
+      "title": "Tworzenie stron internetowych dla firm | EvolaTech",
+      "description": "Tworzymy nowoczesne strony internetowe i landing page dla firm w Polsce i Europie. Vue 3, SEO, Google Ads, Meta Ads. Sprawdź ceny i zacznij współpracę.",
+      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron internetowych, agencja interaktywna, tworzenie stron www, landing page dla firmy, strona internetowa dla małej firmy, nowoczesne strony internetowe, szybka strona internetowa, strona sprzedażowa, tworzenie stron internetowych Warszawa, strony www Kraków, projektowanie stron Wrocław, strony internetowe Polska, SEO dla stron internetowych, pozycjonowanie stron, marketing internetowy dla firm, reklama Google Ads Polska, web development Poland, landing page agency Europe, website development for business, SEO services Poland, ile kosztuje strona internetowa, strona internetowa dla firmy cena, landing page cena"
+    },
+    "terms": {
+      "title": "Regulamin – EvolaTech",
+      "description": "Zapoznaj się z regulaminem EvolaTech dotyczącym doradztwa IT, tworzenia stron internetowych i usług technicznych."
+    },
+    "privacy": {
+      "title": "Polityka prywatności – EvolaTech",
+      "description": "Dowiedz się, jak EvolaTech gromadzi, wykorzystuje i chroni Twoje dane osobowe zgodnie z RODO."
+    },
+    "gdpr": {
+      "title": "RODO – EvolaTech",
+      "description": "Zgodność EvolaTech z RODO i wyjaśnienie Twoich praw w zakresie ochrony danych."
+    },
+    "imprint": {
+      "title": "Dane firmy – EvolaTech",
+      "description": "Informacje prawne i dane kontaktowe EvolaTech."
+    }
+  },
+  "error": {
+    "notFoundTitle": "Strona nie znaleziona",
+    "notFoundMessage": "Strona, której szukasz, nie istnieje lub została przeniesiona.",
+    "defaultTitle": "Coś poszło nie tak",
+    "defaultMessage": "Wystąpił nieoczekiwany błąd. Spróbuj ponownie.",
+    "goHome": "Wróć na stronę główną"
+  }
+}

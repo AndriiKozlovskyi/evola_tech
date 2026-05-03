@@ -16,14 +16,15 @@ export default defineNuxtConfig({
   // i18n Configuration
   i18n: {
     locales: [
+      { code: 'pl', iso: 'pl-PL', name: 'Polski', dir: 'ltr', file: 'pl.json' },
       { code: 'en', iso: 'en-US', name: 'English', dir: 'ltr', file: 'en.json' },
       { code: 'de', iso: 'de-DE', name: 'Deutsch', dir: 'ltr', file: 'de.json' },
       { code: 'ru', iso: 'ru-RU', name: 'Русский', dir: 'ltr', file: 'ru.json' },
     ],
     langDir: 'locales',
     restructureDir: '',
-    defaultLocale: 'en',
-    strategy: 'no_prefix',
+    defaultLocale: 'pl',
+    strategy: 'prefix',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
   },
@@ -62,7 +63,13 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: {
-      routes: ['/', '/gdpr', '/imprint', '/privacy', '/terms'],
+      routes: [
+        '/',
+        '/pl', '/pl/gdpr', '/pl/imprint', '/pl/privacy', '/pl/terms',
+        '/en', '/en/gdpr', '/en/imprint', '/en/privacy', '/en/terms',
+        '/de', '/de/gdpr', '/de/imprint', '/de/privacy', '/de/terms',
+        '/ru', '/ru/gdpr', '/ru/imprint', '/ru/privacy', '/ru/terms',
+      ],
     },
   },
 

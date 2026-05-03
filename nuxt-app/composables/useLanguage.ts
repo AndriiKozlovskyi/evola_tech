@@ -5,7 +5,7 @@ export const useLanguage = () => {
 
   const currentLocale = computed(() => locale.value as string)
 
-  const availableLocales = ['en', 'de', 'ru']
+  const availableLocales = ['pl', 'en', 'de', 'ru']
 
   const toggleLanguage = async () => {
     const idx = availableLocales.indexOf(currentLocale.value)

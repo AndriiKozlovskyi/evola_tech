@@ -284,7 +284,7 @@
 </template>
 
 <script setup lang="ts">
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { projects } = useProjects()
 const contactEmail = 'evolateam@gmail.com'
 const contactPhoneRaw = '+48789711631'
@@ -297,13 +297,13 @@ useSeoMeta({
   description: () => t('seo.home.description'),
   ogDescription: () => t('seo.home.description'),
   keywords: () => t('seo.home.keywords'),
-  ogUrl: 'https://evola-tec/',
+  ogUrl: () => `https://evola-tec.com/${locale.value}/`,
   twitterTitle: () => t('seo.home.title'),
   twitterDescription: () => t('seo.home.description'),
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: 'https://evola-tec/' }],
+  link: [{ rel: 'canonical', href: () => `https://evola-tec.com/${locale.value}/` }],
   script: [{
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
