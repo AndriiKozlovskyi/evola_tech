@@ -255,7 +255,7 @@
                 <span class="material-symbols-outlined text-primary text-xl">mail</span>
               </div>
               <div>
-                <h4 class="font-semibold text-sm text-on-surface">Email</h4>
+                <p class="font-semibold text-sm text-on-surface">Email</p>
                 <a
                   :href="`mailto:${contactEmail}`"
                   class="text-on-surface-variant text-sm hover:text-primary transition-colors"
@@ -269,7 +269,7 @@
                 <span class="material-symbols-outlined text-primary text-xl">call</span>
               </div>
               <div>
-                <h4 class="font-semibold text-sm text-on-surface">{{ $t('contact.phoneLabel') }}</h4>
+                <p class="font-semibold text-sm text-on-surface">{{ $t('contact.phoneLabel') }}</p>
                 <a
                   :href="`tel:${contactPhoneRaw}`"
                   class="text-on-surface-variant text-sm hover:text-primary transition-colors"

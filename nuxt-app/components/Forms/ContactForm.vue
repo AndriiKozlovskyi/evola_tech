@@ -41,7 +41,7 @@
 
           <!-- Topic Selection Chips -->
           <div>
-            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-4">
+            <p class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface mb-4">
               {{ $t('contact.form.topicLabel') }}
             </p>
             <div class="flex flex-wrap gap-2">
@@ -65,7 +65,7 @@
 
           <!-- Email -->
           <div class="space-y-2">
-            <label for="contact-email" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <label for="contact-email" class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface">
               {{ $t('contact.form.email') }}
             </label>
             <input
@@ -83,7 +83,7 @@
 
           <!-- Message -->
           <div class="space-y-2">
-            <label for="contact-message" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+            <label for="contact-message" class="text-xs font-bold uppercase tracking-[0.2em] text-on-surface">
               {{ $t('contact.form.message') }}
             </label>
             <textarea
@@ -121,7 +121,7 @@
         <!-- Divider -->
         <div class="flex items-center gap-4">
           <div class="flex-1 h-px bg-outline-variant/20"></div>
-          <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">
+          <span class="text-xs font-bold uppercase tracking-[0.15em] text-on-surface-variant">
             {{ $t('contact.form.orConnect') }}
           </span>
           <div class="flex-1 h-px bg-outline-variant/20"></div>

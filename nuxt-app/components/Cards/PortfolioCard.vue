@@ -22,6 +22,7 @@
         :href="project.link || '#'"
         target="_blank"
         rel="noopener noreferrer"
+        :aria-label="`${$t('portfolio.visitWebsite')} – ${project.title}`"
         class="inline-flex items-center gap-1.5 text-primary font-semibold text-sm group-hover:gap-2.5 transition-all"
       >
         {{ $t('portfolio.visitWebsite') }}
