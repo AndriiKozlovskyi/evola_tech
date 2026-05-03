@@ -1,7 +1,7 @@
 export default defineNuxtConfig({
   ssr: true,
   compatibilityDate: '2026-05-04',
-  devtools: { enabled: true },
+  devtools: { enabled: false },
 
   modules: [
     '@nuxtjs/tailwindcss',
@@ -25,7 +25,7 @@ export default defineNuxtConfig({
     langDir: 'locales',
     restructureDir: '',
     defaultLocale: 'pl',
-    strategy: 'prefix',
+    strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
   },
@@ -44,7 +44,7 @@ export default defineNuxtConfig({
         { name: 'robots', content: 'index, follow' },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'EvolaTech' },
-        { property: 'og:image', content: 'https://evola-tec/og-image.jpg' },
+        { property: 'og:image', content: 'https://evola-tec.com/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
         { name: 'twitter:card', content: 'summary_large_image' },
@@ -64,8 +64,8 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: {
-      // Seed with each locale homepage; crawlLinks discovers the rest (legal pages etc.)
-      routes: ['/pl', '/en', '/de', '/ru'],
+      // Seed the default locale root plus localized pages; crawlLinks discovers the rest.
+      routes: ['/', '/en', '/de', '/ru'],
       crawlLinks: true,
     },
   },
@@ -81,8 +81,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    appManifest: true,
+    appManifest: process.env.NODE_ENV === 'production',
     payloadExtraction: true,
-    componentIslands: true,
+    componentIslands: false,
   },
 })

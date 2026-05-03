@@ -17,7 +17,7 @@ for (const file of jpegs) {
 
   await sharp(src)
     .resize({ width: 640, withoutEnlargement: true })
-    .webp({ quality: 82 })
+    .webp({ quality: 75 })
     .toFile(destWebp)
 
   console.log(`✓ ${file} → ${name}.webp`)

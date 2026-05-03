@@ -65,6 +65,8 @@
               width="637"
               height="425"
               loading="lazy"
+              decoding="async"
+              importance="low"
             />
             <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-br from-primary to-primary-container p-6 lg:p-8 rounded-xl shadow-xl z-20">
               <div class="text-on-primary text-3xl lg:text-4xl font-bold">
@@ -194,6 +196,8 @@
             width="637"
             height="478"
             loading="lazy"
+            decoding="async"
+            importance="low"
           />
           <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-br from-primary to-primary-container p-6 lg:p-8 rounded-xl shadow-xl z-20">
             <div class="text-on-primary text-3xl lg:text-4xl font-bold">
@@ -284,10 +288,16 @@
 </template>
 
 <script setup lang="ts">
+import { computed } from 'vue'
+
 const { t, locale } = useI18n()
 const { projects } = useProjects()
 const contactEmail = 'evolateam@gmail.com'
 const contactPhoneRaw = '+48789711631'
+
+const absoluteLocaleRoot = computed(() => {
+  return locale.value === 'pl' ? 'https://evola-tec.com/' : `https://evola-tec.com/${locale.value}/`
+})
 
 definePageMeta({ layout: 'default' })
 
@@ -297,21 +307,21 @@ useSeoMeta({
   description: () => t('seo.home.description'),
   ogDescription: () => t('seo.home.description'),
   keywords: () => t('seo.home.keywords'),
-  ogUrl: () => `https://evola-tec.com/${locale.value}/`,
+  ogUrl: () => absoluteLocaleRoot.value,
   twitterTitle: () => t('seo.home.title'),
   twitterDescription: () => t('seo.home.description'),
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: () => `https://evola-tec.com/${locale.value}/` }],
+  link: [{ rel: 'canonical', href: () => absoluteLocaleRoot.value }],
   script: [{
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
       name: 'EvolaTech',
-      url: 'https://evola-tec',
-      logo: 'https://evola-tec/favicon.svg',
+      url: 'https://evola-tec.com',
+      logo: 'https://evola-tec.com/favicon.svg',
       telephone: '+48-789-711-631',
       email: 'evolateam@gmail.com',
       priceRange: '€€',
