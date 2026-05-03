@@ -5,12 +5,28 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
+    '@nuxt/fonts',
+    '@nuxt/image',
   ],
 
   // Tailwind CSS
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
+  },
+
+  // Fonts – self-hosted Inter, no CDN blocking request
+  fonts: {
+    families: [
+      { name: 'Inter', provider: 'google', weights: [400, 500, 600, 700, 800] },
+    ],
+    defaults: { display: 'swap' },
+  },
+
+  // Image optimization
+  image: {
+    domains: ['images.unsplash.com'],
+    formats: ['webp', 'avif'],
   },
 
   // i18n Configuration
@@ -52,8 +68,9 @@ export default defineNuxtConfig({
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap' },
+        // Preconnect for Material Symbols (loaded async via plugin)
+        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
+        { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
       ],
     },
   },

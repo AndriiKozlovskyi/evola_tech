@@ -58,10 +58,14 @@
         <div class="flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
           <div class="w-full lg:w-1/2 relative pb-16 lg:pb-0">
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
-            <img
+            <NuxtImg
               class="rounded-2xl relative z-10 w-full shadow-2xl service-visual-image"
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1400&q=80"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=75"
               alt="Software planning board and laptop"
+              width="637"
+              height="425"
+              loading="lazy"
+              sizes="100vw lg:50vw"
             />
             <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-br from-primary to-primary-container p-6 lg:p-8 rounded-xl shadow-xl z-20">
               <div class="text-on-primary text-3xl lg:text-4xl font-bold">
@@ -184,10 +188,15 @@
       <div class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16 lg:gap-20">
         <div class="w-full lg:w-1/2 relative">
           <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/5 rounded-full blur-3xl"></div>
-          <img
+          <NuxtImg
             class="rounded-2xl relative z-10 w-full shadow-2xl grayscale hover:grayscale-0 transition-all duration-700"
             src="/images/about/team.jpg"
             alt="Team collaboration"
+            width="637"
+            height="478"
+            format="webp"
+            loading="lazy"
+            sizes="100vw lg:50vw"
           />
           <div class="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-br from-primary to-primary-container p-6 lg:p-8 rounded-xl shadow-xl z-20">
             <div class="text-on-primary text-3xl lg:text-4xl font-bold">
