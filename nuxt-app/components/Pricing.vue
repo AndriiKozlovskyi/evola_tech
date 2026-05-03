@@ -1,6 +1,14 @@
 <template>
-  <section class="py-24 lg:py-32 px-6 lg:px-8 bg-surface" id="pricing">
-    <div class="max-w-7xl mx-auto">
+  <section class="relative py-24 lg:py-32 px-6 lg:px-8 overflow-hidden pricing-bg" id="pricing">
+    <!-- Decorative orbs -->
+    <div class="pointer-events-none absolute inset-0 overflow-hidden" aria-hidden="true">
+      <div class="absolute -top-32 -left-32 w-[500px] h-[500px] rounded-full bg-primary/10 blur-[120px]"></div>
+      <div class="absolute top-1/2 -right-40 w-[400px] h-[400px] rounded-full bg-primary/8 blur-[100px]"></div>
+      <div class="absolute -bottom-24 left-1/3 w-[350px] h-[350px] rounded-full bg-primary/6 blur-[90px]"></div>
+      <div class="absolute inset-0 pricing-grid opacity-[0.04]"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto relative z-10">
       <!-- Header -->
       <div class="mb-16 max-w-3xl">
         <p class="text-label-md font-bold text-primary tracking-[0.2em] uppercase mb-4">
@@ -34,12 +42,6 @@
         </div>
       </div>
 
-      <!-- Popular Note -->
-      <div class="mb-12 p-4 bg-primary/10 border border-primary/30 rounded-lg text-center">
-        <p class="text-sm font-semibold text-primary">
-          💡 {{ $t('pricing.mostPopular') }}
-        </p>
-      </div>
 
       <!-- Pricing Cards Grid -->
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -59,7 +61,7 @@
       </div>
 
       <!-- Additional Info -->
-      <div class="bg-surface-container-low rounded-xl p-8 md:p-12 border border-outline-variant/20">
+      <div class="bg-surface-container-low rounded-xl p-8 md:p-12 border border-outline-variant/20 shadow-lg">
         <h3 class="text-lg font-bold text-on-surface mb-6">{{ $t('pricing.importantInfo.title') }}</h3>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
@@ -121,9 +123,9 @@ const packages = [
     name: 'START',
     subtitle: 'Perfect for testing and launching',
     pricing: {
-      landing: '€1,200 - €1,500',
-      website: '€1,500 - €2,000',
-      ecommerce: 'Custom Quote'
+      landing: 'from €350',
+      website: 'from €750',
+      ecommerce: 'from €1,200'
     },
     features: [
       'Individual design',
@@ -144,9 +146,9 @@ const packages = [
     name: 'GROWTH',
     subtitle: 'Build authority and attract clients',
     pricing: {
-      landing: '€2,000 - €2,500',
-      website: '€2,500 - €3,500',
-      ecommerce: '€3,500 - €4,500'
+      landing: 'from €650',
+      website: 'from €1,200',
+      ecommerce: 'from €2,000'
     },
     features: [
       'Everything in START',
@@ -168,9 +170,9 @@ const packages = [
     name: 'PRO',
     subtitle: 'Full-scale growth system',
     pricing: {
-      landing: '€3,000 - €4,000',
-      website: '€4,000 - €6,000',
-      ecommerce: '€5,000 - €8,000'
+      landing: 'from €1,000',
+      website: 'from €2,300',
+      ecommerce: 'from €5,000'
     },
     features: [
       'Everything in GROWTH',
@@ -194,7 +196,15 @@ const packages = [
 </script>
 
 <style scoped>
-#pricing {
-  position: relative;
+.pricing-bg {
+
+  background-color: #F1F4F9;
+}
+
+.pricing-grid {
+  background-image:
+    linear-gradient(var(--md-sys-color-outline-variant, #49454f) 1px, transparent 1px),
+    linear-gradient(90deg, var(--md-sys-color-outline-variant, #49454f) 1px, transparent 1px);
+  background-size: 48px 48px;
 }
 </style>
