@@ -18,7 +18,7 @@ export const useProjects = () => {
       title: rt(p.title),
       description: rt(p.description),
       image: ['/images/projects/evola.jpg', '/images/projects/recovery.jpg', '/images/projects/dobroe-serdce.jpg'][Number(rt(p.id)) - 1],
-      link: ['https://evola.netlify.app/', 'https://recoveryastana.netlify.app/', 'https://dobroe-serdce.netlify.app/'][Number(rt(p.id)) - 1],
+      link: ['https://evola.netlify.app/', 'https://freedomastana.netlify.app/', 'https://dobroe-serdce.netlify.app/'][Number(rt(p.id)) - 1],
     }))
   })
 

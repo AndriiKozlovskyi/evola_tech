@@ -37,11 +37,11 @@
           @click="toggleLanguage"
           class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors px-3 py-1.5 rounded-md hover:bg-surface-container-low"
         >
-          {{ currentLocale === 'en' ? 'DE' : 'EN' }}
+          {{ currentLocale === 'en' ? 'EN' : 'DE' }}
         </button>
         <NuxtLink
           to="/#contact"
-          class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
+          class="flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary w-44 h-11 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
         >
           {{ $t('navigation.cta') }}
         </NuxtLink>
@@ -81,7 +81,7 @@
             @click="toggleLanguage"
             class="absolute top-3 right-4 text-on-surface-variant text-sm font-semibold hover:text-primary transition-colors px-2 py-1 rounded-md hover:bg-surface-container-low"
           >
-            {{ currentLocale === 'en' ? 'DE' : 'EN' }}
+            {{ currentLocale === 'en' ? 'EN' : 'DE' }}
           </button>
           <NuxtLink to="/#home" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.home') }}
@@ -108,7 +108,7 @@
             <NuxtLink
               to="/#contact"
               @click="mobileMenuOpen = false"
-              class="block w-full text-center bg-gradient-to-br from-primary to-primary-container text-on-primary px-5 py-2.5 rounded-xl text-sm font-semibold"
+              class="flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary w-44 h-11 rounded-xl text-sm font-semibold whitespace-nowrap"
             >
               {{ $t('navigation.cta') }}
             </NuxtLink>
