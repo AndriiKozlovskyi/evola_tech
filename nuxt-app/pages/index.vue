@@ -260,7 +260,7 @@
                 <span class="material-symbols-outlined text-primary text-xl">call</span>
               </div>
               <div>
-                <h4 class="font-semibold text-sm text-on-surface">{{ currentLocale === 'en' ? 'Phone' : 'Telefon' }}</h4>
+                <h4 class="font-semibold text-sm text-on-surface">{{ $t('contact.phoneLabel') }}</h4>
                 <a
                   :href="`tel:${contactPhoneRaw}`"
                   class="text-on-surface-variant text-sm hover:text-primary transition-colors"
@@ -280,12 +280,51 @@
 <script setup lang="ts">
 const { t } = useI18n()
 const { projects } = useProjects()
-const { currentLocale } = useLanguage()
 const contactEmail = 'evolateam@gmail.com'
 const contactPhoneRaw = '+48789711631'
 
-definePageMeta({
-  layout: 'default'
+definePageMeta({ layout: 'default' })
+
+useSeoMeta({
+  title: () => t('seo.home.title'),
+  ogTitle: () => t('seo.home.title'),
+  description: () => t('seo.home.description'),
+  ogDescription: () => t('seo.home.description'),
+  keywords: () => t('seo.home.keywords'),
+  ogUrl: 'https://evola-tec/',
+  twitterTitle: () => t('seo.home.title'),
+  twitterDescription: () => t('seo.home.description'),
+})
+
+useHead({
+  link: [{ rel: 'canonical', href: 'https://evola-tec/' }],
+  script: [{
+    type: 'application/ld+json',
+    innerHTML: JSON.stringify({
+      '@context': 'https://schema.org',
+      '@type': 'ProfessionalService',
+      name: 'EvolaTech',
+      url: 'https://evola-tec',
+      logo: 'https://evola-tec/favicon.svg',
+      telephone: '+48-789-711-631',
+      email: 'evolateam@gmail.com',
+      priceRange: '€€',
+      address: { '@type': 'PostalAddress', addressCountry: 'PL' },
+      serviceArea: { '@type': 'GeoShape', name: 'Poland, Europe' },
+      availableLanguage: ['Polish', 'English', 'German', 'Russian'],
+      description: 'Tworzenie nowoczesnych stron internetowych i landing page dla firm. Web development, SEO, Google Ads, Meta Ads.',
+      hasOfferCatalog: {
+        '@type': 'OfferCatalog',
+        name: 'Web Services',
+        itemListElement: [
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Tworzenie stron internetowych' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landing page dla firmy' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'SEO i pozycjonowanie' } },
+          { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads i Meta Ads' } },
+        ],
+      },
+    }),
+  }],
 })
 </script>
 

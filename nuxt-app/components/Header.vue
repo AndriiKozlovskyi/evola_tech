@@ -37,7 +37,7 @@
           @click="toggleLanguage"
           class="text-on-surface-variant text-sm font-medium hover:text-primary transition-colors px-3 py-1.5 rounded-md hover:bg-surface-container-low"
         >
-          {{ currentLocale === 'en' ? 'EN' : 'DE' }}
+          {{ currentLocale.toUpperCase() }}
         </button>
         <NuxtLink
           to="/#contact"
@@ -81,7 +81,7 @@
             @click="toggleLanguage"
             class="absolute top-3 right-4 text-on-surface-variant text-sm font-semibold hover:text-primary transition-colors px-2 py-1 rounded-md hover:bg-surface-container-low"
           >
-            {{ currentLocale === 'en' ? 'EN' : 'DE' }}
+            {{ currentLocale.toUpperCase() }}
           </button>
           <NuxtLink to="/#home" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.home') }}

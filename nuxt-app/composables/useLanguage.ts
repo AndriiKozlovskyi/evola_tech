@@ -5,17 +5,17 @@ export const useLanguage = () => {
 
   const currentLocale = computed(() => locale.value as string)
 
+  const availableLocales = ['en', 'de', 'ru']
+
   const toggleLanguage = async () => {
-    const newLocale = currentLocale.value === 'en' ? 'de' : 'en'
+    const idx = availableLocales.indexOf(currentLocale.value)
+    const newLocale = availableLocales[(idx + 1) % availableLocales.length]
     await setLocale(newLocale)
 
-    // Persist to localStorage
     if (import.meta.client) {
       localStorage.setItem('i18n-locale', newLocale)
     }
   }
-
-  const availableLocales = ['en', 'de']
 
   return {
     currentLocale,

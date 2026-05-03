@@ -343,24 +343,25 @@
   },
   "seo": {
     "home": {
-      "title": "EvolaTech – High-Performance Web Applications",
-      "description": "EvolaTech builds scalable web solutions and seamless API integrations for your business. Contact us for a technical consultation."
+      "title": "Tworzenie stron internetowych dla firm | EvolaTech",
+      "description": "Tworzymy nowoczesne strony internetowe i landing page dla firm w Polsce i Europie. Vue 3, SEO, Google Ads, Meta Ads. Sprawdź ceny i zacznij współpracę.",
+      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron internetowych, agencja interaktywna, tworzenie stron www, landing page dla firmy, strona internetowa dla małej firmy, nowoczesne strony internetowe, szybka strona internetowa, strona sprzedażowa, tworzenie stron internetowych Warszawa, strony www Kraków, projektowanie stron Wrocław, strony internetowe Polska, SEO dla stron internetowych, pozycjonowanie stron, marketing internetowy dla firm, reklama Google Ads Polska, web development Poland, landing page agency Europe, website development for business, SEO services Poland, ile kosztuje strona internetowa, strona internetowa dla firmy cena, landing page cena"
     },
     "terms": {
-      "title": "Terms of Service – EvolaTech",
-      "description": "Read EvolaTech's terms and conditions for IT consulting, software development, and technical services."
+      "title": "Warunki korzystania z usług – EvolaTech",
+      "description": "Zapoznaj się z warunkami korzystania z usług EvolaTech w zakresie doradztwa IT, tworzenia stron internetowych i usług technicznych."
     },
     "privacy": {
-      "title": "Privacy Policy – EvolaTech",
-      "description": "Learn how EvolaTech collects, uses, and protects your personal data in accordance with GDPR."
+      "title": "Polityka prywatności – EvolaTech",
+      "description": "Dowiedz się, jak EvolaTech gromadzi, wykorzystuje i chroni Twoje dane osobowe zgodnie z RODO."
     },
     "gdpr": {
-      "title": "GDPR – EvolaTech",
-      "description": "EvolaTech's commitment to GDPR compliance and your data protection rights explained."
+      "title": "RODO – EvolaTech",
+      "description": "Zgodność EvolaTech z RODO i wyjaśnienie Twoich praw w zakresie ochrony danych."
     },
     "imprint": {
-      "title": "Imprint – EvolaTech",
-      "description": "Legal information and contact details for EvolaTech."
+      "title": "Informacje prawne – EvolaTech",
+      "description": "Informacje prawne i dane kontaktowe EvolaTech."
     }
   },
   "error": {
