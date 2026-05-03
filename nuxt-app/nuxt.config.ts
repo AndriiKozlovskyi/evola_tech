@@ -5,28 +5,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
-    '@nuxt/fonts',
-    '@nuxt/image',
   ],
 
   // Tailwind CSS
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
-  },
-
-  // Fonts – self-hosted Inter, no CDN blocking request
-  fonts: {
-    families: [
-      { name: 'Inter', provider: 'google', weights: [400, 500, 600, 700, 800] },
-    ],
-    defaults: { display: 'swap' },
-  },
-
-  // Image optimization
-  image: {
-    domains: ['images.unsplash.com'],
-    formats: ['webp', 'avif'],
   },
 
   // i18n Configuration
@@ -40,7 +24,6 @@ export default defineNuxtConfig({
     restructureDir: '',
     defaultLocale: 'en',
     strategy: 'no_prefix',
-    lazy: true,
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
   },

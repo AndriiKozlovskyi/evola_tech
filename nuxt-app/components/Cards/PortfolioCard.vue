@@ -1,15 +1,13 @@
 <template>
   <div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ambient-shadow">
     <div class="aspect-video bg-surface-container-low overflow-hidden">
-      <NuxtImg
+      <img
         class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
         :src="project.image"
         :alt="project.title"
         width="640"
         height="360"
-        format="webp"
         loading="lazy"
-        sizes="100vw sm:50vw lg:33vw"
       />
     </div>
     <div class="p-6 lg:p-8">
