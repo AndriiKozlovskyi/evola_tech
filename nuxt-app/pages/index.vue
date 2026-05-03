@@ -60,7 +60,7 @@
             <div class="absolute -top-10 -left-10 w-40 h-40 bg-primary/10 rounded-full blur-3xl"></div>
             <img
               class="rounded-2xl relative z-10 w-full shadow-2xl service-visual-image"
-              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=75"
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=640&q=80&fm=webp"
               alt="Software planning board and laptop"
               width="637"
               height="425"

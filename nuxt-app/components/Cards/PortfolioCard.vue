@@ -1,14 +1,17 @@
 <template>
   <div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ambient-shadow">
     <div class="aspect-video bg-surface-container-low overflow-hidden">
-      <img
-        class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-        :src="project.image"
-        :alt="project.title"
-        width="640"
-        height="360"
-        loading="lazy"
-      />
+      <picture>
+        <source :srcset="project.image.replace('.jpg', '.webp')" type="image/webp">
+        <img
+          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+          :src="project.image"
+          :alt="project.title"
+          width="640"
+          height="360"
+          loading="lazy"
+        />
+      </picture>
     </div>
     <div class="p-6 lg:p-8">
       <span class="text-[10px] font-bold text-primary uppercase tracking-widest">

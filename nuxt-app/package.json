@@ -8,6 +8,7 @@
     "dev": "nuxi dev",
     "build": "nuxi build",
     "preview": "nuxi preview",
+    "optimize-images": "node scripts/optimize-images.mjs",
     "generate": "cross-env NITRO_PRESET=static nuxi generate",
     "postinstall": "nuxi prepare"
   },
@@ -26,6 +27,7 @@
     "autoprefixer": "^10.4.0",
     "cross-env": "^10.1.0",
     "postcss": "^8.4.0",
+    "sharp": "^0.34.5",
     "tailwindcss": "^3.4.0",
     "typescript": "^5.0.0"
   }
