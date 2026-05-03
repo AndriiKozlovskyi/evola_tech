@@ -38,30 +38,30 @@
 
         <!-- Links -->
         <div class="grid grid-cols-2 sm:flex sm:flex-wrap gap-x-5 gap-y-3 text-xs tracking-wider uppercase font-semibold w-full md:w-auto">
-          <NuxtLink
+          <NuxtLinkLocale
             to="/imprint"
             class="text-on-surface-variant hover:text-primary transition-colors min-h-10 flex items-center"
           >
             {{ $t('footer.links.imprint') }}
-          </NuxtLink>
-          <NuxtLink
+          </NuxtLinkLocale>
+          <NuxtLinkLocale
             to="/privacy"
             class="text-on-surface-variant hover:text-primary transition-colors min-h-10 flex items-center"
           >
             {{ $t('footer.links.privacy') }}
-          </NuxtLink>
-          <NuxtLink
+          </NuxtLinkLocale>
+          <NuxtLinkLocale
             to="/gdpr"
             class="text-on-surface-variant hover:text-primary transition-colors min-h-10 flex items-center"
           >
             {{ $t('footer.links.gdpr') }}
-          </NuxtLink>
-          <NuxtLink
+          </NuxtLinkLocale>
+          <NuxtLinkLocale
             to="/terms"
             class="text-on-surface-variant hover:text-primary transition-colors min-h-10 flex items-center"
           >
             {{ $t('footer.links.terms') }}
-          </NuxtLink>
+          </NuxtLinkLocale>
         </div>
       </div>
     </div>

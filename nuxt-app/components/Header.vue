@@ -2,33 +2,33 @@
   <header class="fixed top-0 w-full z-50 glass-nav">
     <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full">
       <!-- Brand -->
-      <NuxtLink to="/" class="text-2xl font-bold tracking-tighter text-on-surface">
+      <NuxtLinkLocale to="/" class="text-2xl font-bold tracking-tighter text-on-surface">
         Evola<span class="text-primary">Tech</span>
-      </NuxtLink>
+      </NuxtLinkLocale>
 
       <!-- Navigation Links (Desktop) -->
       <div class="hidden lg:flex items-center gap-8 font-medium text-sm">
-        <NuxtLink to="/#home" class="text-on-surface-variant hover:text-primary transition-colors">
+        <NuxtLinkLocale to="/#home" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.home') }}
-        </NuxtLink>
-        <NuxtLink to="/#portfolio" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#portfolio" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.portfolio') }}
-        </NuxtLink>
-        <NuxtLink to="/#services" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#services" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.services') }}
-        </NuxtLink>
-        <NuxtLink to="/#workflow" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#workflow" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.workflow') }}
-        </NuxtLink>
-        <NuxtLink to="/#about" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#about" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.about') }}
-        </NuxtLink>
-        <NuxtLink to="/#pricing" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#pricing" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.pricing') }}
-        </NuxtLink>
-        <NuxtLink to="/#contact" class="text-on-surface-variant hover:text-primary transition-colors">
+        </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#contact" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.contact') }}
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
 
       <!-- Language & CTA (Desktop) -->
@@ -39,12 +39,12 @@
         >
           {{ currentLocale.toUpperCase() }}
         </button>
-        <NuxtLink
+        <NuxtLinkLocale
           to="/#contact"
           class="flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary w-44 h-11 rounded-xl text-sm font-semibold transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98] whitespace-nowrap"
         >
           {{ $t('navigation.cta') }}
-        </NuxtLink>
+        </NuxtLinkLocale>
       </div>
 
       <!-- Mobile Menu Button -->
@@ -83,35 +83,35 @@
           >
             {{ currentLocale.toUpperCase() }}
           </button>
-          <NuxtLink to="/#home" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          <NuxtLinkLocale to="/#home" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.home') }}
-          </NuxtLink>
-          <NuxtLink to="/#portfolio" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#portfolio" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.portfolio') }}
-          </NuxtLink>
-          <NuxtLink to="/#services" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#services" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.services') }}
-          </NuxtLink>
-          <NuxtLink to="/#workflow" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#workflow" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.workflow') }}
-          </NuxtLink>
-          <NuxtLink to="/#about" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#about" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.about') }}
-          </NuxtLink>
-          <NuxtLink to="/#pricing" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#pricing" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.pricing') }}
-          </NuxtLink>
-          <NuxtLink to="/#contact" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+          </NuxtLinkLocale>
+          <NuxtLinkLocale to="/#contact" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.contact') }}
-          </NuxtLink>
+          </NuxtLinkLocale>
           <div class="pt-4 border-t border-outline-variant/10 mt-2 pb-2">
-            <NuxtLink
+            <NuxtLinkLocale
               to="/#contact"
               @click="mobileMenuOpen = false"
               class="flex items-center justify-center bg-gradient-to-br from-primary to-primary-container text-on-primary w-44 h-11 rounded-xl text-sm font-semibold whitespace-nowrap"
             >
               {{ $t('navigation.cta') }}
-            </NuxtLink>
+            </NuxtLinkLocale>
           </div>
         </div>
         </div>

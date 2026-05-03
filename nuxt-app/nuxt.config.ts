@@ -63,13 +63,9 @@ export default defineNuxtConfig({
   nitro: {
     preset: 'static',
     prerender: {
-      routes: [
-        '/',
-        '/pl', '/pl/gdpr', '/pl/imprint', '/pl/privacy', '/pl/terms',
-        '/en', '/en/gdpr', '/en/imprint', '/en/privacy', '/en/terms',
-        '/de', '/de/gdpr', '/de/imprint', '/de/privacy', '/de/terms',
-        '/ru', '/ru/gdpr', '/ru/imprint', '/ru/privacy', '/ru/terms',
-      ],
+      // Seed with each locale homepage; crawlLinks discovers the rest (legal pages etc.)
+      routes: ['/pl', '/en', '/de', '/ru'],
+      crawlLinks: true,
     },
   },
 
