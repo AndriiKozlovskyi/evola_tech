@@ -1,5 +1,6 @@
 export default defineNuxtConfig({
   ssr: true,
+  compatibilityDate: '2026-05-04',
   devtools: { enabled: true },
 
   modules: [
@@ -80,7 +81,8 @@ export default defineNuxtConfig({
   },
 
   experimental: {
-    payloadExtraction: false,
+    appManifest: true,
+    payloadExtraction: true,
     componentIslands: true,
   },
 })
