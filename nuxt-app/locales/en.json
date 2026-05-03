@@ -5,6 +5,7 @@
     "services": "Services",
     "workflow": "How We Work",
     "about": "About",
+    "pricing": "Pricing",
     "contact": "Contact",
     "language": "EN | DE",
     "cta": "Get in Touch"
@@ -43,41 +44,46 @@
   },
   "services": {
     "title": "What we do",
-    "description1": "Our service model combines product design, engineering, and growth strategy in one streamlined pipeline.",
-    "description2": "Instead of fragmented vendors, you get one team responsible for architecture, conversion-focused UX, speed, and long-term visibility.",
+    "description1": "From a single landing page to a full digital marketing stack — one team for every channel.",
+    "description2": "Web development, design, SEO, social media, and paid ads. Custom scope, clean delivery, measurable results.",
     "projectsDelivered": "End-to-End",
     "projectsDeliveredLabel": "Delivery Model",
     "values": [
-      "Clear scope and measurable milestones",
-      "High-performance build quality and clean code",
-      "SEO and marketing readiness from the first sprint"
+      "Custom scope — no generic templates pushed on you",
+      "Design, development, and marketing under one roof",
+      "GDPR-compliant delivery, SSL included on every project"
     ],
-    "tags": ["Infrastructure", "Web Systems", "SEO", "Cybersecurity", "AI Solutions"],
+    "tags": ["Vue 3 + Nuxt", "Figma", "SEO", "Google Ads", "Meta Ads", "WordPress"],
     "items": [
       {
         "icon": "web",
-        "title": "Web Applications",
-        "description": "Bespoke, responsive web apps built with modern frameworks for maximum performance."
+        "title": "Web Development",
+        "description": "Landing pages, corporate sites, web apps, and e-commerce. Vue 3 + Nuxt frontend, Java Spring Boot backend, WordPress for content-driven sites."
       },
       {
-        "icon": "api",
-        "title": "API & Integrations",
-        "description": "Connecting your systems through secure, high-speed APIs and third-party service synchronization."
-      },
-      {
-        "icon": "cloud_done",
-        "title": "Cloud Foundations",
-        "description": "Essential cloud infrastructure setup to ensure your applications stay accessible and resilient."
-      },
-      {
-        "icon": "monitoring",
-        "title": "Performance Opt",
-        "description": "Identifying bottlenecks and refining systems for maximum speed."
+        "icon": "palette",
+        "title": "Design",
+        "description": "UI/UX in Figma, logo & brand identity, website redesigns, and print-ready materials. You always own the source files."
       },
       {
         "icon": "travel_explore",
-        "title": "SEO & Growth",
-        "description": "Technical SEO setup, content architecture, and measurable search visibility growth."
+        "title": "SEO",
+        "description": "Technical audits, on-page optimisation, local SEO, content strategy, and backlink building. Clear monthly reporting."
+      },
+      {
+        "icon": "campaign",
+        "title": "Social Media",
+        "description": "Monthly content calendars, on-brand post design, copywriting, Stories & Reels, and community management for Instagram, Facebook, and LinkedIn."
+      },
+      {
+        "icon": "ads_click",
+        "title": "Contextual Ads",
+        "description": "Google Search, Display, Shopping, Performance Max, and Meta Ads. You keep full account ownership. Monthly spend reports included."
+      },
+      {
+        "icon": "image",
+        "title": "Banners & Creatives",
+        "description": "Static and animated banners for Google Display, Meta Ads, and web — all IAB sizes. GIF or HTML5 delivery in 2–4 business days."
       }
     ]
   },
@@ -140,6 +146,35 @@
       "Seamless system interoperability",
       "Reliable long-term technical partnership"
     ]
+  },
+  "pricing": {
+    "eyebrow": "TRANSPARENT PRICING",
+    "title": "Simple, Scalable Plans",
+    "description": "Choose the package that fits your goals. All plans include individual design, responsive layout, and fast delivery.",
+    "selectType": "Select your website type",
+    "mostPopular": "Most Popular",
+    "cta": "Get Started",
+    "ready": "Ready to get started?",
+    "contactUs": "Contact Us",
+    "importantInfo": {
+      "title": "What to Know",
+      "overview": "Package Overview",
+      "items": [
+        "Each package includes clear scope and measurable milestones",
+        "Page and revision limits ensure predictable delivery",
+        "E-Commerce plans limited to specific product counts",
+        "Advertising budgets are separate from package pricing",
+        "Support duration varies by tier"
+      ],
+      "important": "Important Limits",
+      "warnings": [
+        "Landing Pages: fixed block limits per tier",
+        "Websites: page limits to maintain quality and timeline",
+        "E-Commerce: product limits to ensure performance",
+        "Ad budgets do not include campaign spend",
+        "Support periods vary — see tier details"
+      ]
+    }
   },
   "contact": {
     "title": "Let's build",

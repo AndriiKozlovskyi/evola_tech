@@ -5,6 +5,7 @@
     "services": "Services",
     "workflow": "Ablauf",
     "about": "Über uns",
+    "pricing": "Preise",
     "contact": "Kontakt",
     "language": "EN | DE",
     "cta": "In Kontakt treten"
@@ -43,41 +44,46 @@
   },
   "services": {
     "title": "Was wir machen",
-    "description1": "Unser Service-Modell verbindet Produktdesign, Entwicklung und Wachstumsstrategie in einem klaren Ablauf.",
-    "description2": "Statt vieler einzelner Dienstleister erhalten Sie ein Team, das Architektur, conversion-orientierte UX, Performance und langfristige Sichtbarkeit gemeinsam verantwortet.",
+    "description1": "Von der Landingpage bis zum kompletten digitalen Marketing-Stack — ein Team für alle Kanäle.",
+    "description2": "Webentwicklung, Design, SEO, Social Media und bezahlte Werbung. Individueller Umfang, saubere Umsetzung, messbare Ergebnisse.",
     "projectsDelivered": "End-to-End",
     "projectsDeliveredLabel": "Delivery-Modell",
     "values": [
-      "Klarer Umfang und messbare Meilensteine",
-      "Hohe Code-Qualität und performante Umsetzung",
-      "SEO- und Marketing-Bereitschaft ab dem ersten Sprint"
+      "Individueller Umfang — keine Standardvorlagen",
+      "Design, Entwicklung und Marketing unter einem Dach",
+      "DSGVO-konform, SSL in jedem Projekt inklusive"
     ],
-    "tags": ["Infrastruktur", "Web-Systeme", "SEO", "Cybersicherheit", "KI-Lösungen"],
+    "tags": ["Vue 3 + Nuxt", "Figma", "SEO", "Google Ads", "Meta Ads", "WordPress"],
     "items": [
       {
         "icon": "web",
-        "title": "Webanwendungen",
-        "description": "Maßgeschneiderte, responsive Web-Apps mit modernen Frameworks für maximale Performance."
+        "title": "Webentwicklung",
+        "description": "Landingpages, Unternehmenswebsites, Webanwendungen und Online-Shops. Vue 3 + Nuxt Frontend, Java Spring Boot Backend, WordPress für Content-Sites."
       },
       {
-        "icon": "api",
-        "title": "API & Integrationen",
-        "description": "Verbindung Ihrer Systeme durch sichere, schnelle APIs und Drittanbieter-Service-Synchronisation."
-      },
-      {
-        "icon": "cloud_done",
-        "title": "Cloud-Grundlagen",
-        "description": "Grundlegende Cloud-Infrastruktur, damit Ihre Anwendungen zugänglich und widerstandsfähig bleiben."
-      },
-      {
-        "icon": "monitoring",
-        "title": "Performance Opt",
-        "description": "Identifizierung von Bottlenecks und Systemoptimierung für maximale Geschwindigkeit."
+        "icon": "palette",
+        "title": "Design",
+        "description": "UI/UX in Figma, Logo & Markenidentität, Website-Redesigns und druckfertige Materialien. Quelldateien gehören immer Ihnen."
       },
       {
         "icon": "travel_explore",
-        "title": "SEO & Wachstum",
-        "description": "Technisches SEO-Setup, Content-Architektur und messbares Wachstum in der organischen Suche."
+        "title": "SEO",
+        "description": "Technische Audits, On-page-Optimierung, lokales SEO, Content-Strategie und Linkaufbau. Monatliches Reporting inklusive."
+      },
+      {
+        "icon": "campaign",
+        "title": "Social Media",
+        "description": "Monatliche Content-Kalender, markenkonformes Post-Design, Texte, Stories & Reels und Community-Management für Instagram, Facebook und LinkedIn."
+      },
+      {
+        "icon": "ads_click",
+        "title": "Werbung",
+        "description": "Google Search, Display, Shopping, Performance Max und Meta Ads. Sie behalten die volle Kontohoheit. Monatliche Ausgabenberichte inklusive."
+      },
+      {
+        "icon": "image",
+        "title": "Banner & Creatives",
+        "description": "Statische und animierte Banner für Google Display, Meta Ads und Web — alle IAB-Größen. GIF- oder HTML5-Lieferung in 2–4 Werktagen."
       }
     ]
   },
@@ -140,6 +146,35 @@
       "Nahtlose Systeminteroperabilität",
       "Zuverlässige langfristige technische Partnerschaft"
     ]
+  },
+  "pricing": {
+    "eyebrow": "TRANSPARENTE PREISGESTALTUNG",
+    "title": "Einfache, skalierbare Pakete",
+    "description": "Wählen Sie das Paket, das zu Ihren Zielen passt. Alle Pakete enthalten individuelles Design, responsives Layout und schnelle Lieferung.",
+    "selectType": "Wählen Sie Ihren Website-Typ",
+    "mostPopular": "Die meisten Kunden wählen Growth",
+    "cta": "Jetzt starten",
+    "ready": "Bereit zum Starten?",
+    "contactUs": "Kontaktieren Sie uns",
+    "importantInfo": {
+      "title": "Was Sie wissen sollten",
+      "overview": "Paket-Übersicht",
+      "items": [
+        "Jedes Paket hat einen klaren Umfang und messbare Meilensteine",
+        "Seiten- und Revisionslimits sichern planbare Lieferung",
+        "E-Commerce-Pläne begrenzt auf bestimmte Produktmengen",
+        "Werbebudgets sind separat vom Paketpreis",
+        "Support-Dauer variiert nach Tier"
+      ],
+      "important": "Wichtige Limits",
+      "warnings": [
+        "Landing Pages: feste Block-Limits pro Tier",
+        "Websites: Seiten-Limits für Qualität und Timeline",
+        "E-Commerce: Produkt-Limits für Performance",
+        "Werbebudgets enthalten keine Kampagnen-Ausgaben",
+        "Support-Perioden variieren — siehe Tier-Details"
+      ]
+    }
   },
   "contact": {
     "title": "Lassen Sie uns",

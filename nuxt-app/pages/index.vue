@@ -224,6 +224,9 @@
       </div>
     </section>
 
+    <!-- Pricing Section -->
+    <Pricing />
+
     <!-- Contact Section -->
     <section class="py-24 lg:py-32 px-6 lg:px-8 bg-surface" id="contact">
       <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">

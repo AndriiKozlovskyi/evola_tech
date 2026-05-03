@@ -23,6 +23,9 @@
         <NuxtLink to="/#about" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.about') }}
         </NuxtLink>
+        <NuxtLink to="/#pricing" class="text-on-surface-variant hover:text-primary transition-colors">
+          {{ $t('navigation.pricing') }}
+        </NuxtLink>
         <NuxtLink to="/#contact" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.contact') }}
         </NuxtLink>
@@ -94,6 +97,9 @@
           </NuxtLink>
           <NuxtLink to="/#about" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.about') }}
+          </NuxtLink>
+          <NuxtLink to="/#pricing" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+            {{ $t('navigation.pricing') }}
           </NuxtLink>
           <NuxtLink to="/#contact" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
             {{ $t('navigation.contact') }}
