@@ -4,69 +4,120 @@
     <div class="absolute -top-8 -right-8 w-40 h-40 bg-primary/8 rounded-full blur-3xl pointer-events-none"></div>
 
     <div class="relative bg-surface-container-lowest p-5 sm:p-7 lg:p-10 rounded-2xl ghost-border space-y-6 sm:space-y-7">
-      <!-- Topic Selection Chips -->
-      <div>
-        <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-4">
-          {{ $t('contact.form.topicLabel') }}
-        </p>
-        <div class="flex flex-wrap gap-2">
+
+      <!-- Success State -->
+      <template v-if="formState === 'success'">
+        <div class="text-center py-8 space-y-4">
+          <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
+            <span class="material-symbols-outlined text-4xl text-primary">check_circle</span>
+          </div>
+          <h3 class="text-xl font-bold text-on-surface">{{ $t('contact.form.successTitle') }}</h3>
+          <p class="text-on-surface-variant">{{ $t('contact.form.successText') }}</p>
           <button
-            v-for="(option, i) in ($tm('contact.form.subjectOptions') as string[])"
-            :key="i"
-            @click="selectedTopic = $rt(option)"
-            :class="[
-              'px-4 sm:px-5 py-2.5 min-h-11 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer',
-              selectedTopic === $rt(option)
-                ? 'bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/20 scale-[1.03]'
-                : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface'
-            ]"
+            @click="resetForm"
+            class="mt-4 px-6 py-2.5 rounded-full text-sm font-medium bg-surface-container-low text-on-surface-variant hover:bg-surface-container transition-all cursor-pointer"
           >
-            {{ $rt(option) }}
+            {{ $t('contact.form.sendAnother') }}
           </button>
         </div>
-      </div>
+      </template>
 
-      <!-- Email -->
-      <div class="space-y-2">
-        <label for="contact-email" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
-          {{ $t('contact.form.email') }}
-        </label>
-        <input
-          id="contact-email"
-          v-model="email"
-          type="email"
-          inputmode="email"
-          autocomplete="email"
-          :placeholder="$t('contact.form.emailPlaceholder')"
-          class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 sm:py-4 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none"
-        />
-      </div>
+      <!-- Form -->
+      <template v-else>
+        <form
+          name="contact"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          @submit.prevent="handleSubmit"
+          class="space-y-6 sm:space-y-7"
+        >
+          <input type="hidden" name="form-name" value="contact" />
 
-      <!-- Message -->
-      <div class="space-y-2">
-        <label for="contact-message" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
-          {{ $t('contact.form.message') }}
-        </label>
-        <textarea
-          id="contact-message"
-          v-model="message"
-          :placeholder="$t('contact.form.messagePlaceholder')"
-          rows="5"
-          class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 sm:py-4 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all resize-y sm:resize-none outline-none"
-        ></textarea>
-      </div>
+          <!-- Honeypot (hidden from real users) -->
+          <p class="hidden" aria-hidden="true">
+            <label>Do not fill: <input v-model="botField" name="bot-field" /></label>
+          </p>
 
-      <!-- Send Button (mailto) -->
-      <a
-        :href="mailtoLink"
-        class="w-full min-h-12 flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98]"
-      >
-        <span class="material-symbols-outlined text-xl">send</span>
-        {{ $t('contact.form.submit') }}
-      </a>
+          <!-- Topic Selection Chips -->
+          <div>
+            <p class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant mb-4">
+              {{ $t('contact.form.topicLabel') }}
+            </p>
+            <div class="flex flex-wrap gap-2">
+              <button
+                v-for="(option, i) in ($tm('contact.form.subjectOptions') as string[])"
+                :key="i"
+                type="button"
+                @click="selectedTopic = $rt(option)"
+                :class="[
+                  'px-4 sm:px-5 py-2.5 min-h-11 rounded-full text-sm font-medium transition-all duration-300 cursor-pointer',
+                  selectedTopic === $rt(option)
+                    ? 'bg-gradient-to-br from-primary to-primary-container text-on-primary shadow-lg shadow-primary/20 scale-[1.03]'
+                    : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container hover:text-on-surface'
+                ]"
+              >
+                {{ $rt(option) }}
+              </button>
+            </div>
+            <input type="hidden" name="topic" :value="selectedTopic" />
+          </div>
 
-      <!-- Divider (hidden on success/error) -->
-      <template v-if="formState === 'idle' || formState === 'sending'">
+          <!-- Email -->
+          <div class="space-y-2">
+            <label for="contact-email" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+              {{ $t('contact.form.email') }}
+            </label>
+            <input
+              id="contact-email"
+              v-model="email"
+              type="email"
+              name="email"
+              inputmode="email"
+              autocomplete="email"
+              required
+              :placeholder="$t('contact.form.emailPlaceholder')"
+              class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 sm:py-4 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all outline-none"
+            />
+          </div>
+
+          <!-- Message -->
+          <div class="space-y-2">
+            <label for="contact-message" class="text-[11px] font-bold uppercase tracking-[0.2em] text-on-surface-variant">
+              {{ $t('contact.form.message') }}
+            </label>
+            <textarea
+              id="contact-message"
+              v-model="message"
+              name="message"
+              :placeholder="$t('contact.form.messagePlaceholder')"
+              rows="5"
+              required
+              class="w-full bg-surface-container-low border-0 rounded-xl py-3.5 sm:py-4 px-4 text-on-surface placeholder:text-on-surface-variant/40 focus:ring-2 focus:ring-primary/20 focus:bg-surface-container-lowest transition-all resize-y sm:resize-none outline-none"
+            ></textarea>
+          </div>
+
+          <!-- Error Banner -->
+          <div
+            v-if="formState === 'error'"
+            class="flex items-center gap-3 px-4 py-3 rounded-xl bg-error/10 text-error text-sm"
+          >
+            <span class="material-symbols-outlined text-xl">error</span>
+            {{ $t('contact.form.errorText') }}
+          </div>
+
+          <!-- Submit Button -->
+          <button
+            type="submit"
+            :disabled="formState === 'sending'"
+            class="w-full min-h-12 flex items-center justify-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary font-bold py-4 rounded-xl hover:shadow-lg hover:shadow-primary/20 transition-all active:scale-[0.98] disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+          >
+            <span v-if="formState === 'sending'" class="material-symbols-outlined text-xl animate-spin">progress_activity</span>
+            <span v-else class="material-symbols-outlined text-xl">send</span>
+            {{ formState === 'sending' ? $t('contact.form.sending') : $t('contact.form.submit') }}
+          </button>
+        </form>
+
+        <!-- Divider -->
         <div class="flex items-center gap-4">
           <div class="flex-1 h-px bg-outline-variant/20"></div>
           <span class="text-[11px] font-bold uppercase tracking-[0.15em] text-on-surface-variant/60">
@@ -112,9 +163,12 @@ type FormState = 'idle' | 'sending' | 'success' | 'error'
 const selectedTopic = ref('')
 const email = ref('')
 const message = ref('')
+const botField = ref('')
 const formState = ref<FormState>('idle')
 
 const handleSubmit = async () => {
+  if (botField.value) return
+
   formState.value = 'sending'
   try {
     const formData = new URLSearchParams({
@@ -138,6 +192,7 @@ const resetForm = () => {
   selectedTopic.value = ''
   email.value = ''
   message.value = ''
+  botField.value = ''
   formState.value = 'idle'
 }
 </script>

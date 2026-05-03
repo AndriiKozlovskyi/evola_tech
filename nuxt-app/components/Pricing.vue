@@ -1,29 +1,29 @@
 <template>
-  <section class="py-16 md:py-24 lg:py-32 px-4 md:px-6 lg:px-8 bg-surface" id="pricing">
+  <section class="py-24 lg:py-32 px-6 lg:px-8 bg-surface" id="pricing">
     <div class="max-w-7xl mx-auto">
       <!-- Header -->
-      <div class="mb-12 md:mb-16 max-w-3xl">
+      <div class="mb-16 max-w-3xl">
         <p class="text-label-md font-bold text-primary tracking-[0.2em] uppercase mb-4">
           {{ $t('pricing.eyebrow') }}
         </p>
-        <h2 class="text-2xl md:text-3xl lg:text-5xl font-semibold tracking-tight text-on-surface mb-4 md:mb-6 leading-tight">
+        <h2 class="text-3xl md:text-5xl font-semibold tracking-tight text-on-surface mb-6 leading-tight">
           {{ $t('pricing.title') }}
         </h2>
-        <p class="text-body-md md:text-body-lg text-on-surface-variant leading-relaxed">
+        <p class="text-body-lg text-on-surface-variant leading-relaxed">
           {{ $t('pricing.description') }}
         </p>
       </div>
 
       <!-- Website Type Toggle -->
-      <div class="mb-12 md:mb-16 flex flex-col sm:flex-row items-start sm:items-center gap-4 md:gap-6">
+      <div class="mb-16 flex flex-col sm:flex-row items-start sm:items-center gap-6">
         <p class="text-sm font-semibold text-on-surface">{{ $t('pricing.selectType') }}:</p>
-        <div class="flex flex-wrap gap-2 md:gap-3 w-full sm:w-auto">
+        <div class="flex gap-3">
           <button
             v-for="type in websiteTypes"
             :key="type.value"
             @click="selectedType = type.value"
             :class="[
-              'px-4 md:px-6 py-2.5 md:py-3 rounded-lg font-semibold transition-all text-sm md:text-base flex-1 sm:flex-none min-w-0',
+              'px-6 py-3 rounded-lg font-semibold transition-all',
               selectedType === type.value
                 ? 'bg-primary text-on-primary shadow-md shadow-primary/20'
                 : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container'
@@ -34,10 +34,15 @@
         </div>
       </div>
 
-
+      <!-- Popular Note -->
+      <div class="mb-12 p-4 bg-primary/10 border border-primary/30 rounded-lg text-center">
+        <p class="text-sm font-semibold text-primary">
+          💡 {{ $t('pricing.mostPopular') }}
+        </p>
+      </div>
 
       <!-- Pricing Cards Grid -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-8 md:mb-12">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
         <CardsPricingCard
           v-for="(pkg, i) in packages"
           :key="`${pkg.id}-${selectedType}`"
@@ -54,29 +59,29 @@
       </div>
 
       <!-- Additional Info -->
-      <div class="bg-surface-container-low rounded-xl p-6 md:p-8 lg:p-12 border border-outline-variant/20">
-        <h3 class="text-lg md:text-xl font-bold text-on-surface mb-4 md:mb-6">{{ $t('pricing.importantInfo.title') }}</h3>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
+      <div class="bg-surface-container-low rounded-xl p-8 md:p-12 border border-outline-variant/20">
+        <h3 class="text-lg font-bold text-on-surface mb-6">{{ $t('pricing.importantInfo.title') }}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div>
-            <h4 class="font-semibold text-on-surface mb-3 flex items-center gap-2 text-sm md:text-base">
-              <span class="material-symbols-outlined text-primary text-lg md:text-xl">info</span>
+            <h4 class="font-semibold text-on-surface mb-3 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">info</span>
               {{ $t('pricing.importantInfo.overview') }}
             </h4>
             <ul class="space-y-2 text-sm text-on-surface-variant">
               <li v-for="(item, i) in $tm('pricing.importantInfo.items')" :key="i" class="flex items-start gap-2">
-                <span class="text-primary mt-1 flex-shrink-0">•</span>
+                <span class="text-primary mt-1">•</span>
                 <span>{{ $rt(item) }}</span>
               </li>
             </ul>
           </div>
           <div>
-            <h4 class="font-semibold text-on-surface mb-3 flex items-center gap-2 text-sm md:text-base">
-              <span class="material-symbols-outlined text-primary text-lg md:text-xl">warning</span>
+            <h4 class="font-semibold text-on-surface mb-3 flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">warning</span>
               {{ $t('pricing.importantInfo.important') }}
             </h4>
             <ul class="space-y-2 text-sm text-on-surface-variant">
               <li v-for="(item, i) in $tm('pricing.importantInfo.warnings')" :key="i" class="flex items-start gap-2">
-                <span class="text-primary/60 mt-1 flex-shrink-0">⚠</span>
+                <span class="text-primary/60 mt-1">⚠</span>
                 <span>{{ $rt(item) }}</span>
               </li>
             </ul>
@@ -85,11 +90,11 @@
       </div>
 
       <!-- CTA -->
-      <div class="mt-12 md:mt-16 text-center">
-        <p class="text-on-surface-variant mb-4 md:mb-6 text-sm md:text-base">{{ $t('pricing.ready') }}</p>
+      <div class="mt-16 text-center">
+        <p class="text-on-surface-variant mb-6">{{ $t('pricing.ready') }}</p>
         <a
           href="#contact"
-          class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-6 md:px-8 py-3 md:py-4 rounded-xl font-semibold text-base md:text-lg transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
+          class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
         >
           {{ $t('pricing.contactUs') }}
           <span class="material-symbols-outlined">arrow_forward</span>

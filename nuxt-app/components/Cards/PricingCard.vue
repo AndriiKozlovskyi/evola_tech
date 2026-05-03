@@ -12,7 +12,7 @@
       v-if="isPopular"
       class="absolute top-3 md:top-5 -right-8 md:-right-10 bg-primary px-8 md:px-10 py-1.5 md:py-2 transform rotate-45 flex items-center justify-center shadow-lg"
     >
-      <span class="text-on-primary font-bold text-xs md:text-sm -text-rotate-45">{{ popularLabel }}</span>
+      <span class="text-on-primary font-bold text-xs md:text-sm -text-                                                                                             rotate-45">{{ popularLabel }}</span>
     </div>
 
     <!-- Card Content -->
