@@ -19,8 +19,7 @@
       <span class="text-[10px] font-bold text-primary uppercase tracking-widest">
         {{ project.category }}
       </span>
-      <h3 class="text-lg font-bold mt-2 mb-2 text-on-surface">{{ project.title }}</h3>
-      <p class="text-sm text-on-surface-variant mb-5 leading-relaxed">{{ project.description }}</p>
+      <h3 class="text-lg font-bold mt-2 mb-5 text-on-surface">{{ project.title }}</h3>
       <a
         :href="project.link || '#'"
         target="_blank"
