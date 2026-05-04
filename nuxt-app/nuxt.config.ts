@@ -7,6 +7,14 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/i18n',
   ],
+    
+  devServer: {
+    https: false,  // Set to false to use HTTP. Enable HTTPS after mkcert setup if needed.
+  },
+    
+  imports: {
+    autoImport: true,
+  },
 
   // 🌍 i18n (оптимизировано)
   i18n: {
@@ -20,8 +28,16 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     lazy: true,
     langDir: 'locales',
+    restructureDir: '',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
+    bundle: {
+      compositionOnly: true,
+      runtimeOnly: false,
+    },
+    compilation: {
+      strictMessage: false,
+    },
   },
 
   app: {
