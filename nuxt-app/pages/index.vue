@@ -235,7 +235,7 @@
     </section>
 
     <!-- Pricing Section -->
-    <Pricing />
+    <LazyPricing />
 
     <!-- Contact Section -->
     <section class="py-24 lg:py-32 px-6 lg:px-8 bg-surface" id="contact">
@@ -281,7 +281,7 @@
             </div>
           </div>
         </div>
-        <FormsContactForm />
+        <LazyFormsContactForm />
       </div>
     </section>
   </div>
@@ -409,7 +409,6 @@ useHead({
   border: 1px solid rgba(130, 163, 196, 0.28);
   border-radius: 0.85rem;
   box-shadow: 0 12px 24px rgba(13, 41, 74, 0.05);
-  backdrop-filter: blur(3px);
   animation: workflow-rise 700ms cubic-bezier(0.21, 1, 0.36, 1) both;
 }
 
@@ -422,7 +421,6 @@ useHead({
   background: rgba(255, 255, 255, 0.84);
   border: 1px solid rgba(138, 166, 199, 0.28);
   box-shadow: 0 18px 34px rgba(6, 42, 76, 0.06);
-  backdrop-filter: blur(3px);
   transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease;
   animation: workflow-rise 720ms cubic-bezier(0.21, 1, 0.36, 1) both;
 }

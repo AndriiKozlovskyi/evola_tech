@@ -26,6 +26,13 @@ export default defineNuxtConfig({
     strategy: 'prefix_except_default',
     detectBrowserLanguage: false,
     vueI18n: './i18n.config.ts',
+    bundle: {
+      compositionOnly: true,
+      runtimeOnly: false,
+    },
+    compilation: {
+      strictMessage: false,
+    },
   },
 
   // Development server
@@ -81,12 +88,12 @@ export default defineNuxtConfig({
         // Non-blocking Inter font (body text)
         { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' },
         { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', media: 'print', onload: "this.media='all'" },
-        // Non-blocking Material Symbols (icons)
-        { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0', media: 'print', onload: "this.media='all'" },
+        // Non-blocking Material Symbols (icons) — display=swap to satisfy font-display audit
+        { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0..1&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0..1&display=swap', media: 'print', onload: "this.media='all'" },
       ],
       noscript: [
-        { innerHTML: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">' },
+        { innerHTML: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL@24,400,0..1&display=swap">' },
       ],
     },
   },

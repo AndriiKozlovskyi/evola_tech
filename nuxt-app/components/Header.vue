@@ -237,8 +237,6 @@ onUnmounted(() => {
 
 <style scoped>
 .glass-nav {
-  background: rgba(247, 249, 255, 1);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  background: rgba(247, 249, 255, 0.96);
 }
 </style>
