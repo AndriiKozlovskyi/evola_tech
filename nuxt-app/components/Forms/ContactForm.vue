@@ -139,7 +139,7 @@
             <span class="text-xs font-semibold text-on-surface-variant group-hover:text-primary transition-colors">Telegram</span>
           </a>
           <a
-            href="mailto:evolateam@gmail.com"
+            href="mailto:team@evola-tec.com"
             class="min-h-12 flex flex-row sm:flex-col items-center justify-center gap-2.5 py-3.5 px-4 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all group"
           >
             <span class="material-symbols-outlined text-2xl text-on-surface-variant group-hover:text-primary transition-colors">mail</span>

@@ -5,12 +5,12 @@
         <!-- Brand -->
         <div class="space-y-3 w-full md:w-auto">
           <div class="text-xl font-bold tracking-tighter text-on-surface">
-            Evola<span class="text-primary">Tech</span>
+            Evola<span class="text-primary">Tec</span>
           </div>
           <p class="text-on-surface-variant text-sm">Digital products, web systems, and SEO.</p>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             <a
-              href="mailto:evolateam@gmail.com"
+              href="mailto:team@evola-tec.com"
               class="min-h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-sm font-medium flex items-center justify-center gap-2"
             >
               <span class="material-symbols-outlined text-base">mail</span>

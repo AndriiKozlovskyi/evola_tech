@@ -292,7 +292,7 @@ import { computed } from 'vue'
 
 const { t, locale } = useI18n()
 const { projects } = useProjects()
-const contactEmail = 'evolateam@gmail.com'
+const contactEmail = 'team@evola-tec.com'
 const contactPhoneRaw = '+48789711631'
 
 const absoluteLocaleRoot = computed(() => {
@@ -319,11 +319,11 @@ useHead({
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
-      name: 'EvolaTech',
+      name: 'EvolaTec',
       url: 'https://evola-tec.com',
       logo: 'https://evola-tec.com/favicon.svg',
       telephone: '+48-789-711-631',
-      email: 'evolateam@gmail.com',
+      email: 'team@evola-tec.com',
       priceRange: '€€',
       address: { '@type': 'PostalAddress', addressCountry: 'PL' },
       serviceArea: { '@type': 'GeoShape', name: 'Poland, Europe' },

@@ -139,7 +139,7 @@
     "title": "Über unser Unternehmen",
     "yearsExperience": "3+",
     "yearsLabel": "Jahre Erfahrung",
-    "description1": "EvolaTech ist mehr als eine Entwicklungsagentur; wir sind Ihre technischen Partner. Wir glauben, dass Websoftware so dauerhaft und präzise sein sollte wie klassische Architektur.",
+    "description1": "EvolaTec ist mehr als eine Entwicklungsagentur; wir sind Ihre technischen Partner. Wir glauben, dass Websoftware so dauerhaft und präzise sein sollte wie klassische Architektur.",
     "description2": "Wir setzen auf sauberen Code und smarte Konnektivität und helfen Unternehmen, die Lücke zwischen komplexer Geschäftslogik und intuitiven Benutzererfahrungen zu schließen.",
     "values": [
       "Full-Stack-Engineering-Exzellenz",
@@ -180,7 +180,7 @@
     "title": "Lassen Sie uns",
     "titleHighlight": "Ihre nächste große Idee bauen.",
     "description": "Bereit, Ihr Webprojekt zu starten? Kontaktieren Sie uns für eine technische Beratung mit unseren Lead-Entwicklern.",
-    "email": "evolateam{'@'}gmail.com",
+    "email": "team{'@'}evola-tec.com",
     "phone": "+48 789 711 631",
     "phoneLabel": "Telefon",
     "address": "",
@@ -208,7 +208,7 @@
     }
   },
   "footer": {
-    "company": "EvolaTech",
+    "company": "EvolaTec",
     "description": "Wir konzipieren und entwickeln performante digitale Produkte mit klarer Strategie, sauberer Umsetzung und langfristiger Betreuung.",
     "contactTitle": "Kontakt",
     "navigateTitle": "Navigation",
@@ -232,7 +232,7 @@
       "landing": "Landingpages",
       "audit": "Performance-Audits"
     },
-    "copyright": "© 2026 EvolaTech. Alle Rechte vorbehalten."
+    "copyright": "© 2026 EvolaTec. Alle Rechte vorbehalten."
   },
   "legal": {
     "terms": {
@@ -241,7 +241,7 @@
       "sections": [
         {
           "heading": "Dienstleistungen",
-          "body": "EvolaTech bietet IT-Beratung, maßgeschneiderte Softwareentwicklung, API-Integrationen, Cloud-Infrastrukturaufbau und laufenden technischen Support. Alle Dienstleistungen unterliegen einer separaten schriftlichen Vereinbarung, sofern nicht anders angegeben."
+          "body": "EvolaTec bietet IT-Beratung, maßgeschneiderte Softwareentwicklung, API-Integrationen, Cloud-Infrastrukturaufbau und laufenden technischen Support. Alle Dienstleistungen unterliegen einer separaten schriftlichen Vereinbarung, sofern nicht anders angegeben."
         },
         {
           "heading": "Zahlungsbedingungen",
@@ -249,7 +249,7 @@
         },
         {
           "heading": "Geistiges Eigentum",
-          "body": "Nach vollständiger Zahlung erhält der Kunde das Eigentum an allen für ihn erstellten individuellen Ergebnissen. EvolaTech behält sich das Recht vor, allgemeine Methoden, Frameworks und nicht kundenspezifisches Know-how, das während der Zusammenarbeit entwickelt wurde, zu verwenden."
+          "body": "Nach vollständiger Zahlung erhält der Kunde das Eigentum an allen für ihn erstellten individuellen Ergebnissen. EvolaTec behält sich das Recht vor, allgemeine Methoden, Frameworks und nicht kundenspezifisches Know-how, das während der Zusammenarbeit entwickelt wurde, zu verwenden."
         },
         {
           "heading": "Haftung",
@@ -265,17 +265,17 @@
         },
         {
           "heading": "Kontakt",
-          "body": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+          "body": "Bei Fragen zu diesen Bedingungen kontaktieren Sie uns unter team{'@'}evola-tec.com."
         }
       ]
     },
     "privacy": {
       "title": "Datenschutzerklärung",
-      "intro": "EvolaTech verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Erklärung erläutert, wie wir Informationen gemäß der Datenschutz-Grundverordnung (DSGVO) erheben, verwenden und schützen.",
+      "intro": "EvolaTec verpflichtet sich zum Schutz Ihrer personenbezogenen Daten. Diese Erklärung erläutert, wie wir Informationen gemäß der Datenschutz-Grundverordnung (DSGVO) erheben, verwenden und schützen.",
       "sections": [
         {
           "heading": "Verantwortlicher",
-          "body": "EvolaTech ist der für Ihre personenbezogenen Daten verantwortliche Verantwortliche. Kontakt: evolateam{'@'}gmail.com, Tel: +48 789 711 631."
+          "body": "EvolaTec ist der für Ihre personenbezogenen Daten verantwortliche Verantwortliche. Kontakt: team{'@'}evola-tec.com, Tel: +48 789 711 631."
         },
         {
           "heading": "Erhobene Daten",
@@ -299,13 +299,13 @@
         },
         {
           "heading": "Kontakt",
-          "body": "Bei datenschutzbezogenen Anfragen oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+          "body": "Bei datenschutzbezogenen Anfragen oder zur Ausübung Ihrer Rechte kontaktieren Sie uns unter team{'@'}evola-tec.com."
         }
       ]
     },
     "gdpr": {
       "title": "DSGVO",
-      "intro": "Gemäß der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung) hält EvolaTech die höchsten Standards zum Schutz personenbezogener Daten ein.",
+      "intro": "Gemäß der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung) hält EvolaTec die höchsten Standards zum Schutz personenbezogener Daten ein.",
       "sections": [
         {
           "heading": "Ihre Rechte",
@@ -313,11 +313,11 @@
         },
         {
           "heading": "Ausübung Ihrer Rechte",
-          "body": "Senden Sie Ihre Anfrage schriftlich an evolateam{'@'}gmail.com. Wir antworten innerhalb von 30 Tagen. Zur Datensicherheit kann eine Identitätsprüfung erforderlich sein."
+          "body": "Senden Sie Ihre Anfrage schriftlich an team{'@'}evola-tec.com. Wir antworten innerhalb von 30 Tagen. Zur Datensicherheit kann eine Identitätsprüfung erforderlich sein."
         },
         {
           "heading": "Verantwortlicher",
-          "body": "EvolaTech — evolateam{'@'}gmail.com — +48 789 711 631."
+          "body": "EvolaTec — team{'@'}evola-tec.com — +48 789 711 631."
         },
         {
           "heading": "Aufsichtsbehörde",
@@ -325,16 +325,16 @@
         },
         {
           "heading": "Kontakt",
-          "body": "Bei DSGVO-bezogenen Anfragen kontaktieren Sie uns unter evolateam{'@'}gmail.com."
+          "body": "Bei DSGVO-bezogenen Anfragen kontaktieren Sie uns unter team{'@'}evola-tec.com."
         }
       ]
     },
     "imprint": {
       "title": "Impressum",
-      "company": "EvolaTech",
+      "company": "EvolaTec",
       "details": "Softwareentwicklung & IT-Beratung",
       "emailLabel": "E-Mail",
-      "email": "evolateam{'@'}gmail.com",
+      "email": "team{'@'}evola-tec.com",
       "phoneLabel": "Telefon",
       "phone": "+48 789 711 631",
       "countryLabel": "Land",
@@ -343,25 +343,25 @@
   },
   "seo": {
     "home": {
-      "title": "Webseiten erstellen für Unternehmen | EvolaTech",
+      "title": "Webseiten erstellen für Unternehmen | EvolaTec",
       "description": "Wir erstellen moderne Webseiten und Landing Pages für Unternehmen in Polen und Europa. Vue 3, SEO, Google Ads, Meta Ads. Preise prüfen und starten.",
       "keywords": "Webseiten erstellen, Webseiten für Unternehmen, Webdesign, interaktive Agentur, Landing Page erstellen, moderne Webseiten, schnelle Webseite, SEO für Webseiten, Google Ads Polen, Webentwicklung Europa"
     },
     "terms": {
-      "title": "Nutzungsbedingungen – EvolaTech",
-      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von EvolaTech für IT-Beratung, Softwareentwicklung und technische Dienstleistungen."
+      "title": "Nutzungsbedingungen – EvolaTec",
+      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von EvolaTec für IT-Beratung, Softwareentwicklung und technische Dienstleistungen."
     },
     "privacy": {
-      "title": "Datenschutzerklärung – EvolaTech",
-      "description": "Erfahren Sie, wie EvolaTech Ihre personenbezogenen Daten gemäß DSGVO erhebt, verwendet und schützt."
+      "title": "Datenschutzerklärung – EvolaTec",
+      "description": "Erfahren Sie, wie EvolaTec Ihre personenbezogenen Daten gemäß DSGVO erhebt, verwendet und schützt."
     },
     "gdpr": {
-      "title": "DSGVO – EvolaTech",
-      "description": "EvolaTechs Einhaltung der DSGVO und Ihre Datenschutzrechte verständlich erklärt."
+      "title": "DSGVO – EvolaTec",
+      "description": "EvolaTecs Einhaltung der DSGVO und Ihre Datenschutzrechte verständlich erklärt."
     },
     "imprint": {
-      "title": "Impressum – EvolaTech",
-      "description": "Rechtliche Angaben und Kontaktdaten für EvolaTech."
+      "title": "Impressum – EvolaTec",
+      "description": "Rechtliche Angaben und Kontaktdaten für EvolaTec."
     }
   },
   "error": {

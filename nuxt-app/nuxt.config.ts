@@ -43,7 +43,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { name: 'robots', content: 'index, follow' },
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'EvolaTech' },
+        { property: 'og:site_name', content: 'EvolaTec' },
         { property: 'og:image', content: 'https://evola-tec.com/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },

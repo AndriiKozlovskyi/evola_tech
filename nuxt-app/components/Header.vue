@@ -3,7 +3,7 @@
     <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full">
       <!-- Brand -->
       <NuxtLinkLocale to="/" class="text-2xl font-bold tracking-tighter text-on-surface">
-        Evola<span class="text-primary">Tech</span>
+        Evola<span class="text-primary">Tec</span>
       </NuxtLinkLocale>
 
       <!-- Navigation Links (Desktop) -->
