@@ -107,7 +107,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+
+const { t, tm, rt } = useI18n()
 
 const selectedType = ref<'landing' | 'website' | 'ecommerce'>('website')
 
@@ -118,88 +120,50 @@ const scrollToContact = () => {
   }
 }
 
-const websiteTypes = [
-  { value: 'landing', label: 'Landing Page' },
-  { value: 'website', label: 'Website' },
-  { value: 'ecommerce', label: 'E-Commerce' }
-]
+const websiteTypes = computed(() => [
+  { value: 'landing', label: t('pricing.types.landing') },
+  { value: 'website', label: t('pricing.types.website') },
+  { value: 'ecommerce', label: t('pricing.types.ecommerce') }
+])
 
-const packages = [
+const packages = computed(() => [
   {
     id: 'start',
-    name: 'START',
-    subtitle: 'Perfect for testing and launching',
+    name: t('pricing.packages.start.name'),
+    subtitle: t('pricing.packages.start.subtitle'),
     pricing: {
       landing: 'from €350',
       website: 'from €750',
       ecommerce: 'from €1,200'
     },
-    features: [
-      'Individual design',
-      'Responsive layout',
-      'Contact forms',
-      'Basic SEO structure',
-      'Fast delivery',
-      'Initial setup'
-    ],
-    limits: [
-      'Landing: up to 7 blocks',
-      'Website: up to 3 pages',
-      'E-Commerce: up to 5 products'
-    ]
+    features: (tm('pricing.packages.start.features') as unknown[]).map(f => rt(f as string)),
+    limits: (tm('pricing.packages.start.limits') as unknown[]).map(l => rt(l as string))
   },
   {
     id: 'growth',
-    name: 'GROWTH',
-    subtitle: 'Build authority and attract clients',
+    name: t('pricing.packages.growth.name'),
+    subtitle: t('pricing.packages.growth.subtitle'),
     pricing: {
       landing: 'from €650',
       website: 'from €1,200',
       ecommerce: 'from €2,000'
     },
-    features: [
-      'Everything in START',
-      'SEO optimization',
-      'Keyword research',
-      'Meta tags & structure',
-      'Google Analytics',
-      'Extended support',
-      'Performance optimization'
-    ],
-    limits: [
-      'Landing: up to 7 blocks',
-      'Website: up to 5-7 pages',
-      'E-Commerce: up to 20 products'
-    ]
+    features: (tm('pricing.packages.growth.features') as unknown[]).map(f => rt(f as string)),
+    limits: (tm('pricing.packages.growth.limits') as unknown[]).map(l => rt(l as string))
   },
   {
     id: 'pro',
-    name: 'PRO',
-    subtitle: 'Full-scale growth system',
+    name: t('pricing.packages.pro.name'),
+    subtitle: t('pricing.packages.pro.subtitle'),
     pricing: {
       landing: 'from €1,000',
       website: 'from €2,300',
       ecommerce: 'from €5,000'
     },
-    features: [
-      'Everything in GROWTH',
-      'Google & Meta ads setup',
-      'Campaign management',
-      'Initial SMM strategy',
-      '1-3 months support',
-      'Advanced analytics',
-      'Conversion optimization',
-      'Ongoing maintenance'
-    ],
-    limits: [
-      'Landing: unlimited blocks',
-      'Website: unlimited pages',
-      'E-Commerce: up to 20 products',
-      'Ad budget: separate',
-      '1-3 months support included'
-    ]
+    features: (tm('pricing.packages.pro.features') as unknown[]).map(f => rt(f as string)),
+    limits: (tm('pricing.packages.pro.limits') as unknown[]).map(l => rt(l as string))
   }
-]
+])
 </script>
 
 <style scoped>
