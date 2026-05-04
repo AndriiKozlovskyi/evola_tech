@@ -94,13 +94,13 @@
       <!-- CTA -->
       <div class="mt-16 text-center">
         <p class="text-on-surface-variant mb-6">{{ $t('pricing.ready') }}</p>
-        <a
-          href="#contact"
+        <button
+          @click="scrollToContact"
           class="inline-flex items-center gap-2 bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
         >
           {{ $t('pricing.contactUs') }}
           <span class="material-symbols-outlined">arrow_forward</span>
-        </a>
+        </button>
       </div>
     </div>
   </section>
@@ -110,6 +110,13 @@
 import { ref } from 'vue'
 
 const selectedType = ref<'landing' | 'website' | 'ecommerce'>('website')
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact')
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 
 const websiteTypes = [
   { value: 'landing', label: 'Landing Page' },

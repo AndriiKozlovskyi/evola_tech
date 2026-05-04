@@ -38,25 +38,48 @@ export default defineNuxtConfig({
   // App configuration
   app: {
     head: {
+      title: 'EvolaTech - Tworzenie stron internetowych i landing page',
+      titleTemplate: '%s | EvolaTech',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        { name: 'description', content: 'Profesjonalne tworzenie stron internetowych, landing page i e-commerce. Web development, SEO, Google Ads, Meta Ads.' },
+        { name: 'theme-color', content: '#0066B8' },
         { name: 'robots', content: 'index, follow' },
+        { name: 'googlebot', content: 'index, follow' },
+        { name: 'author', content: 'EvolaTech' },
+        { name: 'copyright', content: 'EvolaTech 2024-2026' },
+        { name: 'language', content: 'Polish' },
+        // Open Graph tags
         { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'EvolaTec' },
+        { property: 'og:site_name', content: 'EvolaTech' },
+        { property: 'og:title', content: 'EvolaTech - Tworzenie stron internetowych i landing page' },
+        { property: 'og:description', content: 'Profesjonalne tworzenie stron internetowych, landing page i e-commerce. Web development, SEO, Google Ads, Meta Ads.' },
+        { property: 'og:url', content: 'https://evola-tec.com' },
         { property: 'og:image', content: 'https://evola-tec.com/og-image.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
+        { property: 'og:image:alt', content: 'EvolaTech - Web Development Services' },
+        // Twitter Card tags
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@evola_tech' },
+        { name: 'twitter:creator', content: '@evola_tech' },
+        { name: 'twitter:title', content: 'EvolaTech - Tworzenie stron internetowych i landing page' },
+        { name: 'twitter:description', content: 'Profesjonalne tworzenie stron internetowych, landing page i e-commerce.' },
+        { name: 'twitter:image', content: 'https://evola-tec.com/og-image.jpg' },
+        // Additional SEO tags
+        { name: 'revisit-after', content: '7 days' },
+        { httpEquiv: 'X-UA-Compatible', content: 'IE=edge' },
       ],
       link: [
         { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' },
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         { rel: 'sitemap', type: 'application/xml', href: '/sitemap.xml' },
-        // Preconnect for Material Symbols (loaded async via plugin)
+        { rel: 'canonical', href: 'https://evola-tec.com' },
+        // Preconnect for external resources
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
+        { rel: 'dns-prefetch', href: 'https://www.google.com' },
       ],
     },
   },

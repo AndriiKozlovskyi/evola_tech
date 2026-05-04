@@ -308,18 +308,39 @@ useSeoMeta({
   ogDescription: () => t('seo.home.description'),
   keywords: () => t('seo.home.keywords'),
   ogUrl: () => absoluteLocaleRoot.value,
+  ogImage: 'https://evola-tec.com/og-image.jpg',
+  ogImageWidth: 1200,
+  ogImageHeight: 630,
+  ogImageAlt: 'EvolaTech - Web Development Services',
+  ogType: 'website',
+  ogSiteName: 'EvolaTech',
+  twitterCard: 'summary_large_image',
   twitterTitle: () => t('seo.home.title'),
   twitterDescription: () => t('seo.home.description'),
+  twitterImage: 'https://evola-tec.com/og-image.jpg',
+  twitterCreator: '@evola_tech',
+  twitterSite: '@evola_tech',
 })
 
 useHead({
-  link: [{ rel: 'canonical', href: () => absoluteLocaleRoot.value }],
+  title: () => t('seo.home.title'),
+  link: [
+    { rel: 'canonical', href: () => absoluteLocaleRoot.value },
+    { rel: 'alternate', hreflang: 'pl', href: 'https://evola-tec.com/' },
+    { rel: 'alternate', hreflang: 'en', href: 'https://evola-tec.com/en/' },
+    { rel: 'alternate', hreflang: 'de', href: 'https://evola-tec.com/de/' },
+    { rel: 'alternate', hreflang: 'ru', href: 'https://evola-tec.com/ru/' },
+    { rel: 'alternate', hreflang: 'x-default', href: 'https://evola-tec.com/' },
+  ],
+  meta: [
+    { name: 'language', content: () => locale.value },
+  ],
   script: [{
     type: 'application/ld+json',
     innerHTML: JSON.stringify({
       '@context': 'https://schema.org',
       '@type': 'ProfessionalService',
-      name: 'EvolaTec',
+      name: 'EvolaTech',
       url: 'https://evola-tec.com',
       logo: 'https://evola-tec.com/favicon.svg',
       telephone: '+48-789-711-631',
@@ -339,6 +360,11 @@ useHead({
           { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Google Ads i Meta Ads' } },
         ],
       },
+      sameAs: [
+        'https://www.facebook.com/evola_tech',
+        'https://www.linkedin.com/company/evola-tech',
+        'https://twitter.com/evola_tech',
+      ],
     }),
   }],
 })

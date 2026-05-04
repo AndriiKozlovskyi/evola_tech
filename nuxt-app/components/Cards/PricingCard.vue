@@ -39,6 +39,7 @@
 
       <!-- CTA Button -->
       <button
+        @click="scrollToContact"
         :class="[
           'w-full py-2.5 rounded-xl font-semibold transition-all text-center text-sm',
           isPopular
@@ -80,6 +81,13 @@ const props = withDefaults(defineProps<Props>(), {
 const currentPrice = computed(() => {
   return props.pricing[props.packageType]
 })
+
+const scrollToContact = () => {
+  const contactSection = document.getElementById('contact')
+  if (contactSection) {
+    contactSection.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+}
 </script>
 <style scoped>
 .ambient-shadow {

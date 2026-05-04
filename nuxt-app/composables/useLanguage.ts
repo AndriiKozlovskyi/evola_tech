@@ -7,6 +7,13 @@ export const useLanguage = () => {
 
   const availableLocales = ['pl', 'en', 'de', 'ru']
 
+  const localeNames: Record<string, string> = {
+    pl: 'Polski',
+    en: 'English',
+    de: 'Deutsch',
+    ru: 'Русский',
+  }
+
   const toggleLanguage = async () => {
     const idx = availableLocales.indexOf(currentLocale.value)
     const newLocale = availableLocales[(idx + 1) % availableLocales.length]
@@ -17,10 +24,19 @@ export const useLanguage = () => {
     }
   }
 
+  const setLanguage = async (newLocale: string) => {
+    await setLocale(newLocale)
+    if (import.meta.client) {
+      localStorage.setItem('i18n-locale', newLocale)
+    }
+  }
+
   return {
     currentLocale,
     toggleLanguage,
+    setLanguage,
     availableLocales,
+    localeNames,
     t,
   }
 }
