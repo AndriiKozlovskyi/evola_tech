@@ -336,6 +336,13 @@ useSeoMeta({
 useHead({
   title: () => t('seo.home.title'),
 
+  meta: [
+    {
+      name: 'google-site-verification',
+      content: 'OjyVwoCIZV8NVzGNM5kQGwwk1GJRU3Wul9mJTOiIPx8',
+    },
+  ],
+
   link: [
     // canonical
     {
@@ -343,7 +350,7 @@ useHead({
       href: () => absoluteLocaleRoot.value,
     },
 
-    // hreflang (исправлено)
+    // hreflang
     {
       rel: 'alternate',
       hreflang: 'en',
