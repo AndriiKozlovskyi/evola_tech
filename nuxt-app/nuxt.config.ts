@@ -9,10 +9,7 @@ export default defineNuxtConfig({
   ],
 
   // Tailwind CSS
-  tailwindcss: {
-    exposeConfig: true,
-    viewer: true,
-  },
+  tailwindcss: {},
 
   // i18n Configuration
   i18n: {
@@ -22,6 +19,7 @@ export default defineNuxtConfig({
       { code: 'de', iso: 'de-DE', name: 'Deutsch', dir: 'ltr', file: 'de.json' },
       { code: 'ru', iso: 'ru-RU', name: 'Русский', dir: 'ltr', file: 'ru.json' },
     ],
+    lazy: true,
     langDir: 'locales',
     restructureDir: '',
     defaultLocale: 'pl',
@@ -80,6 +78,15 @@ export default defineNuxtConfig({
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: '' },
         { rel: 'dns-prefetch', href: 'https://www.google.com' },
+        // Non-blocking Inter font (body text)
+        { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap', media: 'print', onload: "this.media='all'" },
+        // Non-blocking Material Symbols (icons)
+        { rel: 'preload', as: 'style', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0' },
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0', media: 'print', onload: "this.media='all'" },
+      ],
+      noscript: [
+        { innerHTML: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">' },
       ],
     },
   },
