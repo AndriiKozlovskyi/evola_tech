@@ -5,7 +5,7 @@ export const useLanguage = () => {
 
   const currentLocale = computed(() => locale.value as string)
 
-  const availableLocales = ['pl', 'en', 'de', 'ru']
+  const availableLocales = ['en', 'pl', 'de', 'ru']
 
   const localeNames: Record<string, string> = {
     pl: 'Polski',
