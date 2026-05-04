@@ -1,19 +1,34 @@
 <template>
   <div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ambient-shadow">
     <div class="aspect-video bg-surface-container-low overflow-hidden">
-      <picture>
-        <source :srcset="project.image.replace('.jpg', '.webp')" type="image/webp">
-        <img
-          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-          :src="project.image"
-          :alt="project.title"
-          width="640"
-          height="360"
-          loading="lazy"
-          decoding="async"
-          importance="low"
-        />
-      </picture>
+     <picture>
+  <!-- WebP -->
+  <source
+    type="image/webp"
+    :srcset="`
+      ${project.image.replace('.jpg', '-400.webp')} 400w,
+      ${project.image.replace('.jpg', '-640.webp')} 640w,
+      ${project.image.replace('.jpg', '-800.webp')} 800w
+    `"
+    sizes="(max-width: 768px) 100vw, 400px"
+  />
+
+  <!-- fallback -->
+  <img
+    class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+    :src="project.image.replace('.jpg', '-400.jpg')"
+    :srcset="`
+      ${project.image.replace('.jpg', '-400.jpg')} 400w,
+      ${project.image.replace('.jpg', '-640.jpg')} 640w
+    `"
+    sizes="(max-width: 768px) 100vw, 400px"
+    :alt="project.title"
+    width="400"
+    height="236"
+    loading="lazy"
+    decoding="async"
+  />
+</picture>
     </div>
     <div class="p-6 lg:p-8">
       <span class="text-[10px] font-bold text-primary uppercase tracking-widest">
