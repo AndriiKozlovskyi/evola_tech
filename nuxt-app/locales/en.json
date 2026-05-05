@@ -368,25 +368,25 @@
   },
   "seo": {
     "home": {
-      "title": "Web Development for Business | EvolaTec",
-      "description": "We build modern websites and landing pages for businesses across Poland and Europe. Vue 3, SEO, Google Ads, Meta Ads. Get in touch today.",
-      "keywords": "web development Poland, landing page agency Europe, website development for business, SEO services Poland, modern websites, Vue 3 Nuxt development, Google Ads management"
+      "title": "Web Development, SEO & Google Ads Agency – High-Performance Sites for Business",
+      "description": "EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO optimization, Google Ads, Meta Ads, and design. Serving Poland and Europe.",
+      "keywords": "web development Poland, landing page agency, website development services, SEO agency Poland, Vue 3 Nuxt development, Google Ads management, digital marketing agency, web design Europe"
     },
     "terms": {
-      "title": "Terms of Service – EvolaTec",
-      "description": "Read EvolaTec's terms and conditions for IT consulting, software development, and technical services."
+      "title": "Terms of Service",
+      "description": "EvolaTec terms and conditions for IT consulting, custom software development, and technical services. Payment terms, intellectual property, and liability information."
     },
     "privacy": {
-      "title": "Privacy Policy – EvolaTec",
-      "description": "Learn how EvolaTec collects, uses, and protects your personal data in accordance with GDPR."
+      "title": "Privacy Policy",
+      "description": "Learn how EvolaTec collects, uses, and protects your personal data in accordance with GDPR and data protection regulations."
     },
     "gdpr": {
-      "title": "GDPR – EvolaTec",
-      "description": "EvolaTec's commitment to GDPR compliance and your data protection rights explained."
+      "title": "GDPR Compliance",
+      "description": "EvolaTec's commitment to GDPR compliance. Your data protection rights, how we process information, and how to contact our data controller."
     },
     "imprint": {
-      "title": "Imprint – EvolaTec",
-      "description": "Legal information and contact details for EvolaTec."
+      "title": "Imprint & Legal Contact",
+      "description": "Legal company information, contact details, and official documentation for EvolaTec – your web development and digital agency partner."
     }
   },
   "error": {

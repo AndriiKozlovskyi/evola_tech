@@ -49,18 +49,21 @@ export default defineNuxtConfig({
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
 
-        // ✅ лучше сделать общий EN
-        { name: 'description', content: 'Web development, SEO and advertising services. We build websites that bring clients.' },
+        { name: 'description', content: 'EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO optimization, Google Ads, Meta Ads, and design. Serving Poland and Europe.' },
 
         { name: 'robots', content: 'index, follow' },
 
         // Open Graph
         { property: 'og:type', content: 'website' },
+        { property: 'og:title', content: 'EvolaTec - Web Development & Digital Agency' },
+        { property: 'og:description', content: 'EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO optimization, Google Ads, Meta Ads, and design. Serving Poland and Europe.' },
         { property: 'og:site_name', content: 'EvolaTec' },
         { property: 'og:image', content: 'https://evola-tec.com/images/about/team.jpg' },
 
         // Twitter
         { name: 'twitter:card', content: 'summary_large_image' },
+        { name: 'twitter:title', content: 'EvolaTec - Web Development & Digital Agency' },
+        { name: 'twitter:description', content: 'EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO optimization, Google Ads, Meta Ads, and design. Serving Poland and Europe.' },
       ],
 
       link: [

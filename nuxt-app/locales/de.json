@@ -368,25 +368,25 @@
   },
   "seo": {
     "home": {
-      "title": "Webseiten erstellen für Unternehmen | EvolaTec",
-      "description": "Wir erstellen moderne Webseiten und Landing Pages für Unternehmen in Polen und Europa. Vue 3, SEO, Google Ads, Meta Ads. Preise prüfen und starten.",
-      "keywords": "Webseiten erstellen, Webseiten für Unternehmen, Webdesign, interaktive Agentur, Landing Page erstellen, moderne Webseiten, schnelle Webseite, SEO für Webseiten, Google Ads Polen, Webentwicklung Europa"
+      "title": "Webentwicklung, SEO & Google Ads Agentur – High-Performance Websites",
+      "description": "EvolaTec erstellt moderne Webseiten, Landing Pages und Web-Apps mit Vue 3 + Nuxt. Vollservice-Agentur: Webentwicklung, SEO-Optimierung, Google Ads, Meta Ads und Design. Wir bedienen Polen und Europa.",
+      "keywords": "Webentwicklung, Webseiten erstellen, Landing Pages für Unternehmen, SEO-Agentur, Google Ads Management, Webdesign, Vue 3 Nuxt, digitale Agentur, moderne Webseiten, E-Commerce-Entwicklung, Web-Performance"
     },
     "terms": {
-      "title": "Nutzungsbedingungen – EvolaTec",
-      "description": "Lesen Sie die Allgemeinen Geschäftsbedingungen von EvolaTec für IT-Beratung, Softwareentwicklung und technische Dienstleistungen."
+      "title": "Nutzungsbedingungen",
+      "description": "Allgemeine Geschäftsbedingungen von EvolaTec für IT-Beratung, Softwareentwicklung und technische Dienstleistungen. Zahlungsbedingungen und Haftung."
     },
     "privacy": {
-      "title": "Datenschutzerklärung – EvolaTec",
+      "title": "Datenschutzerklärung",
       "description": "Erfahren Sie, wie EvolaTec Ihre personenbezogenen Daten gemäß DSGVO erhebt, verwendet und schützt."
     },
     "gdpr": {
-      "title": "DSGVO – EvolaTec",
-      "description": "EvolaTecs Einhaltung der DSGVO und Ihre Datenschutzrechte verständlich erklärt."
+      "title": "DSGVO-Compliance",
+      "description": "EvolaTecs Einhaltung der DSGVO. Ihre Datenschutzrechte und wie Sie unseren Datenschutzbeauftragten kontaktieren."
     },
     "imprint": {
-      "title": "Impressum – EvolaTec",
-      "description": "Rechtliche Angaben und Kontaktdaten für EvolaTec."
+      "title": "Impressum & Kontakt",
+      "description": "Rechtliche Informationen und Kontaktdaten für EvolaTec – Ihre Webentwicklungs- und Digital-Agentur."
     }
   },
   "error": {

@@ -368,25 +368,25 @@
   },
   "seo": {
     "home": {
-      "title": "Tworzenie stron internetowych dla firm | EvolaTec",
-      "description": "Tworzymy nowoczesne strony internetowe i landing page dla firm w Polsce i Europie. Vue 3, SEO, Google Ads, Meta Ads. Sprawdź ceny i zacznij współpracę.",
-      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron internetowych, agencja interaktywna, tworzenie stron www, landing page dla firmy, strona internetowa dla małej firmy, nowoczesne strony internetowe, szybka strona internetowa, strona sprzedażowa, tworzenie stron internetowych Warszawa, strony www Kraków, projektowanie stron Wrocław, strony internetowe Polska, SEO dla stron internetowych, pozycjonowanie stron, marketing internetowy dla firm, reklama Google Ads Polska, web development Poland, landing page agency Europe, website development for business, SEO services Poland, ile kosztuje strona internetowa, strona internetowa dla firmy cena, landing page cena"
+      "title": "Tworzenie stron, SEO i Google Ads – Agencja interaktywna dla biznesu",
+      "description": "EvolaTec tworzy nowoczesne strony internetowe, landing page i aplikacje webowe z Vue 3 + Nuxt. Pełna usługa: tworzenie stron, SEO, Google Ads, Meta Ads, projektowanie. Obsługujemy Polskę i Europę.",
+      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron, agencja interaktywna, landing page dla firmy, nowoczesne strony, SEO dla stron, pozycjonowanie stron, reklama Google Ads, marketing internetowy, strony internetowe Polska, projektowanie stron Wrocław, web development, agencja cyfrowa"
     },
     "terms": {
-      "title": "Regulamin – EvolaTec",
-      "description": "Zapoznaj się z regulaminem EvolaTec dotyczącym doradztwa IT, tworzenia stron internetowych i usług technicznych."
+      "title": "Regulamin",
+      "description": "Warunki korzystania z usług EvolaTec – doradztwo IT, tworzenie oprogramowania i usługi techniczne. Umowy, płatności, własność intelektualna."
     },
     "privacy": {
-      "title": "Polityka prywatności – EvolaTec",
-      "description": "Dowiedz się, jak EvolaTec gromadzi, wykorzystuje i chroni Twoje dane osobowe zgodnie z RODO."
+      "title": "Polityka prywatności",
+      "description": "Jak EvolaTec zbiera, wykorzystuje i chroni Twoje dane osobowe zgodnie z RODO i przepisami ochrony danych."
     },
     "gdpr": {
-      "title": "RODO – EvolaTec",
-      "description": "Zgodność EvolaTec z RODO i wyjaśnienie Twoich praw w zakresie ochrony danych."
+      "title": "Zgodność z RODO",
+      "description": "Zobowiązanie EvolaTec do zgodności z RODO. Twoje prawa dotyczące ochrony danych i jak skontaktować się z administratorem."
     },
     "imprint": {
-      "title": "Dane firmy – EvolaTec",
-      "description": "Informacje prawne i dane kontaktowe EvolaTec."
+      "title": "Dane firmy i kontakt",
+      "description": "Informacje prawne i dane kontaktowe EvolaTec – agencja tworzenia stron i usług cyfrowych."
     }
   },
   "error": {
