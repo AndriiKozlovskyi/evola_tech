@@ -67,7 +67,7 @@ export default defineNuxtConfig({
       ],
 
       link: [
-        { rel: 'icon', href: '/favicon.ico' },
+        { rel: 'icon', type: 'icon/svg', sizes: '32x32', href: '/favicon.svg' },
         { rel: 'canonical', href: 'https://evola-tec.com' },
 
         // ⚡ производительность

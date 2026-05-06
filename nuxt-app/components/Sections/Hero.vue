@@ -5,9 +5,9 @@
         {{ $t('hero.label') }}
       </span>
       <h1 class="text-5xl md:text-7xl font-bold tracking-tighter leading-[1.05] text-on-surface">
-        {{ $t('hero.headline') }} <br/>
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">
-          {{ $t('hero.headlineHighlight') }}
+        {{ $t('hero.headline') }}
+        <span v-if="$t('hero.headlineHighlight')" class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary-container">
+          <br/>{{ $t('hero.headlineHighlight') }}
         </span>
       </h1>
       <p class="text-body-lg text-on-surface-variant max-w-lg leading-relaxed">
