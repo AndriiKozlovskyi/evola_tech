@@ -6,9 +6,9 @@
         <div class="text-8xl font-bold text-primary/20 leading-none select-none">
           {{ error?.statusCode ?? '?' }}
         </div>
-        <h1 class="text-2xl md:text-3xl font-bold tracking-tight text-on-surface">
+        <h2 cclass="text-2xl md:text-3xl font-bold tracking-tight text-on-surface">
           {{ is404 ? $t('error.notFoundTitle') : $t('error.defaultTitle') }}
-        </h1>
+        </h2>
         <p class="text-on-surface-variant leading-relaxed">
           {{ is404 ? $t('error.notFoundMessage') : $t('error.defaultMessage') }}
         </p>

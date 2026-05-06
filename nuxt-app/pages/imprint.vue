@@ -1,6 +1,6 @@
 <template>
   <div class="max-w-3xl mx-auto px-6 lg:px-8 py-24">
-    <h1 class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-10">{{ $t('legal.imprint.title') }}</h1>
+    <h2 class="text-3xl md:text-4xl font-bold tracking-tight text-on-surface mb-10">{{ $t('legal.imprint.title') }}</h2>
     <div class="text-on-surface-variant space-y-4 leading-relaxed">
       <p><strong class="text-on-surface">{{ $t('legal.imprint.company') }}</strong></p>
       <p class="text-sm">{{ $t('legal.imprint.details') }}</p>

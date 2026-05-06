@@ -127,7 +127,7 @@ const { count, increment } = useExample()
 
 ```vue
 <!-- Display translated text -->
-<h1>{{ $t('hero.headline') }}</h1>
+<h2>{{ $t('hero.headline') }}</h2>
 
 <!-- Get current language -->
 <script setup>

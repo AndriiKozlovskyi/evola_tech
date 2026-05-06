@@ -142,7 +142,7 @@ Translations are stored in:
 
 ```vue
 <!-- Template -->
-<h1>{{ $t('hero.headline') }}</h1>
+<h2>{{ $t('hero.headline') }}</h2>
 ```
 
 ## 🚀 Build & Preview

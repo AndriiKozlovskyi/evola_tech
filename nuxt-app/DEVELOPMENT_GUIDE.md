@@ -183,7 +183,7 @@ locales/
 
 ```vue
 <!-- Template -->
-<h1>{{ $t('hero.headline') }}</h1>
+<h2>{{ $t('hero.headline') }}</h2>
 
 <!-- Computed property -->
 <script setup>
@@ -509,7 +509,7 @@ describe('useLanguage', () => {
    ```vue
    <template>
      <div>
-       <h1>Blog</h1>
+       <h2>Blog</h2>
        <p>{{ $t('blog.description') }}</p>
      </div>
    </template>

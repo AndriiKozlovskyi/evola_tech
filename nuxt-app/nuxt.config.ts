@@ -81,6 +81,31 @@ export default defineNuxtConfig({
       noscript: [
         { innerHTML: '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap">' },
       ],
+
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=AW-18139597285',
+          async: true
+        },
+        {
+          innerHTML: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'AW-18139597285');
+`
+        },
+        {
+          innerHTML: `<!-- Event snippet for Просмотр страницы conversion page -->
+<script>
+  gtag('event', 'conversion', {
+      'send_to': 'AW-18139597285/IDFRCPLEw6gcEOWT0clD',
+      'value': 1.0,
+      'currency': 'PLN'
+  });
+</script>`
+        }
+      ],
     },
   },
 
