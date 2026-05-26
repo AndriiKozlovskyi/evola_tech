@@ -67,6 +67,16 @@
         </a>
       </div>
 
+      <!-- Price anchor -->
+      <p class="hero-price">
+        <span class="hero-price-label">{{ $t('hero.priceLabel') }}</span>
+        <span class="hero-price-sep" aria-hidden="true">—</span>
+        <a href="#pricing" class="hero-price-link">
+          {{ $t('hero.priceLink') }}
+          <span class="material-symbols-outlined hero-price-arrow">arrow_forward</span>
+        </a>
+      </p>
+
       <!-- Stats strip -->
       <dl class="hero-stats">
         <div
@@ -155,6 +165,51 @@ const heroStats = computed(() =>
   background: rgba(0, 102, 184, 0.1);
   border-color: rgba(0, 102, 184, 0.3);
   transform: translateY(-1px);
+}
+
+.hero-price {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0;
+  font-size: 0.92rem;
+  color: rgba(13, 41, 74, 0.72);
+}
+
+.hero-price-label {
+  font-weight: 600;
+  color: rgba(13, 41, 74, 0.95);
+}
+
+.hero-price-sep {
+  color: rgba(13, 41, 74, 0.35);
+}
+
+.hero-price-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  color: rgb(0, 102, 184);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(0, 102, 184, 0.35);
+  padding-bottom: 1px;
+  transition: color 200ms ease, border-color 200ms ease;
+}
+
+.hero-price-link:hover {
+  color: rgb(0, 71, 117);
+  border-bottom-color: rgb(0, 71, 117);
+}
+
+.hero-price-link:hover .hero-price-arrow {
+  transform: translateX(3px);
+}
+
+.hero-price-arrow {
+  font-size: 1rem;
+  transition: transform 220ms ease;
 }
 
 .hero-stats {

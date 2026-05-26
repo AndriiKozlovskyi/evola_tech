@@ -20,6 +20,8 @@
     "cta2": "Services",
     "badge": "Available for new projects",
     "badgeNote": "Reply within 24h",
+    "priceLabel": "Projects from €350",
+    "priceLink": "see full pricing",
     "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Brand Design"],
     "stats": [
       { "value": "3+", "label": "Years building for clients" },
