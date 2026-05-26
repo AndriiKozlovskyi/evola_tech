@@ -23,19 +23,20 @@
       </div>
 
       <!-- Website Type Toggle -->
-      <div class="mb-16 flex flex-col sm:flex-row items-start sm:items-center gap-6">
+      <div class="mb-16 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-6">
         <p class="text-sm font-semibold text-on-surface">{{ $t('pricing.selectType') }}:</p>
-        <div class="flex gap-3">
+        <div
+          class="pricing-tabs"
+          role="tablist"
+          :aria-label="$t('pricing.selectType')"
+        >
           <button
             v-for="type in websiteTypes"
             :key="type.value"
+            role="tab"
+            :aria-selected="selectedType === type.value"
             @click="selectedType = type.value"
-            :class="[
-              'px-6 py-3 rounded-lg font-semibold transition-all',
-              selectedType === type.value
-                ? 'bg-primary text-on-primary shadow-md shadow-primary/20'
-                : 'bg-surface-container-low text-on-surface-variant hover:bg-surface-container'
-            ]"
+            :class="['pricing-tab', { 'pricing-tab-active': selectedType === type.value }]"
           >
             {{ type.label }}
           </button>
@@ -120,7 +121,9 @@ const scrollToContact = () => {
   }
 }
 
-const websiteTypes = computed(() => [
+type WebsiteType = 'landing' | 'website' | 'ecommerce'
+
+const websiteTypes = computed<{ value: WebsiteType; label: string }[]>(() => [
   { value: 'landing', label: t('pricing.types.landing') },
   { value: 'website', label: t('pricing.types.website') },
   { value: 'ecommerce', label: t('pricing.types.ecommerce') }
@@ -177,5 +180,68 @@ const packages = computed(() => [
     linear-gradient(var(--md-sys-color-outline-variant, #49454f) 1px, transparent 1px),
     linear-gradient(90deg, var(--md-sys-color-outline-variant, #49454f) 1px, transparent 1px);
   background-size: 48px 48px;
+}
+
+/* Segmented control for landing / website / e-commerce */
+.pricing-tabs {
+  display: flex;
+  gap: 0.25rem;
+  padding: 0.3rem;
+  background: rgba(0, 71, 117, 0.05);
+  border: 1px solid rgba(138, 166, 199, 0.3);
+  border-radius: 0.95rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .pricing-tabs {
+    width: auto;
+  }
+}
+
+.pricing-tab {
+  flex: 1;
+  min-height: 2.75rem;
+  padding: 0.55rem 0.6rem;
+  border-radius: 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  color: rgba(13, 41, 74, 0.65);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: -0.005em;
+  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+@media (min-width: 640px) {
+  .pricing-tab {
+    padding: 0.55rem 1.3rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
+.pricing-tab:hover:not(.pricing-tab-active) {
+  background: rgba(0, 102, 184, 0.07);
+  color: rgba(0, 53, 96, 0.95);
+}
+
+.pricing-tab:active:not(.pricing-tab-active) {
+  transform: scale(0.98);
+}
+
+.pricing-tab:focus-visible {
+  outline: 2px solid rgba(0, 102, 184, 0.5);
+  outline-offset: 2px;
+}
+
+.pricing-tab-active {
+  background: #ffffff;
+  color: rgb(0, 66, 117);
+  box-shadow: 0 2px 8px rgba(13, 41, 74, 0.08), 0 1px 2px rgba(13, 41, 74, 0.04);
 }
 </style>
