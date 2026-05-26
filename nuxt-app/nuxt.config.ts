@@ -122,5 +122,6 @@ gtag('event', 'conversion', {
 
   experimental: {
     payloadExtraction: true,
+    appManifest: false,
   },
 })
