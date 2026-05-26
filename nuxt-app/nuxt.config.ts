@@ -96,14 +96,13 @@ gtag('config', 'AW-18139597285');
 `
         },
         {
-          innerHTML: `<!-- Event snippet for Просмотр страницы conversion page -->
-<script>
-  gtag('event', 'conversion', {
-      'send_to': 'AW-18139597285/IDFRCPLEw6gcEOWT0clD',
-      'value': 1.0,
-      'currency': 'PLN'
-  });
-</script>`
+          innerHTML: `
+gtag('event', 'conversion', {
+  'send_to': 'AW-18139597285/IDFRCPLEw6gcEOWT0clD',
+  'value': 1.0,
+  'currency': 'PLN'
+});
+`
         }
       ],
     },
