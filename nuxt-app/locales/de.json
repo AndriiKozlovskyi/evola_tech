@@ -17,7 +17,16 @@
     "headlineHighlight": "Unternehmen.",
     "description": "Wir entwickeln skalierbare Weblösungen und nahtlose API-Integrationen, die Ihre Abläufe optimieren. Ihre Vision, professionell umgesetzt.",
     "cta1": "Unsere Arbeiten",
-    "cta2": "Services"
+    "cta2": "Services",
+    "badge": "Verfügbar für neue Projekte",
+    "badgeNote": "Antwort innerhalb von 24 h",
+    "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Markendesign"],
+    "stats": [
+      { "value": "3+", "label": "Jahre Kundenarbeit" },
+      { "value": "4", "label": "Sprachen im Lieferumfang" },
+      { "value": "<24h", "label": "Antwort auf Anfragen" },
+      { "value": "DSGVO", "label": "Konforme Lieferung" }
+    ]
   },
   "portfolio": {
     "title": "Unsere Projekte",

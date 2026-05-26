@@ -17,7 +17,16 @@
     "headlineHighlight": "Business.",
     "description": "We build scalable web solutions and seamless API integrations designed to streamline your operations. Your vision, expertly engineered.",
     "cta1": "Our Work",
-    "cta2": "Services"
+    "cta2": "Services",
+    "badge": "Available for new projects",
+    "badgeNote": "Reply within 24h",
+    "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Brand Design"],
+    "stats": [
+      { "value": "3+", "label": "Years building for clients" },
+      { "value": "4", "label": "Languages we deliver in" },
+      { "value": "<24h", "label": "Reply to new enquiries" },
+      { "value": "GDPR", "label": "Compliant delivery" }
+    ]
   },
   "portfolio": {
     "title": "Our Projects",

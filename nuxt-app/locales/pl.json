@@ -17,7 +17,16 @@
     "headlineHighlight": "Biznesu.",
     "description": "Tworzymy skalowalne strony internetowe i landing page dla firm w Polsce i Europie. Twoja wizja, profesjonalnie zrealizowana.",
     "cta1": "Nasze realizacje",
-    "cta2": "Usługi"
+    "cta2": "Usługi",
+    "badge": "Przyjmujemy nowe projekty",
+    "badgeNote": "Odpowiedź w 24h",
+    "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Identyfikacja marki"],
+    "stats": [
+      { "value": "3+", "label": "Lat pracy dla klientów" },
+      { "value": "4", "label": "Języki obsługi" },
+      { "value": "<24h", "label": "Odpowiedź na zapytanie" },
+      { "value": "RODO", "label": "Zgodna realizacja" }
+    ]
   },
   "portfolio": {
     "title": "Nasze realizacje",
