@@ -6,6 +6,7 @@
     "workflow": "How We Work",
     "about": "About",
     "pricing": "Pricing",
+    "aiSearch": "AI Search",
     "contact": "Contact",
     "language": "EN | PL | DE | RU",
     "cta": "Get in Touch"
@@ -240,6 +241,7 @@
     "legalTitle": "Legal",
     "otherTitle": "Other",
     "responseTime": "Response within 24 hours",
+    "alsoAt": "Also at",
     "links": {
       "imprint": "Imprint",
       "privacy": "Privacy Policy",
@@ -258,6 +260,98 @@
       "audit": "Performance Audits"
     },
     "copyright": "© 2026 EvolaTec. All rights reserved."
+  },
+  "aiSearch": {
+    "eyebrow": "GENERATIVE ENGINE OPTIMIZATION",
+    "title": "AI Search Optimization (GEO)",
+    "subtitle": "We make your business citable by ChatGPT, Perplexity, Google AI Overviews, Gemini, and Claude — not just rankable on Google.",
+    "what": {
+      "title": "What is GEO?",
+      "p1": "Generative Engine Optimization (GEO) is the practice of structuring a website so generative AI engines can find your content, understand it, and cite it as an answer. SEO targets the keyword ranking; GEO targets the synthesised answer itself.",
+      "p2": "About 60% of searches now end without a click. Google AI Overviews, ChatGPT search, Perplexity, Gemini, and Claude are increasingly the first — and sometimes only — source a buyer reads. If your business is not formatted for them to quote, you are invisible in the new search layer."
+    },
+    "why": {
+      "title": "Why it matters for your business",
+      "items": [
+        { "stat": "60%", "label": "Searches end without a click — the answer is read on the results page itself." },
+        { "stat": "+47%", "label": "Higher trust when AI engines cite your brand by name in a generated answer." },
+        { "stat": "5 engines", "label": "ChatGPT, Perplexity, Google AI Overviews, Gemini, and Claude all index content differently — GEO covers all of them." }
+      ]
+    },
+    "geoVsSeo": {
+      "title": "GEO vs SEO — side by side",
+      "caption": "Two different games. We play both.",
+      "headers": ["Aspect", "Traditional SEO", "GEO (AI Search)"],
+      "rows": [
+        ["Where you appear", "Google search results page", "ChatGPT, Perplexity, AI Overviews, Gemini, Claude"],
+        ["Goal", "Rank in the top 10 links", "Be cited inside the generated answer"],
+        ["Primary signals", "Keywords, backlinks, click-through rate", "Semantic clarity, structured data, brand mentions"],
+        ["Content unit", "The whole page", "Short, self-contained passages"],
+        ["Audience", "Humans skimming a list", "LLMs synthesising one reply"],
+        ["Measurement", "Position and organic traffic", "Citations, mentions, AI-referral traffic"]
+      ]
+    },
+    "advantage": {
+      "title": "EvolaTec vs a typical agency",
+      "caption": "What separates a build that ranks from a build that gets quoted.",
+      "headers": ["Capability", "Typical agency", "EvolaTec"],
+      "rows": [
+        ["Structured data", "Basic Organization tag", "FAQPage, Service, Article, BreadcrumbList — wired per page"],
+        ["AI crawler access", "robots.txt only", "llms.txt + clean SSR HTML + open licensing"],
+        ["Content format", "Long blog posts", "Citation-ready Q&A passages with clear answers"],
+        ["Performance", "Average WordPress build", "Nuxt SSR, prerendered, sub-second LCP"],
+        ["Languages", "One language, sometimes machine-translated", "4 hand-localised languages with iso hreflang"],
+        ["Reporting", "Google rankings only", "Google + AI Overview + Perplexity citation tracking"]
+      ]
+    },
+    "checklist": {
+      "title": "What an EvolaTec GEO engagement delivers",
+      "caption": "Every box checked on day one, not after three audits.",
+      "headers": ["Layer", "What we ship"],
+      "rows": [
+        ["Semantic structure", "Strict H1→H3 hierarchy, descriptive headings, accessible landmarks"],
+        ["Structured data", "FAQPage, Service, Organization, BreadcrumbList JSON-LD"],
+        ["AI discovery", "llms.txt, sitemap.xml, allow-list for ChatGPT, Perplexity, Google-Extended"],
+        ["Citation hooks", "Self-contained answer paragraphs LLMs can quote verbatim"],
+        ["Author signals", "Named organisation and author markup for E-E-A-T"],
+        ["Performance", "SSR + prerender, <1s LCP, AVIF/WebP images, lazy loading"],
+        ["Monitoring", "Track AI Overview appearances, Perplexity citations, and brand mentions"]
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions about GEO",
+      "items": [
+        {
+          "q": "What is GEO (Generative Engine Optimization)?",
+          "a": "GEO is the practice of structuring a website so generative AI engines like ChatGPT, Perplexity, and Google AI Overviews can find your content, understand it, and cite it inside the answer they generate for a user."
+        },
+        {
+          "q": "How is GEO different from SEO?",
+          "a": "SEO aims to rank your page in Google's list of blue links. GEO aims to have your content quoted inside the AI-generated answer that appears above or instead of those links. SEO is page-level; GEO is passage-level."
+        },
+        {
+          "q": "Do I still need SEO if I do GEO?",
+          "a": "Yes. AI engines use search indexes as their primary source. A site that is GEO-optimised is also SEO-optimised, but the reverse is not true. We deliver both together, never one without the other."
+        },
+        {
+          "q": "How long until my content appears in AI answers?",
+          "a": "Initial citations typically start within 2–6 weeks after technical GEO work ships and the AI engines recrawl the site. Brand-name mentions in ChatGPT and Perplexity often appear faster than Google AI Overview placements."
+        },
+        {
+          "q": "Which AI engines do you optimize for?",
+          "a": "ChatGPT search, Perplexity, Google AI Overviews and Gemini, Claude, and Bing Copilot. We configure llms.txt and crawler allow-lists for each one and verify they can reach the content."
+        },
+        {
+          "q": "Can you make my existing site GEO-ready?",
+          "a": "Yes. We run a GEO audit on the live site, add structured data, restructure key passages into citation-ready form, ship an llms.txt, and report back on which AI engines start citing the brand."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Want a free GEO audit of your current site?",
+      "subtitle": "We will check structured data, AI-crawler access, citation readiness, and report back within 3 business days.",
+      "button": "Request a GEO audit"
+    }
   },
   "legal": {
     "terms": {
@@ -368,9 +462,9 @@
   },
   "seo": {
     "home": {
-      "title": "Web Development, SEO & Google Ads Agency – High-Performance Sites for Business",
-      "description": "EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO optimization, Google Ads, Meta Ads, and design. Serving Poland and Europe.",
-      "keywords": "web development Poland, landing page agency, website development services, SEO agency Poland, Vue 3 Nuxt development, Google Ads management, digital marketing agency, web design Europe"
+      "title": "Web Development, SEO & AI Search (GEO) Agency – High-Performance Sites for Business",
+      "description": "EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO, Generative Engine Optimization (GEO) for ChatGPT and AI Overviews, Google Ads, Meta Ads, and design. Serving Poland and Europe.",
+      "keywords": "web development Poland, landing page agency, website development services, SEO agency Poland, GEO agency, Generative Engine Optimization, AI search optimization, ChatGPT SEO, Perplexity citations, Google AI Overviews, Vue 3 Nuxt development, Google Ads management, digital marketing agency, web design Europe"
     },
     "terms": {
       "title": "Terms of Service",

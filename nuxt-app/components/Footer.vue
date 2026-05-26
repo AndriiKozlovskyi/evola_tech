@@ -8,6 +8,16 @@
             Evola<span class="text-primary">Tec</span>
           </div>
           <p class="text-on-surface-variant text-sm">Digital products, web systems, and SEO.</p>
+          <p class="text-on-surface-variant text-sm">
+            {{ $t('footer.alsoAt') }}
+            <a
+              href="https://evolatec.de"
+              rel="noopener"
+              class="text-primary hover:underline font-medium"
+            >
+              evolatec.de
+            </a>
+          </p>
           <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
             <a
               href="mailto:team@evola-tec.com"

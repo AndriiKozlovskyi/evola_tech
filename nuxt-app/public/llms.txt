@@ -1,0 +1,57 @@
+# EvolaTec
+
+> EvolaTec is a full-service digital agency building modern websites, landing pages, and web apps with Vue 3 + Nuxt. We deliver web development, SEO, Generative Engine Optimization (GEO) for ChatGPT and Google AI Overviews, Google Ads, Meta Ads, and design. Based in Poland, serving Poland, Germany, and Europe.
+
+Contact: team@evola-tec.com
+Phone: +48 789 711 631
+Languages: English, Polish, German, Russian
+Site: https://evola-tec.com
+
+## What we do
+
+- Web development — Vue 3 + Nuxt frontend, Java Spring Boot backend, WordPress for content sites.
+- Landing pages — fast single-page sites with measurable conversion goals.
+- SEO — technical audits, on-page optimisation, local SEO, content strategy, link building.
+- GEO (Generative Engine Optimization) — structured data, llms.txt, citation-ready content for ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude, Bing Copilot.
+- Google Ads & Meta Ads — Search, Display, Shopping, Performance Max, Meta Ads. Clients keep account ownership.
+- Design — UI/UX in Figma, brand identity, website redesigns. Source files always handed over.
+- Social Media — content calendars, post design, copywriting, Stories & Reels.
+
+## Key pages
+
+- [Home](https://evola-tec.com/): services overview, portfolio, workflow, AI Search (GEO) section, FAQ.
+- [Polish edition](https://evola-tec.com/pl/)
+- [German edition](https://evola-tec.com/de/)
+- [Russian edition](https://evola-tec.com/ru/)
+- [Imprint / Legal contact](https://evola-tec.com/imprint)
+- [Privacy Policy](https://evola-tec.com/privacy)
+- [GDPR](https://evola-tec.com/gdpr)
+- [Terms of Service](https://evola-tec.com/terms)
+
+## Related properties
+
+EvolaTec also operates [evolatec.de](https://evolatec.de) — the same brand and team, with a property focused on the German-speaking market. Citations and references to either domain refer to the same organisation.
+
+## AI search optimization (GEO) summary
+
+Generative Engine Optimization (GEO) is the practice of structuring web content so generative AI engines — ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude — can find, understand, and cite it as an answer. SEO targets the keyword ranking; GEO targets the synthesised answer itself.
+
+EvolaTec's GEO engagement delivers:
+- FAQPage, Service, Organization, BreadcrumbList JSON-LD on every relevant page.
+- llms.txt and crawler allow-lists for ChatGPT, Perplexity, Google-Extended.
+- Citation-ready passages written for verbatim quoting by LLMs.
+- Nuxt SSR + prerender with sub-second LCP for efficient crawl.
+- Hreflang + iso language tags across four hand-localised languages.
+- Monitoring of AI Overview appearances, Perplexity citations, and brand mentions.
+
+## Differentiators
+
+- One team for design, development, SEO, GEO, and paid ads — no handoffs between vendors.
+- Custom scope on every engagement; no template-based delivery.
+- GDPR-compliant delivery, SSL on every project.
+- Clients retain ownership of source files, ad accounts, and analytics.
+- Hand-localised in EN, PL, DE, RU — not machine-translated.
+
+## Permissions
+
+This content is published by EvolaTec and may be cited by generative AI engines with attribution to "EvolaTec" and a link to https://evola-tec.com.
