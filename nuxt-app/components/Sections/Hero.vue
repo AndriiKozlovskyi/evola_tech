@@ -1,21 +1,9 @@
 <template>
   <section
-    class="min-h-[90vh] flex flex-col justify-center px-6 lg:px-8 max-w-7xl mx-auto py-16 lg:py-20"
+    class="min-h-[90vh] flex flex-col justify-center px-6 lg:px-8 max-w-7xl mx-auto py-8 lg:py-20"
     id="home"
   >
     <div class="max-w-4xl space-y-6 md:space-y-7">
-      <!-- Availability badge -->
-      <div class="hero-badge">
-        <span class="hero-dot" aria-hidden="true"></span>
-        <span class="text-sm font-medium text-on-surface">
-          {{ $t('hero.badge') }}
-        </span>
-        <span class="hero-badge-sep" aria-hidden="true">·</span>
-        <span class="text-sm text-on-surface-variant">
-          {{ $t('hero.badgeNote') }}
-        </span>
-      </div>
-
       <!-- Eyebrow -->
       <span class="text-label-md font-bold text-primary tracking-[0.2em] uppercase block">
         {{ $t('hero.label') }}
@@ -39,8 +27,21 @@
         {{ $t('hero.description') }}
       </p>
 
+      <!-- Price block -->
+      <div class="hero-price">
+        <div class="hero-price-amount">
+          <span class="hero-price-from">{{ $t('hero.priceFrom') }}</span>
+          <span class="hero-price-value">{{ $t('hero.priceValue') }}</span>
+        </div>
+        <span class="hero-price-divider" aria-hidden="true"></span>
+        <a href="#pricing" class="hero-price-link">
+          {{ $t('hero.priceLink') }}
+          <span class="material-symbols-outlined hero-price-arrow">arrow_forward</span>
+        </a>
+      </div>
+
       <!-- Capability chips -->
-      <div class="flex flex-wrap gap-2.5">
+      <div class="grid grid-cols-2 sm:grid-cols-4 items-center gap-2.5">
         <span
           v-for="(chip, i) in heroChips"
           :key="`hero-chip-${i}`"
@@ -51,43 +52,21 @@
       </div>
 
       <!-- CTAs -->
-      <div class="pt-2 flex flex-col sm:flex-row gap-4">
+      <div class="flex flex-col sm:flex-row gap-4">
         <a
           href="#portfolio"
-          class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2 transition-all hover:shadow-lg hover:shadow-primary/20 hover:scale-[1.02] active:scale-[0.98]"
+          class="hero-cta-primary"
         >
           {{ $t('hero.cta1') }}
           <span class="material-symbols-outlined">arrow_forward</span>
         </a>
         <a
           href="#services"
-          class="ghost-border text-primary px-8 py-4 rounded-xl font-semibold text-lg transition-all hover:bg-surface-container-low text-center"
+          class="hero-cta-secondary"
         >
           {{ $t('hero.cta2') }}
         </a>
       </div>
-
-      <!-- Price anchor -->
-      <p class="hero-price">
-        <span class="hero-price-label">{{ $t('hero.priceLabel') }}</span>
-        <span class="hero-price-sep" aria-hidden="true">—</span>
-        <a href="#pricing" class="hero-price-link">
-          {{ $t('hero.priceLink') }}
-          <span class="material-symbols-outlined hero-price-arrow">arrow_forward</span>
-        </a>
-      </p>
-
-      <!-- Stats strip -->
-      <dl class="hero-stats">
-        <div
-          v-for="(stat, i) in heroStats"
-          :key="`hero-stat-${i}`"
-          class="hero-stat"
-        >
-          <dt class="hero-stat-value">{{ stat.value }}</dt>
-          <dd class="hero-stat-label">{{ stat.label }}</dd>
-        </div>
-      </dl>
     </div>
   </section>
 </template>
@@ -100,57 +79,14 @@ const { tm, rt } = useI18n()
 const heroChips = computed(() =>
   (tm('hero.chips') as string[]).map(chip => rt(chip))
 )
-
-const heroStats = computed(() =>
-  (tm('hero.stats') as any[]).map(stat => ({
-    value: rt(stat.value),
-    label: rt(stat.label),
-  }))
-)
 </script>
 
 <style scoped>
-.hero-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.45rem 0.95rem;
-  background: rgba(255, 255, 255, 0.9);
-  border: 1px solid rgba(0, 102, 184, 0.18);
-  border-radius: 999px;
-  box-shadow: 0 4px 14px rgba(13, 41, 74, 0.05);
-  backdrop-filter: blur(6px);
-  width: fit-content;
-}
-
-.hero-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #16a34a;
-  box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.55);
-  animation: hero-pulse 2.4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
-  flex-shrink: 0;
-}
-
-.hero-badge-sep {
-  color: rgba(13, 41, 74, 0.35);
-}
-
-@keyframes hero-pulse {
-  0%,
-  100% {
-    box-shadow: 0 0 0 0 rgba(22, 163, 74, 0.5);
-  }
-  50% {
-    box-shadow: 0 0 0 7px rgba(22, 163, 74, 0);
-  }
-}
-
 .hero-chip {
   display: inline-flex;
   align-items: center;
-  padding: 0.4rem 0.9rem;
+  justify-content: center;
+  padding: 0.5rem 0.95rem;
   background: rgba(0, 102, 184, 0.06);
   border: 1px solid rgba(0, 102, 184, 0.18);
   border-radius: 999px;
@@ -159,6 +95,7 @@ const heroStats = computed(() =>
   color: rgba(0, 53, 96, 0.92);
   letter-spacing: -0.005em;
   transition: background 200ms ease, border-color 200ms ease, transform 200ms ease;
+  text-align: center;
 }
 
 .hero-chip:hover {
@@ -167,81 +104,37 @@ const heroStats = computed(() =>
   transform: translateY(-1px);
 }
 
+/* Price block — prominent gradient pill */
 .hero-price {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  margin: 0;
-  font-size: 0.92rem;
-  color: rgba(13, 41, 74, 0.72);
+  gap: 0.85rem;
+  padding: 0.65rem 1.1rem 0.65rem 1rem;
+  background: linear-gradient(135deg, rgba(0, 102, 184, 0.05), rgba(0, 163, 255, 0.08));
+  border: 1px solid rgba(0, 102, 184, 0.2);
+  border-radius: 0.95rem;
+  box-shadow: 0 6px 18px rgba(13, 41, 74, 0.05);
+  width: fit-content;
+  max-width: 100%;
 }
 
-.hero-price-label {
-  font-weight: 600;
-  color: rgba(13, 41, 74, 0.95);
-}
-
-.hero-price-sep {
-  color: rgba(13, 41, 74, 0.35);
-}
-
-.hero-price-link {
+.hero-price-amount {
   display: inline-flex;
-  align-items: center;
-  gap: 0.25rem;
-  color: rgb(0, 102, 184);
-  font-weight: 600;
-  text-decoration: none;
-  border-bottom: 1px dashed rgba(0, 102, 184, 0.35);
-  padding-bottom: 1px;
-  transition: color 200ms ease, border-color 200ms ease;
+  align-items: baseline;
+  gap: 0.45rem;
 }
 
-.hero-price-link:hover {
-  color: rgb(0, 71, 117);
-  border-bottom-color: rgb(0, 71, 117);
+.hero-price-from {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: rgba(0, 53, 96, 0.62);
 }
 
-.hero-price-link:hover .hero-price-arrow {
-  transform: translateX(3px);
-}
-
-.hero-price-arrow {
-  font-size: 1rem;
-  transition: transform 220ms ease;
-}
-
-.hero-stats {
-  margin: 0;
-  margin-top: 1rem;
-  padding-top: 1.75rem;
-  border-top: 1px solid rgba(138, 166, 199, 0.3);
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem 1.5rem;
-}
-
-@media (min-width: 640px) {
-  .hero-stats {
-    grid-template-columns: repeat(4, 1fr);
-    gap: 0 1.5rem;
-  }
-
-  .hero-stat + .hero-stat {
-    border-left: 1px solid rgba(138, 166, 199, 0.28);
-    padding-left: 1.5rem;
-  }
-}
-
-.hero-stat {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-
-.hero-stat-value {
-  font-size: 1.75rem;
+.hero-price-value {
+  font-size: 1.55rem;
   font-weight: 700;
   letter-spacing: -0.02em;
   background: linear-gradient(135deg, rgba(0, 102, 184, 1), rgba(0, 163, 255, 1));
@@ -251,11 +144,92 @@ const heroStats = computed(() =>
   line-height: 1;
 }
 
-.hero-stat-label {
-  margin: 0;
-  font-size: 0.78rem;
-  color: rgba(13, 41, 74, 0.72);
-  font-weight: 500;
-  line-height: 1.35;
+.hero-price-divider {
+  width: 1px;
+  height: 1.4rem;
+  background: rgba(0, 102, 184, 0.22);
+  flex-shrink: 0;
+}
+
+.hero-price-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: rgb(0, 102, 184);
+  font-weight: 600;
+  font-size: 0.88rem;
+  text-decoration: none;
+  transition: color 200ms ease;
+}
+
+.hero-price-link:hover {
+  color: rgb(0, 71, 117);
+}
+
+.hero-price-link:hover .hero-price-arrow {
+  transform: translateX(3px);
+}
+
+.hero-price-arrow {
+  font-size: 1.05rem;
+  transition: transform 220ms ease;
+}
+
+/* CTAs */
+.hero-cta-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  border-radius: 0.85rem;
+  background: linear-gradient(135deg, rgb(0, 102, 184), rgb(0, 163, 255));
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  box-shadow: 0 10px 24px rgba(0, 102, 184, 0.22);
+  transition: transform 200ms ease, box-shadow 200ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero-cta-primary:hover {
+  transform: translateY(-1px) scale(1.01);
+  box-shadow: 0 14px 30px rgba(0, 102, 184, 0.28);
+}
+
+.hero-cta-primary:active {
+  transform: scale(0.98);
+}
+
+.hero-cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 0.85rem;
+  border: 1.5px solid rgba(0, 102, 184, 0.45);
+  background: transparent;
+  color: rgb(0, 102, 184);
+  font-size: 1.05rem;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  text-align: center;
+  transition: background 200ms ease, border-color 200ms ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.hero-cta-secondary:hover {
+  background: rgba(0, 102, 184, 0.06);
+  border-color: rgba(0, 102, 184, 0.65);
+}
+
+@media (max-width: 639px) {
+  .hero-price {
+    width: 100%;
+    justify-content: flex-start;
+  }
 }
 </style>

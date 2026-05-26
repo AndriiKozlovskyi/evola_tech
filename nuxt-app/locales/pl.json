@@ -20,9 +20,10 @@
     "cta2": "Usługi",
     "badge": "Przyjmujemy nowe projekty",
     "badgeNote": "Odpowiedź w 24h",
-    "priceLabel": "Projekty od €350",
+    "priceFrom": "Od",
+    "priceValue": "€350",
     "priceLink": "zobacz cennik",
-    "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Identyfikacja marki"],
+    "chips": ["Design", "SEO + GEO", "Google Ads", "Identyfikacja marki"],
     "stats": [
       { "value": "3+", "label": "Lat pracy dla klientów" },
       { "value": "4", "label": "Języki obsługi" },

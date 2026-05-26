@@ -20,9 +20,10 @@
     "cta2": "Услуги",
     "badge": "Открыты для новых проектов",
     "badgeNote": "Ответ в течение 24 часов",
-    "priceLabel": "Проекты от €350",
+    "priceFrom": "От",
+    "priceValue": "€350",
     "priceLink": "все цены",
-    "chips": ["Vue 3 + Nuxt", "SEO + GEO", "Google Ads", "Айдентика"],
+    "chips": ["Design", "SEO + GEO", "Google Ads", "Айдентика"],
     "stats": [
       { "value": "3+", "label": "Лет работы с клиентами" },
       { "value": "4", "label": "Языка обслуживания" },
