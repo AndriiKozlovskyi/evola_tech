@@ -159,7 +159,7 @@ useHead({
             sameAs: [
               'https://evolatec.de',
               'https://www.facebook.com/evola_tec',
-              'https://www.linkedin.com/company/evola-tec',
+              'https://www.linkedin.com/company/121004478',
               'https://twitter.com/evola_tec',
             ],
           },

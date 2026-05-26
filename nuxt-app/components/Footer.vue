@@ -18,7 +18,7 @@
               evolatec.de
             </a>
           </p>
-          <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5">
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-2.5">
             <a
               href="mailto:team@evola-tec.com"
               class="min-h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-sm font-medium flex items-center justify-center gap-2"
@@ -41,6 +41,16 @@
             >
               <span class="material-symbols-outlined text-base">forum</span>
               Telegram
+            </a>
+            <a
+              href="https://www.linkedin.com/company/121004478"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="EvolaTec on LinkedIn"
+              class="min-h-11 px-3 rounded-lg bg-surface-container-low text-on-surface-variant hover:text-primary hover:bg-surface-container transition-colors text-sm font-medium flex items-center justify-center gap-2"
+            >
+              <span class="material-symbols-outlined text-base">hub</span>
+              LinkedIn
             </a>
           </div>
           <p class="text-on-surface-variant text-sm">{{ $t('footer.copyright') }}</p>
