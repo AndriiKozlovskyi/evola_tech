@@ -4,7 +4,11 @@
     <div class="relative overflow-hidden rounded-t-2xl">
       <img
         :src="project.image"
-        :alt="project.image.alt"
+        :alt="`${project.title} — ${project.category}`"
+        width="640"
+        height="240"
+        loading="lazy"
+        decoding="async"
         class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
       />
       <!-- subtle orange tint overlay on hover -->
