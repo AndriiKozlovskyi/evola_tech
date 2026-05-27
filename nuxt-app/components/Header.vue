@@ -26,6 +26,9 @@
         <NuxtLinkLocale to="/#pricing" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.pricing') }}
         </NuxtLinkLocale>
+        <NuxtLinkLocale to="/#mobile-app" class="text-on-surface-variant hover:text-primary transition-colors">
+          {{ $t('navigation.mobileApp') }}
+        </NuxtLinkLocale>
         <NuxtLinkLocale to="/#ai-search" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.aiSearch') }}
         </NuxtLinkLocale>
@@ -162,6 +165,9 @@
             </NuxtLinkLocale>
             <NuxtLinkLocale to="/#pricing" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
               {{ $t('navigation.pricing') }}
+            </NuxtLinkLocale>
+            <NuxtLinkLocale to="/#mobile-app" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
+              {{ $t('navigation.mobileApp') }}
             </NuxtLinkLocale>
             <NuxtLinkLocale to="/#ai-search" @click="mobileMenuOpen = false" class="text-on-surface-variant hover:text-primary transition-colors font-medium py-2">
               {{ $t('navigation.aiSearch') }}

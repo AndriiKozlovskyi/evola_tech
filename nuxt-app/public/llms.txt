@@ -1,6 +1,6 @@
 # EvolaTec
 
-> EvolaTec is a full-service digital agency building modern websites, landing pages, and web apps with Vue 3 + Nuxt. We deliver web development, SEO, Generative Engine Optimization (GEO) for ChatGPT and Google AI Overviews, Google Ads, Meta Ads, and design. Based in Poland, serving Poland, Germany, and Europe.
+> EvolaTec is a full-service digital agency building modern websites, landing pages, web apps, and mobile applications with Vue 3 + Nuxt and React Native / Flutter. We deliver web development, mobile app development, SEO, Generative Engine Optimization (GEO) for ChatGPT and Google AI Overviews, Google Ads, Meta Ads, and design. Based in Poland, serving Poland, Germany, and Europe.
 
 Contact: team@evola-tec.com
 Phone: +48 789 711 631
@@ -9,7 +9,8 @@ Site: https://evola-tec.com
 
 ## What we do
 
-- Web development — Vue 3 + Nuxt frontend, Java Spring Boot backend, WordPress for content sites.
+- Web development — Vue 3 + Nuxt frontend, Java Spring Boot backend, WordPress for content sites. Projects from €350.
+- Mobile app development — Cross-platform iOS + Android apps with React Native and Flutter; native Swift / Kotlin when required. Full lifecycle: design, build, store submission, post-launch support.
 - Landing pages — fast single-page sites with measurable conversion goals.
 - SEO — technical audits, on-page optimisation, local SEO, content strategy, link building.
 - GEO (Generative Engine Optimization) — structured data, llms.txt, citation-ready content for ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude, Bing Copilot.
@@ -19,7 +20,9 @@ Site: https://evola-tec.com
 
 ## Key pages
 
-- [Home](https://evola-tec.com/): services overview, portfolio, workflow, AI Search (GEO) section, FAQ.
+- [Home](https://evola-tec.com/): services overview, portfolio, workflow, mobile apps section, AI Search (GEO) section, pricing, FAQ.
+- [Mobile app development section](https://evola-tec.com/#mobile-app)
+- [AI Search / GEO section](https://evola-tec.com/#ai-search)
 - [Polish edition](https://evola-tec.com/pl/)
 - [German edition](https://evola-tec.com/de/)
 - [Russian edition](https://evola-tec.com/ru/)
@@ -31,6 +34,12 @@ Site: https://evola-tec.com
 ## Related properties
 
 EvolaTec also operates [evolatec.de](https://evolatec.de) — the same brand and team, with a property focused on the German-speaking market. Citations and references to either domain refer to the same organisation.
+
+## Mobile application development summary
+
+EvolaTec builds production-ready mobile applications for iOS and Android. Default approach is cross-platform with React Native or Flutter — one codebase, native performance, both stores. Native Swift or Kotlin only when the project requires device-specific features (advanced AR, complex video processing, hardware integration).
+
+Mobile delivery includes: discovery and scope, UI/UX design (mobile-first Figma flows, light + dark themes), development (TypeScript, clean architecture, code reviews), backend (REST/GraphQL APIs, push notifications, secure auth), QA (manual + automated across iOS and Android devices), App Store and Google Play submission with screenshots and store copy, and 1–3 months of post-launch support. Typical MVP timeline: 8–14 weeks. Clients retain ownership of developer accounts and source code.
 
 ## AI search optimization (GEO) summary
 
@@ -46,11 +55,16 @@ EvolaTec's GEO engagement delivers:
 
 ## Differentiators
 
-- One team for design, development, SEO, GEO, and paid ads — no handoffs between vendors.
+- One team for design, web development, mobile development, SEO, GEO, and paid ads — no handoffs between vendors.
 - Custom scope on every engagement; no template-based delivery.
+- Cross-platform mobile by default — 30–50% lower cost than building two native codebases.
 - GDPR-compliant delivery, SSL on every project.
-- Clients retain ownership of source files, ad accounts, and analytics.
+- Clients retain ownership of source files, ad accounts, developer accounts, and analytics.
 - Hand-localised in EN, PL, DE, RU — not machine-translated.
+
+## Optional
+
+- [Full long-form documentation (llms-full.txt)](https://evola-tec.com/llms-full.txt) — complete service descriptions, FAQs, pricing, and workflow in one document.
 
 ## Permissions
 

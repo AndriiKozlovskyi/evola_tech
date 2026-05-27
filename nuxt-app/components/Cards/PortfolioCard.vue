@@ -1,19 +1,14 @@
 <template>
   <div class="group bg-surface-container-lowest rounded-xl overflow-hidden transition-all duration-300 hover:scale-[1.02] ambient-shadow">
-    <div class="aspect-video bg-surface-container-low overflow-hidden">
-      <picture>
-        <source :srcset="project.image.replace('.jpg', '.webp')" type="image/webp">
-        <img
-          class="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-          :src="project.image"
-          :alt="project.title"
-          width="640"
-          height="360"
-          loading="lazy"
-          decoding="async"
-          importance="low"
-        />
-      </picture>
+<!-- Image -->
+    <div class="relative overflow-hidden rounded-t-2xl">
+      <img
+        :src="project.image"
+        :alt="project.image.alt"
+        class="w-full h-48 xl:h-60 object-cover pointer-events-none transition-transform duration-300 group-hover:scale-105"
+      />
+      <!-- subtle orange tint overlay on hover -->
+      <div class="absolute inset-0 bg-[#f05b04] opacity-0 group-hover:opacity-5 transition-opacity duration-300 pointer-events-none"></div>
     </div>
     <div class="p-6 lg:p-8">
       <span class="text-[10px] font-bold text-primary uppercase tracking-widest">

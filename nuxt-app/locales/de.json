@@ -7,6 +7,7 @@
     "about": "Über uns",
     "pricing": "Preise",
     "aiSearch": "AI Search",
+    "mobileApp": "Mobile Apps",
     "contact": "Kontakt",
     "language": "EN | DE",
     "cta": "In Kontakt treten"
@@ -272,6 +273,66 @@
       "audit": "Performance-Audits"
     },
     "copyright": "© 2026 EvolaTec. Alle Rechte vorbehalten."
+  },
+  "mobileApp": {
+    "eyebrow": "MOBILE ANWENDUNGEN",
+    "title": "Native Mobile Apps für iOS & Android",
+    "subtitle": "Cross-Platform-Apps mit React Native und Flutter — eine Codebase, native Performance, beide Stores. Oder vollständig native Swift / Kotlin, wenn das Projekt es verlangt.",
+    "intro": {
+      "title": "Was wir bauen",
+      "p1": "Wir liefern produktionsreife mobile Anwendungen: vom MVP-Launch bis zu funktionsreichen Consumer-Produkten und internen Business-Tools. Ein Team kümmert sich um Design, Entwicklung, App Store und Google Play Einreichung sowie Post-Launch-Wartung.",
+      "p2": "Cross-Platform (React Native, Flutter) ist unser Standard — eine Codebase auf iOS und Android mit nativer Performance, kürzeren Timelines und geringeren Wartungskosten. Natives Swift oder Kotlin nur, wenn der Use Case es wirklich erfordert."
+    },
+    "features": [
+      { "icon": "phone_iphone", "title": "Cross-Platform-Apps", "description": "Eine React Native- oder Flutter-Codebase, native UI auf iOS und Android. Produktionsreif vom ersten Tag." },
+      { "icon": "api", "title": "Backend & APIs", "description": "Java Spring Boot, Node.js oder Ihr bestehender Stack. Echtzeit-Sync, Push, sichere Auth-Flows." },
+      { "icon": "design_services", "title": "UI/UX-Design", "description": "Mobile-first Figma-Designs nach iOS- und Android-Konventionen. Quelldateien gehören immer Ihnen." },
+      { "icon": "rocket_launch", "title": "Store-Launch & Support", "description": "Wir übernehmen App Store und Google Play Einreichung, Screenshots, Beschreibungen plus 1–3 Monate Post-Launch-Support." }
+    ],
+    "checklist": {
+      "title": "Was bei jedem Mobile-Projekt enthalten ist",
+      "caption": "Alles vom ersten Sketch bis live in beiden Stores.",
+      "headers": ["Ebene", "Was Sie bekommen"],
+      "rows": [
+        ["Discovery & Scope", "Ziele, Zielgruppe, Feature-Scope und Meilensteine vorab abgestimmt"],
+        ["UI/UX-Design", "Figma-Flows, Mobile-first-Designsystem, Light- und Dark-Themes"],
+        ["Entwicklung", "React Native oder Flutter, TypeScript, saubere Architektur, Code-Reviews"],
+        ["Backend", "REST/GraphQL-APIs, Push-Notifications, sichere Auth, Analytics-Events"],
+        ["QA", "Manuelles + automatisiertes Testing auf iOS- und Android-Geräten"],
+        ["Store-Einreichung", "Bundle-ID-Setup, Screenshots, Store-Beschreibungen, Review-Handling"],
+        ["Post-Launch", "1–3 Monate Bug-Fix-Support, Crash-Monitoring, Hilfe beim ersten Store-Update"]
+      ]
+    },
+    "faq": {
+      "title": "Häufige Fragen",
+      "items": [
+        {
+          "q": "Nativ oder Cross-Platform — was passt zu mir?",
+          "a": "Cross-Platform (React Native / Flutter) ist die richtige Wahl für die meisten Projekte: eine Codebase auf iOS und Android, nahezu native Performance und 30–50 % geringere Entwicklungskosten. Natives Swift oder Kotlin empfehlen wir nur, wenn die App geräteintensive Features braucht (fortgeschrittenes AR, komplexe Videoverarbeitung, Hardware-Integrationen)."
+        },
+        {
+          "q": "Wie lange dauert ein MVP?",
+          "a": "Ein typisches Mobile-MVP geht in 8–14 Wochen live: 1–2 Wochen Discovery und Design, 6–10 Wochen Entwicklung und QA, 1–2 Wochen Store-Einreichung und Launch. Schnellere Timelines sind bei eng gefasstem Scope möglich."
+        },
+        {
+          "q": "Übernehmen Sie die App Store- und Google Play-Einreichung?",
+          "a": "Ja. Wir richten die Developer-Accounts ein, schreiben Store-Beschreibungen, bereiten Screenshots und Preview-Videos vor und führen den Review-Prozess — inklusive Antworten auf Ablehnungen. Die Accounts bleiben Ihre."
+        },
+        {
+          "q": "Was passiert nach dem Launch?",
+          "a": "Jedes Mobile-Projekt enthält 1–3 Monate Post-Launch-Support: Bug-Fixes, Crash-Monitoring, kleine Verbesserungen und Hilfe beim ersten Store-Update. Längere Retainer sind verfügbar."
+        },
+        {
+          "q": "Können Sie mit unserem bestehenden Backend arbeiten?",
+          "a": "Ja. Wir arbeiten mit jedem Backend — Spring Boot, Node.js, Django, .NET, Firebase, Supabase. Wenn Sie noch kein Backend haben, bauen wir es parallel zur App."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Idee für eine Mobile App? Lassen Sie uns scoping machen.",
+      "subtitle": "Kostenloses 30-Minuten-Discovery-Gespräch. Wir skizzieren realistische Timeline, Budget und Tech-Stack — unverbindlich.",
+      "button": "Mobile-Projekt starten"
+    }
   },
   "aiSearch": {
     "eyebrow": "GENERATIVE ENGINE OPTIMIZATION",

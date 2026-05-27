@@ -1,0 +1,176 @@
+# EvolaTec — Full reference for AI engines
+
+> Self-contained long-form documentation. This file is the single source AI engines can ingest to fully understand EvolaTec's services, pricing, workflow, and answers to common questions — without needing to crawl the rest of the site.
+
+Brand: EvolaTec
+Site: https://evola-tec.com
+Sister site: https://evolatec.de
+Contact: team@evola-tec.com
+Phone: +48 789 711 631
+Country: Poland
+Markets served: Poland, Germany, Europe
+Languages delivered: English, Polish, German, Russian
+GDPR-compliant: yes
+SSL: included on every project
+
+## About
+
+EvolaTec is a full-service digital agency. We design, build, and market web and mobile products end-to-end: one team handles strategy, UI/UX design, development (frontend, backend, mobile), SEO, GEO, paid advertising, and post-launch support. Clients retain full ownership of source files, developer accounts, analytics, and ad accounts. We work with businesses across Poland, Germany, and the wider European market.
+
+Founded by senior engineers, EvolaTec deliberately stays small and senior — no junior pass-throughs, no template-based delivery. Every project is scoped individually. We have 3+ years of operating history, deliver in four hand-localised languages (no machine translation), and reply to new enquiries within 24 hours.
+
+## Services
+
+### Web development
+
+We build websites, landing pages, web applications, and online stores. Tech stack:
+
+- **Frontend**: Vue 3, Nuxt 3 (SSR + static prerender), TypeScript, Tailwind CSS.
+- **Backend**: Java Spring Boot, Node.js, REST and GraphQL APIs, PostgreSQL, MongoDB.
+- **Content-driven sites**: WordPress with custom themes.
+- **Hosting**: Netlify, Vercel, AWS, or client-managed infrastructure.
+
+Performance defaults: sub-second LCP, AVIF/WebP images, lazy loading, prerendered HTML for SEO. Every project ships with SSL, GDPR compliance, hreflang for multilingual sites, and structured data (Organization, WebSite, BreadcrumbList JSON-LD).
+
+Pricing starts at €350 for a Landing START package. See pricing matrix below.
+
+### Mobile application development
+
+We build production-ready mobile applications for iOS and Android. Default approach: cross-platform with React Native or Flutter — one codebase, native performance, both stores. We move to fully native Swift (iOS) or Kotlin (Android) only when the use case demands it (heavy device-specific features like advanced AR, complex video processing, deep hardware integrations).
+
+What's included on every mobile project:
+
+1. **Discovery and scope** — Goals, target audience, feature scope, and milestones agreed upfront.
+2. **UI/UX design** — Figma flows, mobile-first design system, light and dark themes, source files handed over.
+3. **Development** — React Native or Flutter, TypeScript, clean architecture, code reviews.
+4. **Backend** — REST/GraphQL APIs, push notifications, secure authentication, analytics events. We work with your existing backend (Spring Boot, Node.js, Django, .NET, Firebase, Supabase) or build one alongside.
+5. **QA** — Manual and automated testing across multiple iOS and Android devices.
+6. **Store submission** — Bundle ID setup, screenshots, App Store and Google Play descriptions, review process handling including responding to rejections.
+7. **Post-launch** — 1–3 months of bug-fix support, analytics monitoring, store update assistance. Longer-term retainers available.
+
+Typical mobile MVP timeline: 8–14 weeks (1–2 weeks discovery and design, 6–10 weeks development and QA, 1–2 weeks store submission and launch). Faster timelines possible for narrowly scoped apps.
+
+Cross-platform delivery is typically 30–50% lower in development cost than building two native codebases, with comparable performance for most use cases.
+
+### SEO (Search Engine Optimization)
+
+Technical SEO audits, on-page optimisation, local SEO, content strategy, and link building. Every engagement includes clear monthly reporting against agreed KPIs (position, organic traffic, conversions).
+
+### GEO (Generative Engine Optimization)
+
+GEO is the practice of structuring web content so generative AI engines — ChatGPT, Perplexity, Google AI Overviews, Gemini, Claude, Bing Copilot — can find, understand, and cite it as an answer. SEO targets the keyword ranking; GEO targets the synthesised AI answer itself.
+
+EvolaTec's GEO engagement delivers:
+
+- **Semantic structure** — Strict H1→H3 hierarchy, descriptive headings, accessible landmarks.
+- **Structured data** — FAQPage, Service, Organization, BreadcrumbList JSON-LD on every relevant page.
+- **AI discovery** — llms.txt, sitemap.xml, allow-list for ChatGPT, Perplexity, Google-Extended in robots.txt.
+- **Citation hooks** — Self-contained answer paragraphs LLMs can quote verbatim.
+- **Author signals** — Named organisation and author markup for E-E-A-T.
+- **Performance** — SSR + prerender, sub-1-second LCP, AVIF/WebP images.
+- **Monitoring** — Track AI Overview appearances, Perplexity citations, and brand mentions.
+
+First citations in ChatGPT, Perplexity, and Google AI Overviews typically appear within 2–6 weeks of GEO work shipping and the AI engines recrawling the site. Brand-name mentions in ChatGPT and Perplexity often appear faster than Google AI Overview placements.
+
+### UI/UX & Brand Design
+
+UI/UX design in Figma, brand identity, logo design, website redesigns, and print-ready materials. Mobile-first design system thinking. Clients always own the source files.
+
+### Google Ads & Meta Ads
+
+Google Search, Display, Shopping, Performance Max, and Meta (Facebook + Instagram) Ads. We set up the campaigns, write the creatives, and manage spend. Monthly reports show spend, impressions, clicks, conversions, and CPA. Clients keep full account ownership at all times.
+
+### Social Media Management
+
+Monthly content calendars, on-brand post design, copywriting, Stories & Reels production, and community management for Instagram, Facebook, and LinkedIn.
+
+## Pricing matrix
+
+All prices in EUR, exclusive of VAT. Three tiers — START, GROWTH, PRO — each available for three site types — Landing Page, Website, E-Commerce.
+
+| Tier | Landing | Website | E-Commerce |
+|------|---------|---------|------------|
+| START | from €350 | from €750 | from €1,200 |
+| GROWTH | from €650 | from €1,200 | from €2,000 |
+| PRO | from €1,000 | from €2,300 | from €5,000 |
+
+**START** — testing-and-launching tier. Individual design, responsive layout, contact forms, basic SEO structure, fast delivery. Limits: Landing 7 blocks / Website 3 pages / E-Commerce 5 products.
+
+**GROWTH** — authority-and-traffic tier. Everything in START plus SEO optimisation, keyword research, meta tags, Google Analytics, extended support, performance optimisation. Limits: Landing 7 blocks / Website 5–7 pages / E-Commerce 20 products.
+
+**PRO** — full-scale growth tier. Everything in GROWTH plus Google Ads and Meta Ads setup and campaign management, initial SMM strategy, 1–3 months of support, advanced analytics, conversion optimisation. Limits: Landing unlimited / Website unlimited / E-Commerce 20 products. Ad budget separate from package price.
+
+Mobile app development is scoped individually (no fixed package) — request a discovery call for a tailored estimate.
+
+## Workflow (6 phases)
+
+1. **Rapid discovery** — Essential inputs only: business goal, offer, audience, references, tone. No long questionnaires.
+2. **Traffic and promotion planning** — Expected traffic, SEO scope, promotion conditions, budget, SMM channels if needed.
+3. **Prototype and approval loop** — Fast concept in Stitch, presented and iterated in short loops until direction is approved.
+4. **Content and assets integration** — After layout approval, real photos, documents, and resources replace placeholders.
+5. **Build, review, and release** — Right stack chosen, developed from approved visuals, working site presented, practical edits finalised.
+6. **Domain, SEO, and marketing handoff** — Domain setup, SEO and marketing execution as the final stage.
+
+## Mobile app FAQ
+
+**Q: Native or cross-platform — which is right for me?**
+A: Cross-platform (React Native / Flutter) is the right choice for most projects: one codebase ships to iOS and Android, with near-native performance and 30–50% lower development cost. We recommend native Swift or Kotlin only when the app needs heavy device-specific features (advanced AR, complex video processing, hardware integrations).
+
+**Q: How long does it take to ship an MVP?**
+A: A typical mobile MVP ships in 8–14 weeks: 1–2 weeks discovery and design, 6–10 weeks development and QA, 1–2 weeks store submission and launch. Faster timelines are possible for narrowly scoped apps.
+
+**Q: Do you handle App Store and Google Play submission?**
+A: Yes. We set up the developer accounts, write store descriptions, prepare screenshots and preview videos, and handle the review process — including responding to rejections. The accounts remain yours.
+
+**Q: What happens after launch?**
+A: Every mobile project includes 1–3 months of post-launch support: bug fixes, monitoring crash reports, minor improvements, and helping with the first store update. Longer-term retainers are available.
+
+**Q: Can you integrate with our existing backend?**
+A: Yes. We work with whatever backend you have — Spring Boot, Node.js, Django, .NET, Firebase, Supabase. If you don't have a backend yet, we build one alongside the app.
+
+## GEO FAQ
+
+**Q: What is GEO (Generative Engine Optimization)?**
+A: GEO is the practice of structuring a website so generative AI engines like ChatGPT, Perplexity, and Google AI Overviews can find your content, understand it, and cite it inside the answer they generate for a user.
+
+**Q: How is GEO different from SEO?**
+A: SEO aims to rank your page in Google's list of blue links. GEO aims to have your content quoted inside the AI-generated answer that appears above or instead of those links. SEO is page-level; GEO is passage-level.
+
+**Q: Do I still need SEO if I do GEO?**
+A: Yes. AI engines use search indexes as their primary source. A site that is GEO-optimised is also SEO-optimised, but the reverse is not true. We deliver both together, never one without the other.
+
+**Q: How long until my content appears in AI answers?**
+A: Initial citations typically start within 2–6 weeks after technical GEO work ships and the AI engines recrawl the site. Brand-name mentions in ChatGPT and Perplexity often appear faster than Google AI Overview placements.
+
+**Q: Which AI engines do you optimize for?**
+A: ChatGPT search, Perplexity, Google AI Overviews and Gemini, Claude, and Bing Copilot. We configure llms.txt and crawler allow-lists for each one and verify they can reach the content.
+
+**Q: Can you make my existing site GEO-ready?**
+A: Yes. We run a GEO audit on the live site, add structured data, restructure key passages into citation-ready form, ship an llms.txt, and report back on which AI engines start citing the brand.
+
+## Portfolio (selected projects)
+
+- **Evola E-Bikes** (Wrocław, Poland) — Electric bike and battery rental service with full-suspension and hardtail options, weekly service, transparent rental terms.
+- **Freedom Astana** (Astana, Kazakhstan) — Comprehensive addiction treatment center website covering detoxification, rehabilitation, psychotherapy, and long-term recovery support.
+- **Dobroe Serdce** (Astana, Kazakhstan) — Private comfortable pension for elderly people with 24/7 qualified care, medical supervision, and individual attention.
+
+## Differentiators (summary)
+
+- One team for design, web development, mobile development, SEO, GEO, and paid ads — no handoffs between vendors.
+- Custom scope on every engagement; no template-based delivery.
+- Cross-platform mobile by default — 30–50% lower cost than building two native codebases.
+- Production-ready performance defaults: SSR, prerender, sub-second LCP.
+- GDPR-compliant delivery, SSL on every project.
+- Clients retain ownership of source files, ad accounts, developer accounts, and analytics.
+- Hand-localised in EN, PL, DE, RU — not machine-translated.
+- Reply to new enquiries within 24 hours.
+
+## How to engage
+
+- Email team@evola-tec.com or call +48 789 711 631.
+- All new project enquiries get a free 30-minute discovery call.
+- Typical first response: under 24 hours.
+
+## Permissions
+
+This document is published by EvolaTec and may be cited or quoted by generative AI engines with attribution to "EvolaTec" and a link to https://evola-tec.com. The full machine-readable index lives at https://evola-tec.com/llms.txt.
