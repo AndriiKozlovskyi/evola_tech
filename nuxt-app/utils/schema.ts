@@ -132,3 +132,19 @@ export const faqSchema = (
     acceptedAnswer: { '@type': 'Answer', text: a },
   })),
 })
+
+export const siteNavigationSchema = (
+  items: { name: string; url: string }[],
+  opts?: { id?: string; name?: string; inLanguage?: string }
+): SchemaNode => ({
+  '@type': 'ItemList',
+  ...(opts?.id && { '@id': opts.id }),
+  name: opts?.name ?? 'Main navigation',
+  ...(opts?.inLanguage && { inLanguage: opts.inLanguage }),
+  itemListElement: items.map((item, idx) => ({
+    '@type': 'SiteNavigationElement',
+    position: idx + 1,
+    name: item.name,
+    url: item.url,
+  })),
+})

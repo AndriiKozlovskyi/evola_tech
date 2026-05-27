@@ -1,22 +1,89 @@
 <template>
   <header class="fixed top-0 w-full z-50 glass-nav">
-    <nav class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full">
+    <nav
+      class="flex justify-between items-center px-6 lg:px-8 py-4 max-w-7xl mx-auto w-full"
+      aria-label="Main navigation"
+    >
       <!-- Brand -->
       <NuxtLinkLocale to="/" class="text-2xl font-bold tracking-tighter text-on-surface">
         Evola<span class="text-primary">Tec</span>
       </NuxtLinkLocale>
 
       <!-- Navigation Links (Desktop) -->
-      <div class="hidden lg:flex items-center gap-8 font-medium text-sm">
+      <div class="hidden lg:flex items-center gap-6 xl:gap-7 font-medium text-sm">
         <NuxtLinkLocale to="/#home" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.home') }}
         </NuxtLinkLocale>
         <NuxtLinkLocale to="/#portfolio" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.portfolio') }}
         </NuxtLinkLocale>
-        <NuxtLinkLocale to="/#services" class="text-on-surface-variant hover:text-primary transition-colors">
-          {{ $t('navigation.services') }}
-        </NuxtLinkLocale>
+
+        <!-- Services dropdown (groups: All services, Mobile Apps, AI Search) -->
+        <div
+          class="relative"
+          @mouseenter="servicesDropdownOpen = true"
+          @mouseleave="servicesDropdownOpen = false"
+        >
+          <button
+            type="button"
+            @click="servicesDropdownOpen = !servicesDropdownOpen"
+            class="text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1"
+            :class="{ 'text-primary': servicesDropdownOpen }"
+            aria-haspopup="true"
+            :aria-expanded="servicesDropdownOpen"
+          >
+            {{ $t('navigation.services') }}
+            <span
+              class="material-symbols-outlined text-base"
+              :style="{
+                transform: servicesDropdownOpen ? 'rotate(180deg)' : 'rotate(0deg)',
+                transition: 'transform 300ms ease',
+              }"
+            >
+              expand_more
+            </span>
+          </button>
+          <Transition
+            enter-active-class="transition-all duration-200 ease-out"
+            enter-from-class="opacity-0 -translate-y-2"
+            enter-to-class="opacity-100 translate-y-0"
+            leave-active-class="transition-all duration-150 ease-in"
+            leave-from-class="opacity-100 translate-y-0"
+            leave-to-class="opacity-0 -translate-y-2"
+          >
+            <div
+              v-if="servicesDropdownOpen"
+              class="absolute top-full left-0 mt-2 bg-surface border border-outline-variant/20 rounded-lg shadow-lg overflow-hidden min-w-[200px] z-50"
+              role="menu"
+            >
+              <NuxtLinkLocale
+                to="/#services"
+                role="menuitem"
+                class="block px-4 py-3 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors"
+                @click="servicesDropdownOpen = false"
+              >
+                {{ $t('navigation.servicesOverview') }}
+              </NuxtLinkLocale>
+              <NuxtLinkLocale
+                to="/#mobile-app"
+                role="menuitem"
+                class="block px-4 py-3 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors"
+                @click="servicesDropdownOpen = false"
+              >
+                {{ $t('navigation.mobileApp') }}
+              </NuxtLinkLocale>
+              <NuxtLinkLocale
+                to="/#ai-search"
+                role="menuitem"
+                class="block px-4 py-3 text-sm font-medium text-on-surface-variant hover:text-primary hover:bg-surface-container-low transition-colors"
+                @click="servicesDropdownOpen = false"
+              >
+                {{ $t('navigation.aiSearch') }}
+              </NuxtLinkLocale>
+            </div>
+          </Transition>
+        </div>
+
         <NuxtLinkLocale to="/#workflow" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.workflow') }}
         </NuxtLinkLocale>
@@ -25,12 +92,6 @@
         </NuxtLinkLocale>
         <NuxtLinkLocale to="/#pricing" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.pricing') }}
-        </NuxtLinkLocale>
-        <NuxtLinkLocale to="/#mobile-app" class="text-on-surface-variant hover:text-primary transition-colors">
-          {{ $t('navigation.mobileApp') }}
-        </NuxtLinkLocale>
-        <NuxtLinkLocale to="/#ai-search" class="text-on-surface-variant hover:text-primary transition-colors">
-          {{ $t('navigation.aiSearch') }}
         </NuxtLinkLocale>
         <NuxtLinkLocale to="/#contact" class="text-on-surface-variant hover:text-primary transition-colors">
           {{ $t('navigation.contact') }}
@@ -198,6 +259,7 @@ const { currentLocale, setLanguage, availableLocales, localeNames } = useLanguag
 const mobileMenuOpen = ref(false)
 const languageDropdownOpen = ref(false)
 const languageDropdownOpenMobile = ref(false)
+const servicesDropdownOpen = ref(false)
 const route = useRoute()
 
 const selectLanguage = async (lang: string) => {
@@ -233,6 +295,7 @@ watch(
     mobileMenuOpen.value = false
     languageDropdownOpen.value = false
     languageDropdownOpenMobile.value = false
+    servicesDropdownOpen.value = false
   }
 )
 

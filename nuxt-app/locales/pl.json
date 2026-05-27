@@ -8,6 +8,7 @@
     "pricing": "Cennik",
     "aiSearch": "AI Search",
     "mobileApp": "Aplikacje mobilne",
+    "servicesOverview": "Wszystkie usługi",
     "contact": "Kontakt",
     "language": "PL | EN | DE | RU",
     "cta": "Skontaktuj się"
@@ -73,6 +74,11 @@
         "icon": "web",
         "title": "Tworzenie stron internetowych",
         "description": "Landing page, strony firmowe, aplikacje webowe i sklepy internetowe. Frontend Vue 3 + Nuxt, backend Java Spring Boot, WordPress dla stron contentowych."
+      },
+      {
+        "icon": "phone_iphone",
+        "title": "Aplikacje mobilne",
+        "description": "Aplikacje cross-platform na iOS i Androida w React Native i Flutter — jeden kod, natywna wydajność. Publikacja w App Store i Google Play oraz wsparcie po launchu w pakiecie."
       },
       {
         "icon": "palette",

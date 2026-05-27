@@ -22,6 +22,7 @@ import {
   serviceSchema,
   breadcrumbSchema,
   faqSchema,
+  siteNavigationSchema,
 } from '~/utils/schema'
 
 const { t, tm, rt, locale } = useI18n()
@@ -43,6 +44,18 @@ const localeFaqs = (path: string) =>
 const aiSearchFaqs = computed(() => localeFaqs('aiSearch.faq.items'))
 const mobileAppFaqs = computed(() => localeFaqs('mobileApp.faq.items'))
 
+const navItems = computed(() => [
+  { name: t('navigation.home'), url: `${absoluteLocaleRoot.value}#home` },
+  { name: t('navigation.portfolio'), url: `${absoluteLocaleRoot.value}#portfolio` },
+  { name: t('navigation.services'), url: `${absoluteLocaleRoot.value}#services` },
+  { name: t('navigation.mobileApp'), url: `${absoluteLocaleRoot.value}#mobile-app` },
+  { name: t('navigation.aiSearch'), url: `${absoluteLocaleRoot.value}#ai-search` },
+  { name: t('navigation.workflow'), url: `${absoluteLocaleRoot.value}#workflow` },
+  { name: t('navigation.about'), url: `${absoluteLocaleRoot.value}#about` },
+  { name: t('navigation.pricing'), url: `${absoluteLocaleRoot.value}#pricing` },
+  { name: t('navigation.contact'), url: `${absoluteLocaleRoot.value}#contact` },
+])
+
 const schemaMarkup = computed(() =>
   buildSchema(
     organizationSchema({
@@ -60,6 +73,11 @@ const schemaMarkup = computed(() =>
     breadcrumbSchema([
       { name: 'Home', url: absoluteLocaleRoot.value },
     ]),
+    siteNavigationSchema(navItems.value, {
+      id: `${absoluteLocaleRoot.value}#main-nav`,
+      name: 'Main navigation',
+      inLanguage: locale.value,
+    }),
     serviceSchema({
       id: `${absoluteLocaleRoot.value}#web-development-service`,
       name: 'Web Development',

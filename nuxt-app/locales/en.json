@@ -8,6 +8,7 @@
     "pricing": "Pricing",
     "aiSearch": "AI Search",
     "mobileApp": "Mobile Apps",
+    "servicesOverview": "All services",
     "contact": "Contact",
     "language": "EN | PL | DE | RU",
     "cta": "Get in Touch"
@@ -73,6 +74,11 @@
         "icon": "web",
         "title": "Web Development",
         "description": "Landing pages, corporate sites, web apps, and e-commerce. Vue 3 + Nuxt frontend, Java Spring Boot backend, WordPress for content-driven sites."
+      },
+      {
+        "icon": "phone_iphone",
+        "title": "Mobile Apps",
+        "description": "Cross-platform iOS and Android apps with React Native and Flutter — one codebase, native performance. App Store and Google Play submission and post-launch support included."
       },
       {
         "icon": "palette",
