@@ -25,7 +25,7 @@
     "priceFrom": "From",
     "priceValue": "€350",
     "priceLink": "see full pricing",
-    "chips": ["Design", "SEO + GEO", "Google Ads", "Brand Design"],
+    "chips": ["Design", "SEO + GEO", "Google Ads", "Mobile Apps"],
     "stats": [
       { "value": "3+", "label": "Years building for clients" },
       { "value": "4", "label": "Languages we deliver in" },
@@ -541,9 +541,9 @@
   },
   "seo": {
     "home": {
-      "title": "Web Development, SEO & AI Search (GEO) Agency – High-Performance Sites for Business",
-      "description": "EvolaTec builds modern websites, landing pages, and web apps with Vue 3 + Nuxt. Full-service digital agency: web development, SEO, Generative Engine Optimization (GEO) for ChatGPT and AI Overviews, Google Ads, Meta Ads, and design. Serving Poland and Europe.",
-      "keywords": "web development Poland, landing page agency, website development services, SEO agency Poland, GEO agency, Generative Engine Optimization, AI search optimization, ChatGPT SEO, Perplexity citations, Google AI Overviews, Vue 3 Nuxt development, Google Ads management, digital marketing agency, web design Europe"
+      "title": "Web & Mobile App Development Wrocław — Sites, Apps, SEO & AI Search (GEO) | EvolaTec",
+      "description": "EvolaTec is a Wrocław-based digital agency building modern websites, landing pages, and web apps with Vue 3 + Nuxt, plus cross-platform mobile apps with React Native and Flutter. Full-service: web development, mobile app development, SEO, GEO for ChatGPT and AI Overviews, Google Ads, Meta Ads, and design. Based in Wrocław, serving Poland and Europe.",
+      "keywords": "web development Poland, landing page agency, website development services, SEO agency Poland, GEO agency, Generative Engine Optimization, AI search optimization, ChatGPT SEO, Perplexity citations, Google AI Overviews, Vue 3 Nuxt development, Google Ads management, digital marketing agency, web design Europe, web development Wrocław, mobile app development Wrocław, mobile app development Poland, iOS app development Wrocław, Android app development Wrocław, React Native developer Wrocław, Flutter developer Wrocław, website price Wrocław, mobile app price Wrocław, cost of website Wrocław, cost of mobile app Wrocław, web agency Wrocław, software house Wrocław, web designer Wrocław, SEO Wrocław, Google Ads Wrocław, landing page Wrocław, e-commerce Wrocław, custom software Wrocław"
     },
     "terms": {
       "title": "Terms of Service",

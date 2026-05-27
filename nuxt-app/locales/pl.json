@@ -25,7 +25,7 @@
     "priceFrom": "Od",
     "priceValue": "€350",
     "priceLink": "zobacz cennik",
-    "chips": ["Design", "SEO + GEO", "Google Ads", "Identyfikacja marki"],
+    "chips": ["Design", "SEO + GEO", "Google Ads", "Aplikacje mobilne"],
     "stats": [
       { "value": "3+", "label": "Lat pracy dla klientów" },
       { "value": "4", "label": "Języki obsługi" },
@@ -541,9 +541,9 @@
   },
   "seo": {
     "home": {
-      "title": "Tworzenie stron, SEO i AI Search (GEO) – Agencja interaktywna dla biznesu",
-      "description": "EvolaTec tworzy nowoczesne strony internetowe, landing page i aplikacje webowe z Vue 3 + Nuxt. Pełna usługa: tworzenie stron, SEO, optymalizacja pod wyszukiwarki AI (GEO) dla ChatGPT i AI Overviews, Google Ads, Meta Ads i projektowanie. Obsługujemy Polskę i Europę.",
-      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron, agencja interaktywna, landing page dla firmy, nowoczesne strony, SEO dla stron, pozycjonowanie stron, GEO agencja, Generative Engine Optimization, optymalizacja pod ChatGPT, cytaty Perplexity, Google AI Overviews, reklama Google Ads, marketing internetowy, strony internetowe Polska, projektowanie stron Wrocław, web development, agencja cyfrowa"
+      "title": "Tworzenie stron i aplikacji mobilnych Wrocław — Agencja interaktywna dla biznesu | EvolaTec",
+      "description": "EvolaTec we Wrocławiu tworzy nowoczesne strony internetowe, landing page, aplikacje webowe na Vue 3 + Nuxt i aplikacje mobilne na React Native oraz Flutter. Pełna usługa: tworzenie stron, aplikacje mobilne, SEO, GEO dla ChatGPT i AI Overviews, Google Ads, Meta Ads i projektowanie. Siedziba we Wrocławiu, obsługujemy Polskę i Europę.",
+      "keywords": "tworzenie stron internetowych, strony internetowe dla firm, projektowanie stron, agencja interaktywna, landing page dla firmy, nowoczesne strony, SEO dla stron, pozycjonowanie stron, GEO agencja, Generative Engine Optimization, optymalizacja pod ChatGPT, cytaty Perplexity, Google AI Overviews, reklama Google Ads, marketing internetowy, strony internetowe Polska, web development, agencja cyfrowa, tworzenie stron internetowych Wrocław, projektowanie stron Wrocław, tworzenie aplikacji mobilnych Wrocław, aplikacje mobilne Wrocław, cena strony internetowej Wrocław, cena aplikacji mobilnej Wrocław, koszt strony internetowej Wrocław, koszt aplikacji mobilnej Wrocław, ile kosztuje strona internetowa Wrocław, ile kosztuje aplikacja mobilna Wrocław, React Native Wrocław, Flutter Wrocław, programista aplikacji mobilnych Wrocław, programista stron internetowych Wrocław, web developer Wrocław, agencja interaktywna Wrocław, SEO Wrocław, Google Ads Wrocław, pozycjonowanie Wrocław, sklep internetowy Wrocław, landing page Wrocław, software house Wrocław"
     },
     "terms": {
       "title": "Regulamin",

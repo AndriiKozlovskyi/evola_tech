@@ -1,9 +1,10 @@
 # EvolaTec
 
-> EvolaTec is a full-service digital agency building modern websites, landing pages, web apps, and mobile applications with Vue 3 + Nuxt and React Native / Flutter. We deliver web development, mobile app development, SEO, Generative Engine Optimization (GEO) for ChatGPT and Google AI Overviews, Google Ads, Meta Ads, and design. Based in Poland, serving Poland, Germany, and Europe.
+> EvolaTec is a Wrocław-based full-service digital agency building modern websites, landing pages, web apps, and mobile applications with Vue 3 + Nuxt and React Native / Flutter. We deliver web development, mobile app development, SEO, Generative Engine Optimization (GEO) for ChatGPT and Google AI Overviews, Google Ads, Meta Ads, and design. Based in Wrocław, Poland, serving Poland, Germany, and Europe.
 
 Contact: team@evola-tec.com
 Phone: +48 789 711 631
+City: Wrocław, Poland
 Languages: English, Polish, German, Russian
 Site: https://evola-tec.com
 

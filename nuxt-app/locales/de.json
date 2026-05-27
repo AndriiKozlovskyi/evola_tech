@@ -25,7 +25,7 @@
     "priceFrom": "Ab",
     "priceValue": "350 €",
     "priceLink": "Preise ansehen",
-    "chips": ["Design", "SEO + GEO", "Google Ads", "Markendesign"],
+    "chips": ["Design", "SEO + GEO", "Google Ads", "Mobile Apps"],
     "stats": [
       { "value": "3+", "label": "Jahre Kundenarbeit" },
       { "value": "4", "label": "Sprachen im Lieferumfang" },
@@ -541,9 +541,9 @@
   },
   "seo": {
     "home": {
-      "title": "Webentwicklung, SEO & AI Search (GEO) Agentur – High-Performance Websites",
-      "description": "EvolaTec erstellt moderne Webseiten, Landing Pages und Web-Apps mit Vue 3 + Nuxt. Vollservice-Agentur: Webentwicklung, SEO, Generative Engine Optimization (GEO) für ChatGPT und AI Overviews, Google Ads, Meta Ads und Design. Wir bedienen Polen und Europa.",
-      "keywords": "Webentwicklung, Webseiten erstellen, Landing Pages für Unternehmen, SEO-Agentur, GEO Agentur, Generative Engine Optimization, KI-Suchmaschinenoptimierung, ChatGPT SEO, Perplexity Zitate, Google AI Overviews, Google Ads Management, Webdesign, Vue 3 Nuxt, digitale Agentur, moderne Webseiten, E-Commerce-Entwicklung, Web-Performance"
+      "title": "Webentwicklung & App-Entwicklung Wrocław — Webseiten, Apps, SEO & AI Search (GEO) | EvolaTec",
+      "description": "EvolaTec mit Sitz in Wrocław erstellt moderne Webseiten, Landing Pages und Web-Apps mit Vue 3 + Nuxt sowie Cross-Platform-Mobile-Apps mit React Native und Flutter. Vollservice-Agentur: Webentwicklung, Mobile-App-Entwicklung, SEO, GEO für ChatGPT und AI Overviews, Google Ads, Meta Ads und Design. Sitz in Wrocław, wir bedienen Polen und Europa.",
+      "keywords": "Webentwicklung, Webseiten erstellen, Landing Pages für Unternehmen, SEO-Agentur, GEO Agentur, Generative Engine Optimization, KI-Suchmaschinenoptimierung, ChatGPT SEO, Perplexity Zitate, Google AI Overviews, Google Ads Management, Webdesign, Vue 3 Nuxt, digitale Agentur, moderne Webseiten, E-Commerce-Entwicklung, Web-Performance, Webentwicklung Wrocław, Mobile App Entwicklung Wrocław, App-Entwicklung Polen, iOS App Entwicklung Wrocław, Android App Entwicklung Wrocław, React Native Entwickler Wrocław, Flutter Entwickler Wrocław, Webseite Preis Wrocław, App Preis Wrocław, Kosten Webseite Wrocław, Kosten Mobile App Wrocław, Webagentur Wrocław, Software-Entwicklung Wrocław, Software House Wrocław, SEO Wrocław, Google Ads Wrocław, Landing Page Wrocław, Onlineshop Wrocław, Nearshoring Polen, IT-Dienstleister Wrocław"
     },
     "terms": {
       "title": "Nutzungsbedingungen",

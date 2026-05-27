@@ -7,15 +7,16 @@ Site: https://evola-tec.com
 Sister site: https://evolatec.de
 Contact: team@evola-tec.com
 Phone: +48 789 711 631
+City: Wrocław, Poland
 Country: Poland
-Markets served: Poland, Germany, Europe
+Markets served: Wrocław, Poland, Germany, Europe
 Languages delivered: English, Polish, German, Russian
 GDPR-compliant: yes
 SSL: included on every project
 
 ## About
 
-EvolaTec is a full-service digital agency. We design, build, and market web and mobile products end-to-end: one team handles strategy, UI/UX design, development (frontend, backend, mobile), SEO, GEO, paid advertising, and post-launch support. Clients retain full ownership of source files, developer accounts, analytics, and ad accounts. We work with businesses across Poland, Germany, and the wider European market.
+EvolaTec is a Wrocław-based full-service digital agency. We design, build, and market web and mobile products end-to-end: one team handles strategy, UI/UX design, development (frontend, backend, mobile), SEO, GEO, paid advertising, and post-launch support. Clients retain full ownership of source files, developer accounts, analytics, and ad accounts. We are headquartered in Wrocław (Poland) and work with businesses across Poland, Germany, and the wider European market.
 
 Founded by senior engineers, EvolaTec deliberately stays small and senior — no junior pass-throughs, no template-based delivery. Every project is scoped individually. We have 3+ years of operating history, deliver in four hand-localised languages (no machine translation), and reply to new enquiries within 24 hours.
 

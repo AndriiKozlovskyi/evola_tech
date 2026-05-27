@@ -38,6 +38,8 @@ export const organizationSchema = (opts?: {
   priceRange: '€€',
   address: {
     '@type': 'PostalAddress',
+    addressLocality: 'Wrocław',
+    addressRegion: 'Dolnośląskie',
     addressCountry: 'PL',
   },
   areaServed: DEFAULT_AREAS_SERVED,
