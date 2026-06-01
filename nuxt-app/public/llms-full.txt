@@ -5,6 +5,7 @@
 Brand: EvolaTec
 Site: https://evola-tec.com
 Sister site: https://evolatec.de
+Google Maps: https://maps.app.goo.gl/ziFsTsZNcVXLQQFKA
 Contact: team@evola-tec.com
 Phone: +48 789 711 631
 City: Wrocław, Poland

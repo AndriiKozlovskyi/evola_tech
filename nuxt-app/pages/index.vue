@@ -23,7 +23,23 @@ import {
   breadcrumbSchema,
   faqSchema,
   siteNavigationSchema,
+  offerCatalogSchema,
+  GOOGLE_MAPS_URL,
 } from '~/utils/schema'
+
+const PRICING_TIERS = [
+  { name: 'Landing Page — START',  price:  350, category: 'Landing Page' },
+  { name: 'Landing Page — GROWTH', price:  650, category: 'Landing Page' },
+  { name: 'Landing Page — PRO',    price: 1000, category: 'Landing Page' },
+  { name: 'Website — START',       price:  750, category: 'Website' },
+  { name: 'Website — GROWTH',      price: 1200, category: 'Website' },
+  { name: 'Website — PRO',         price: 2300, category: 'Website' },
+  { name: 'E-Commerce — START',    price: 1200, category: 'E-Commerce' },
+  { name: 'E-Commerce — GROWTH',   price: 2000, category: 'E-Commerce' },
+  { name: 'E-Commerce — PRO',      price: 5000, category: 'E-Commerce' },
+] as const
+
+const WROCLAW_GEO = { latitude: 51.1079, longitude: 17.0385 } as const
 
 const { t, tm, rt, locale } = useI18n()
 
@@ -56,12 +72,36 @@ const navItems = computed(() => [
   { name: t('navigation.contact'), url: `${absoluteLocaleRoot.value}#contact` },
 ])
 
+const pricingCatalog = computed(() =>
+  offerCatalogSchema({
+    name: 'EvolaTec Pricing Tiers',
+    inLanguage: locale.value,
+    items: PRICING_TIERS.map(tier => ({
+      name: tier.name,
+      price: tier.price,
+      priceCurrency: 'EUR',
+      category: tier.category,
+      url: `${absoluteLocaleRoot.value}#pricing`,
+    })),
+  })
+)
+
 const schemaMarkup = computed(() =>
   buildSchema(
     organizationSchema({
       inLanguage: locale.value,
       description: t('seo.home.description'),
       url: absoluteLocaleRoot.value,
+      geo: WROCLAW_GEO,
+      hasMap: GOOGLE_MAPS_URL,
+      openingHours: [
+        {
+          dayOfWeek: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'],
+          opens: '09:00',
+          closes: '18:00',
+        },
+      ],
+      hasOfferCatalog: pricingCatalog.value,
     }),
     websiteSchema({ inLanguage: locale.value }),
     pageSchema({
@@ -85,7 +125,7 @@ const schemaMarkup = computed(() =>
       url: `${absoluteLocaleRoot.value}#services`,
       serviceType: 'Web Development',
       inLanguage: locale.value,
-      minPrice: 350,
+      priceRange: { low: 350, high: 5000, offerCount: 9, currency: 'EUR' },
       category: ['Web development', 'Vue 3', 'Nuxt', 'Landing pages', 'E-commerce'],
     }),
     serviceSchema({

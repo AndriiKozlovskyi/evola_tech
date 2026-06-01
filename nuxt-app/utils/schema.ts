@@ -12,10 +12,13 @@ const DEFAULT_AREAS_SERVED = [
 
 const DEFAULT_SAME_AS = [
   'https://evolatec.de',
+  'https://maps.app.goo.gl/ziFsTsZNcVXLQQFKA',
   'https://www.facebook.com/evola_tec',
   'https://www.linkedin.com/company/121004478',
   'https://twitter.com/evola_tec',
 ]
+
+export const GOOGLE_MAPS_URL = 'https://maps.app.goo.gl/ziFsTsZNcVXLQQFKA'
 
 export const buildSchema = (...nodes: SchemaNode[]) => ({
   '@context': 'https://schema.org',
@@ -26,6 +29,11 @@ export const organizationSchema = (opts?: {
   inLanguage?: string
   description?: string
   url?: string
+  geo?: { latitude: number; longitude: number }
+  hasMap?: string
+  hasOfferCatalog?: SchemaNode
+  openingHours?: { dayOfWeek: string[]; opens: string; closes: string }[]
+  sameAs?: string[]
 }): SchemaNode => ({
   '@type': 'ProfessionalService',
   '@id': ORG_ID,
@@ -44,9 +52,63 @@ export const organizationSchema = (opts?: {
   },
   areaServed: DEFAULT_AREAS_SERVED,
   availableLanguage: ['Polish', 'English', 'German', 'Russian'],
-  sameAs: DEFAULT_SAME_AS,
+  sameAs: opts?.sameAs ?? DEFAULT_SAME_AS,
   ...(opts?.inLanguage && { inLanguage: opts.inLanguage }),
   ...(opts?.description && { description: opts.description }),
+  ...(opts?.geo && {
+    geo: {
+      '@type': 'GeoCoordinates',
+      latitude: opts.geo.latitude,
+      longitude: opts.geo.longitude,
+    },
+  }),
+  ...(opts?.hasMap && { hasMap: opts.hasMap }),
+  ...(opts?.openingHours && {
+    openingHoursSpecification: opts.openingHours.map(spec => ({
+      '@type': 'OpeningHoursSpecification',
+      dayOfWeek: spec.dayOfWeek,
+      opens: spec.opens,
+      closes: spec.closes,
+    })),
+  }),
+  ...(opts?.hasOfferCatalog && { hasOfferCatalog: opts.hasOfferCatalog }),
+})
+
+export const offerCatalogSchema = (opts: {
+  name: string
+  inLanguage?: string
+  items: {
+    name: string
+    description?: string
+    price: number
+    priceCurrency?: string
+    category?: string
+    url?: string
+  }[]
+}): SchemaNode => ({
+  '@type': 'OfferCatalog',
+  name: opts.name,
+  ...(opts.inLanguage && { inLanguage: opts.inLanguage }),
+  itemListElement: opts.items.map((item, idx) => ({
+    '@type': 'Offer',
+    position: idx + 1,
+    name: item.name,
+    price: item.price,
+    priceCurrency: item.priceCurrency ?? 'EUR',
+    priceSpecification: {
+      '@type': 'PriceSpecification',
+      price: item.price,
+      priceCurrency: item.priceCurrency ?? 'EUR',
+      valueAddedTaxIncluded: false,
+    },
+    ...(item.url && { url: item.url }),
+    itemOffered: {
+      '@type': 'Service',
+      name: item.name,
+      ...(item.description && { description: item.description }),
+      ...(item.category && { category: item.category }),
+    },
+  })),
 })
 
 export const websiteSchema = (opts?: { inLanguage?: string }): SchemaNode => ({
@@ -81,33 +143,49 @@ export const serviceSchema = (opts: {
   url?: string
   serviceType?: string
   minPrice?: number
+  priceRange?: { low: number; high: number; offerCount?: number; currency?: string }
   inLanguage?: string
   category?: string[]
-}): SchemaNode => ({
-  '@type': 'Service',
-  '@id': opts.id,
-  name: opts.name,
-  description: opts.description,
-  provider: { '@id': ORG_ID },
-  areaServed: DEFAULT_AREAS_SERVED,
-  ...(opts.url && { url: opts.url }),
-  ...(opts.serviceType && { serviceType: opts.serviceType }),
-  ...(opts.inLanguage && { inLanguage: opts.inLanguage }),
-  ...(opts.category && { category: opts.category }),
-  ...(opts.minPrice !== undefined && {
-    offers: {
-      '@type': 'Offer',
-      price: opts.minPrice,
-      priceCurrency: 'EUR',
-      priceSpecification: {
-        '@type': 'PriceSpecification',
+}): SchemaNode => {
+  const currency = opts.priceRange?.currency ?? 'EUR'
+  const offers = opts.priceRange
+    ? {
+        '@type': 'AggregateOffer',
+        lowPrice: opts.priceRange.low,
+        highPrice: opts.priceRange.high,
+        priceCurrency: currency,
+        ...(opts.priceRange.offerCount !== undefined && {
+          offerCount: opts.priceRange.offerCount,
+        }),
+      }
+    : opts.minPrice !== undefined
+    ? {
+        '@type': 'Offer',
         price: opts.minPrice,
-        priceCurrency: 'EUR',
-        valueAddedTaxIncluded: false,
-      },
-    },
-  }),
-})
+        priceCurrency: currency,
+        priceSpecification: {
+          '@type': 'PriceSpecification',
+          price: opts.minPrice,
+          priceCurrency: currency,
+          valueAddedTaxIncluded: false,
+        },
+      }
+    : undefined
+
+  return {
+    '@type': 'Service',
+    '@id': opts.id,
+    name: opts.name,
+    description: opts.description,
+    provider: { '@id': ORG_ID },
+    areaServed: DEFAULT_AREAS_SERVED,
+    ...(opts.url && { url: opts.url }),
+    ...(opts.serviceType && { serviceType: opts.serviceType }),
+    ...(opts.inLanguage && { inLanguage: opts.inLanguage }),
+    ...(opts.category && { category: opts.category }),
+    ...(offers && { offers }),
+  }
+}
 
 export const breadcrumbSchema = (
   items: { name: string; url: string }[]
