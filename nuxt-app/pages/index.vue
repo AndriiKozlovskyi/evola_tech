@@ -59,6 +59,7 @@ const localeFaqs = (path: string) =>
 
 const aiSearchFaqs = computed(() => localeFaqs('aiSearch.faq.items'))
 const mobileAppFaqs = computed(() => localeFaqs('mobileApp.faq.items'))
+const allFaqs = computed(() => [...mobileAppFaqs.value, ...aiSearchFaqs.value])
 
 const navItems = computed(() => [
   { name: t('navigation.home'), url: `${absoluteLocaleRoot.value}#home` },
@@ -195,12 +196,8 @@ const schemaMarkup = computed(() =>
       inLanguage: locale.value,
       category: ['Social media', 'Content marketing', 'Instagram', 'Facebook', 'LinkedIn'],
     }),
-    faqSchema(aiSearchFaqs.value, {
-      id: `${absoluteLocaleRoot.value}#ai-search-faq`,
-      inLanguage: locale.value,
-    }),
-    faqSchema(mobileAppFaqs.value, {
-      id: `${absoluteLocaleRoot.value}#mobile-app-faq`,
+    faqSchema(allFaqs.value, {
+      id: `${absoluteLocaleRoot.value}#faq`,
       inLanguage: locale.value,
     }),
   )
